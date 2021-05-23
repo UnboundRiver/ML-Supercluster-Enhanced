@@ -1,4 +1,9 @@
 ﻿namespace Supercluster.Classification
 {
     using System;
-    using System.Collec
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Threading.Tasks;
+
+    /// <summary>
+    /// The Extended Nearest N
