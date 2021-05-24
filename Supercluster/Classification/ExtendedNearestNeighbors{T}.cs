@@ -6,4 +6,4 @@
     using System.Threading.Tasks;
 
     /// <summary>
-    /// The Extended Nearest N
+    /// The Extended Nearest Neighbors learning algorithm is a variation of the kNN learning algorithm which classification decisions are made in such a way that they maximize 
