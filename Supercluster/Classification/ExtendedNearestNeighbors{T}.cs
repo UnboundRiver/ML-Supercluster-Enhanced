@@ -23,4 +23,7 @@
         private int[] trainingOutputs;
 
         /// <summary>
-        /// Initializes a new instance of the <see 
+        /// Initializes a new instance of the <see cref="ExtendedNearestNeighbors{T}"/> class.
+        /// </summary>
+        /// <param name="k">The number of neighbors during classification</param>
+        /// <
