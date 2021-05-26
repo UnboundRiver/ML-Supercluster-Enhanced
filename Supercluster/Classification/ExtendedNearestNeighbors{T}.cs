@@ -27,4 +27,11 @@
         /// </summary>
         /// <param name="k">The number of neighbors during classification</param>
         /// <param name="clusters">The number of clusters (classes) that the model should have</param>
-        public ExtendedNearestNeighbors(i
+        public ExtendedNearestNeighbors(int k, int clusters)
+        {
+            this.Clusters = clusters;
+            this.K = k;
+        }
+
+        /// <summary>
+        /
