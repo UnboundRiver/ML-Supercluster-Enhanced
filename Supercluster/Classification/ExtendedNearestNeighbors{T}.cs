@@ -19,4 +19,8 @@
 
         /// <summary>
         /// An array containg the original training outputs.
-   
+        /// </summary>
+        private int[] trainingOutputs;
+
+        /// <summary>
+        /// Initializes a new instance of the <see 
