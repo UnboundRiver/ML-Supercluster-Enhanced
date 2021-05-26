@@ -14,4 +14,9 @@
     {
         /// <summary>
         /// An array containing the original training data.
+        /// </summary>
+        private T[] trainingData;
+
+        /// <summary>
+        /// An array containg the original training outputs.
    
