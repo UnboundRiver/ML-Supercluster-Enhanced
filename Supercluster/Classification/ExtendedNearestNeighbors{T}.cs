@@ -26,4 +26,5 @@
         /// Initializes a new instance of the <see cref="ExtendedNearestNeighbors{T}"/> class.
         /// </summary>
         /// <param name="k">The number of neighbors during classification</param>
-        /// <
+        /// <param name="clusters">The number of clusters (classes) that the model should have</param>
+        public ExtendedNearestNeighbors(i
