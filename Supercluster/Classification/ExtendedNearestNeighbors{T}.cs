@@ -34,4 +34,6 @@
         }
 
         /// <summary>
-        /
+        /// The metric used to calculate distance between two datapoints.
+        /// </summary>
+        public Func<T, T, double> Metric 
