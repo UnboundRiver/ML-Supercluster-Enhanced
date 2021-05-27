@@ -36,4 +36,8 @@
         /// <summary>
         /// The metric used to calculate distance between two datapoints.
         /// </summary>
-        public Func<T, T, double> Metric 
+        public Func<T, T, double> Metric { get; set; }
+
+        private double[][] WeightedKNNDistance;
+        private int[][] WeightedKNNLabels;
+        private double[] ClassSta
