@@ -40,4 +40,10 @@
 
         private double[][] WeightedKNNDistance;
         private int[][] WeightedKNNLabels;
-        private double[] ClassSta
+        private double[] ClassStatistics;
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="testingData"></param>
+        /// <returns></
