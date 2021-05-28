@@ -46,4 +46,7 @@
         /// 
         /// </summary>
         /// <param name="testingData"></param>
-        /// <returns></
+        /// <returns></returns>
+        public int[] Predict(T[] testingData)
+        {
+            var predictedLabels = Enumerable.Repeat(-1, testingDa
