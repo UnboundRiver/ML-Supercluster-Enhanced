@@ -68,4 +68,5 @@
                 for (int j = 0; j < this.trainingData.Length; j++)
                 {
                     // TODO: Here we have the index, distance, then class label, make this more elegant
-                
+                    distances.Add(new double[] { j, this.Metric(testingData[i], this.trainingData[j]), this.trainingOutputs[j] });
+      
