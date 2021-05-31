@@ -54,4 +54,10 @@
             var numTrainingEachClass = new int[numClass];
 
             // calculate the num training each class
-            for (int i = 0; i < numClass;
+            for (int i = 0; i < numClass; i++)
+            {
+                numTrainingEachClass[i] = this.trainingOutputs.Count(l => l == i);
+            }
+
+            // classify each Point
+  
