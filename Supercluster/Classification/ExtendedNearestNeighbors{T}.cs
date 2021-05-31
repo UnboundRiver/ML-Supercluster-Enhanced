@@ -60,4 +60,8 @@
             }
 
             // classify each Point
-  
+            for (int i = 0; i < testingData.Length; i++)
+            {
+
+                // get all distances for the Point
+           
