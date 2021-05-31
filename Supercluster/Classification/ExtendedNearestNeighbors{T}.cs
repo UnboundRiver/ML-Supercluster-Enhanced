@@ -49,4 +49,6 @@
         /// <returns></returns>
         public int[] Predict(T[] testingData)
         {
-            var predictedLabels = Enumerable.Repeat(-1, testingDa
+            var predictedLabels = Enumerable.Repeat(-1, testingData.Length).ToArray();
+            var numClass = this.trainingOutputs.Distinct().Count();
+            var numTrainingEachC
