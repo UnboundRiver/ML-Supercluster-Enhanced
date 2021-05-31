@@ -51,4 +51,7 @@
         {
             var predictedLabels = Enumerable.Repeat(-1, testingData.Length).ToArray();
             var numClass = this.trainingOutputs.Distinct().Count();
-            var numTrainingEachC
+            var numTrainingEachClass = new int[numClass];
+
+            // calculate the num training each class
+            for (int i = 0; i < numClass;
