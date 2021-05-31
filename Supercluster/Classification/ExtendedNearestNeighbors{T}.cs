@@ -64,4 +64,6 @@
             {
 
                 // get all distances for the Point
-           
+                var distances = new List<double[]>();
+                for (int j = 0; j < this.trainingData.Length; j++)
+     
