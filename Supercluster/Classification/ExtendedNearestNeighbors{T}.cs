@@ -76,4 +76,7 @@
                 distances = distances.OrderBy(d => d[1]).ToList();
 
                 // count how many training labels per class
-  
+                var hitNumKNN = new int[numClass];
+                for (int j = 0; j < numClass; j++)
+                {
+   
