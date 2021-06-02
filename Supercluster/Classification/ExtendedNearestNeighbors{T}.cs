@@ -72,4 +72,8 @@
                 }
 
                 // index 0: index of trainingData
-                // index 1: distance between testingData and trainingDat
+                // index 1: distance between testingData and trainingData
+                distances = distances.OrderBy(d => d[1]).ToList();
+
+                // count how many training labels per class
+  
