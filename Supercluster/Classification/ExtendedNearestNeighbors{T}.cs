@@ -82,4 +82,7 @@
                     hitNumKNN[j] = distances.Take(this.K).Count(d => (int)d[2] == j);
                 }
 
-                // variables defined in
+                // variables defined in matlab program
+                var tsEnn = new double[numClass];
+                var numTrainingNN = new double[numClass];
+                var num
