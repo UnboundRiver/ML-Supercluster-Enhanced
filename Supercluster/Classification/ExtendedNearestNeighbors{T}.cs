@@ -85,4 +85,6 @@
                 // variables defined in matlab program
                 var tsEnn = new double[numClass];
                 var numTrainingNN = new double[numClass];
-                var num
+                var numSameTraining = new double[numClass];
+
+                // for each class we count the change of class membership among the k
