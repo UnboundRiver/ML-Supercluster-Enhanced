@@ -79,4 +79,7 @@
                 var hitNumKNN = new int[numClass];
                 for (int j = 0; j < numClass; j++)
                 {
-   
+                    hitNumKNN[j] = distances.Take(this.K).Count(d => (int)d[2] == j);
+                }
+
+                // variables defined in
