@@ -87,4 +87,9 @@
                 var numTrainingNN = new double[numClass];
                 var numSameTraining = new double[numClass];
 
-                // for each class we count the change of class membership among the k
+                // for each class we count the change of class membership among the k-neighbors
+                for (int j = 0; j < numClass; j++)
+                {
+                    // TODO: Optimize the shit out of this
+
+ 
