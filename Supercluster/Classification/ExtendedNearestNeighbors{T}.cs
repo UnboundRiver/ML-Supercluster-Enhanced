@@ -99,4 +99,5 @@
                     // calculates the distances for each Point 
                     var testingMuDistances = distances.WithIndexes(indicies).Select(x => x[1]).ToArray();
 
-                    // o
+                    // only get the k-th nearest neighbor
+                    var trainingMuDis = this.WeightedKNNDistance.WithIndexes(indicies).Select(x => 
