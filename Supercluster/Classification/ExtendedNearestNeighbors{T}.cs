@@ -96,4 +96,7 @@
                     var indicies = this.trainingOutputs.WhereIndex(l => l == j).ToArray();
                     distances = distances.OrderBy(d => d[0]).ToList();
 
-                    // calculates the distances for each
+                    // calculates the distances for each Point 
+                    var testingMuDistances = distances.WithIndexes(indicies).Select(x => x[1]).ToArray();
+
+                    // o
