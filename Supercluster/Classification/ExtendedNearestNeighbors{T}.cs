@@ -93,4 +93,7 @@
                     // TODO: Optimize the shit out of this
 
                     // Get all the indexes of the current class
-                    var indicies = this.trainingOutputs.WhereIndex(l => l == j).ToAr
+                    var indicies = this.trainingOutputs.WhereIndex(l => l == j).ToArray();
+                    distances = distances.OrderBy(d => d[0]).ToList();
+
+                    // calculates the distances for each
