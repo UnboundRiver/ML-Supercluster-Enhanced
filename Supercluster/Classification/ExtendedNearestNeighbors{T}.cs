@@ -100,4 +100,5 @@
                     var testingMuDistances = distances.WithIndexes(indicies).Select(x => x[1]).ToArray();
 
                     // only get the k-th nearest neighbor
-                    var trainingMuDis = this.WeightedKNNDistance.WithIndexes(indicies).Select(x => 
+                    var trainingMuDis = this.WeightedKNNDistance.WithIndexes(indicies).Select(x => x[this.K - 1]).ToArray();
+                    var trainingMuClass = this.WeightedKNNLabels.WithIndexes(indicies).Select(x => x[this.K -
