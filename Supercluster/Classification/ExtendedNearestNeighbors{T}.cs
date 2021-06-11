@@ -104,4 +104,6 @@
                     var trainingMuClass = this.WeightedKNNLabels.WithIndexes(indicies).Select(x => x[this.K - 1]).ToArray();
 
                     var diffDistance = testingMuDistances.ArraySubtract(trainingMuDis);
-                    var indexes
+                    var indexesLessThanZero = diffDistance.WhereIndex(d => d <= 0);
+
+                    numTrainingNN[j] = indexesLessThanZero.Count();
