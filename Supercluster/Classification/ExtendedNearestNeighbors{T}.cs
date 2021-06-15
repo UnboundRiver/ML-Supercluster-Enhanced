@@ -110,4 +110,8 @@
                     if (numTrainingNN[j] > 0)
                     {
                         numSameTraining[j] =
-                            trainingMuClass.With
+                            trainingMuClass.WithIndexes(indexesLessThanZero.ToArray()).Count(m => m == j);
+                    }
+                }
+
+                // now w
