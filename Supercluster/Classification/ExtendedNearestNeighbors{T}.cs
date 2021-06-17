@@ -140,4 +140,9 @@
         /// <summary>
         /// The number of neighbors used during classification.
         /// </summary>
-        public
+        public int K { get; private set; }
+
+        /// <summary>
+        /// Performs classification of a single Point.
+        /// </summary>
+        /// <para
