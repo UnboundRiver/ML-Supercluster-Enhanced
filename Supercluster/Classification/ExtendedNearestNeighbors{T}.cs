@@ -119,4 +119,6 @@
                 {
                     var deltaNumSame = numTrainingNN[j] - numSameTraining[j];
                     var difTmp = numSameTraining.ArrayDivide(numTrainingEachClass.Select(x => (double)(x * this.K)).ToArray());
-                    var deltaNumDif = difTmp.Sum() - numSam
+                    var deltaNumDif = difTmp.Sum() - numSameTraining[j] / ((double)(numTrainingEachClass[j] * this.K));
+
+                    tsEnn[j] = ((deltaNumSame + hitNumKNN[j] - (this
