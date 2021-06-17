@@ -133,4 +133,6 @@
         }
 
         /// <summary>
-        ///
+        /// The number of clusters the model has.
+        /// </summary>
+        public int Clusters { get; private set; }
