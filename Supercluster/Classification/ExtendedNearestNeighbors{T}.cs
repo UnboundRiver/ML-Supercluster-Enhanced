@@ -125,4 +125,12 @@
 
                 }
 
-            
+                predictedLabels[i] = tsEnn.MaxIndexRandomTies();
+
+            }
+
+            return predictedLabels;
+        }
+
+        /// <summary>
+        ///
