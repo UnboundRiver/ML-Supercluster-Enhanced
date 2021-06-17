@@ -114,4 +114,6 @@
                     }
                 }
 
-                // now w
+                // now we calculate the class statistics
+                for (int j = 0; j < numClass; j++) // we assume the testing data to be in class j
+    
