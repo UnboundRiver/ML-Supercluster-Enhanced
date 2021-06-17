@@ -136,3 +136,8 @@
         /// The number of clusters the model has.
         /// </summary>
         public int Clusters { get; private set; }
+
+        /// <summary>
+        /// The number of neighbors used during classification.
+        /// </summary>
+        public
