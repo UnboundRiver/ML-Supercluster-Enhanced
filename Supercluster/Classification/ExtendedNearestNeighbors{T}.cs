@@ -145,4 +145,6 @@
         /// <summary>
         /// Performs classification of a single Point.
         /// </summary>
-        /// <para
+        /// <param name="dataPoint">Datum to be classified.</param>
+        /// <returns>The output-class index.</returns>
+        public int 
