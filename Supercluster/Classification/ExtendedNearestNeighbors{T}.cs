@@ -147,4 +147,7 @@
         /// </summary>
         /// <param name="dataPoint">Datum to be classified.</param>
         /// <returns>The output-class index.</returns>
-        public int 
+        public int Compute(T dataPoint)
+        {
+            var numClass = this.trainingOutputs.Distinct().Count();
+            
