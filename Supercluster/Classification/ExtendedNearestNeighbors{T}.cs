@@ -150,4 +150,7 @@
         public int Compute(T dataPoint)
         {
             var numClass = this.trainingOutputs.Distinct().Count();
-            
+            var numTrainingEachClass = new int[numClass];
+
+            // calculate the num training each class
+            for (int
