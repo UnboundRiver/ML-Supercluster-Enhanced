@@ -156,4 +156,8 @@
             for (int i = 0; i < numClass; i++)
             {
                 numTrainingEachClass[i] = this.trainingOutputs.Count(l => l == i);
-        
+            }
+
+            // get all distances for the Point
+            var distances = new List<double[]>();
+            for (int j = 0; j < this.traini
