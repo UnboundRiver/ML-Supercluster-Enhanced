@@ -153,4 +153,7 @@
             var numTrainingEachClass = new int[numClass];
 
             // calculate the num training each class
-            for (int
+            for (int i = 0; i < numClass; i++)
+            {
+                numTrainingEachClass[i] = this.trainingOutputs.Count(l => l == i);
+        
