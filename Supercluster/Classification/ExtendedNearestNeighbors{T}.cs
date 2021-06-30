@@ -160,4 +160,6 @@
 
             // get all distances for the Point
             var distances = new List<double[]>();
-            for (int j = 0; j < this.traini
+            for (int j = 0; j < this.trainingData.Length; j++)
+            {
+                // TODO: Here we have the index, distance, then class label, make this m
