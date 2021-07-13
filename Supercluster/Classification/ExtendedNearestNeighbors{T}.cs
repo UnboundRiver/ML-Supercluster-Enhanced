@@ -202,4 +202,7 @@
                 var indexesLessThanZero = diffDistance.WhereIndex(d => d <= 0);
 
                 numTrainingNN[j] = indexesLessThanZero.Count();
-                if (numTrainingNN[j] > 0
+                if (numTrainingNN[j] > 0)
+                {
+                    numSameTraining[j] =
+                        trainingMuClass.WithIndexes(indexesLess
