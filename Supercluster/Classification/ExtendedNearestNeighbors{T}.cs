@@ -212,4 +212,6 @@
             // now we calculate the class statistics
             for (int j = 0; j < numClass; j++) // we assume the testing data to be in class j
             {
-                var deltaNumSame = numTrainingNN[j] - nu
+                var deltaNumSame = numTrainingNN[j] - numSameTraining[j];
+                var difTmp = numSameTraining.ArrayDivide(numTrainingEachClass.Select(x => (double)(x * this.K)).ToArray());
+     
