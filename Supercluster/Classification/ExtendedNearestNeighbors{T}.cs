@@ -217,4 +217,10 @@
                 var deltaNumDif = difTmp.Sum() - (numSameTraining[j] / ((double)(numTrainingEachClass[j] * this.K)));
 
                 tsEnn[j] = ((deltaNumSame + hitNumKNN[j] - (this.ClassStatistics[j] * this.K)) / ((numTrainingEachClass[j] + 1) * this.K)) - deltaNumDif;
-          
+            }
+
+            return tsEnn.MaxIndexRandomTies();
+        }
+
+        /// <summary>
+        /// We train the ENN algo
