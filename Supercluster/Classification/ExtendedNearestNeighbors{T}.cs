@@ -205,4 +205,9 @@
                 if (numTrainingNN[j] > 0)
                 {
                     numSameTraining[j] =
-                        trainingMuClass.WithIndexes(indexesLess
+                        trainingMuClass.WithIndexes(indexesLessThanZero.ToArray()).Count(m => m == j);
+                }
+            }
+
+            // now we calculate the class statistics
+            for (int j = 
