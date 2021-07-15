@@ -225,4 +225,5 @@
         /// <summary>
         /// We train the ENN algorithm by computing a "kNN map". See [1] and the source code for a explanation of a weighted kNN map.
         /// </summary>
-        /// <param name
+        /// <param name="trainingData">The training data set.</param>
+        /// <param name="trainingOutputs">The supervised clas
