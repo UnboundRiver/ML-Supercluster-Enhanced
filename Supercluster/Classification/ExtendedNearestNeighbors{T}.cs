@@ -229,4 +229,5 @@
         /// <param name="trainingOutputs">The supervised classification outputs of the training data set.</param>
         public void Train(T[] trainingData, int[] trainingOutputs)
         {
-    
+            this.trainingData = trainingData;
+            this.trainingOutputs = trainingOutputs.BijectWithNatur
