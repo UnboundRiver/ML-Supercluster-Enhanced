@@ -230,4 +230,9 @@
         public void Train(T[] trainingData, int[] trainingOutputs)
         {
             this.trainingData = trainingData;
-            this.trainingOutputs = trainingOutputs.BijectWithNatur
+            this.trainingOutputs = trainingOutputs.BijectWithNaturals();
+
+            // holds the k-nearest distances
+            var weightedKNNDistance = new double[trainingData.Length][];
+
+            // holds
