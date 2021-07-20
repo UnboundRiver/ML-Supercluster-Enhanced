@@ -253,4 +253,8 @@
                             new double[] { trainingOutputs[i], this.Metric(currentPoint, trainingData[i]) });
                     }
 
-                    /
+                    // exclude self
+                    distances[index][1] = double.PositiveInfinity;
+
+                    // get k nearest distance
+  
