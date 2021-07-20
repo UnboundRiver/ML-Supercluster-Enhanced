@@ -247,4 +247,7 @@
                     var distances = new List<double[]>();
 
                     // calculate all the distances
+                    for (int i = 0; i < trainingData.Length; i++)
+                    {
+                        distances.Add(
           
