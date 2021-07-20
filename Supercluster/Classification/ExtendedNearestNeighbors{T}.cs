@@ -257,4 +257,6 @@
                     distances[index][1] = double.PositiveInfinity;
 
                     // get k nearest distance
-  
+                    var topK = distances.OrderBy(d => d[1]).Take(this.K).ToArray();
+
+                    // set the distance matrix and labels matr
