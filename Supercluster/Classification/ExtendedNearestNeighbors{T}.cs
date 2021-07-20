@@ -235,4 +235,8 @@
             // holds the k-nearest distances
             var weightedKNNDistance = new double[trainingData.Length][];
 
-            // holds
+            // holds the k-nearest labels
+            var weightedKNNLabels = new int[trainingData.Length][];
+
+            Parallel.For(
+                
