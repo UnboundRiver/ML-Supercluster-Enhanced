@@ -243,4 +243,8 @@
                 trainingData.Length,
                 index =>
                 {
-                    var currentPoint = trainingD
+                    var currentPoint = trainingData[index];
+                    var distances = new List<double[]>();
+
+                    // calculate all the distances
+          
