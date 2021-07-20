@@ -239,4 +239,8 @@
             var weightedKNNLabels = new int[trainingData.Length][];
 
             Parallel.For(
-                
+                0,
+                trainingData.Length,
+                index =>
+                {
+                    var currentPoint = trainingD
