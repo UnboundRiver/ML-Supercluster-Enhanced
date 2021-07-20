@@ -250,4 +250,7 @@
                     for (int i = 0; i < trainingData.Length; i++)
                     {
                         distances.Add(
-          
+                            new double[] { trainingOutputs[i], this.Metric(currentPoint, trainingData[i]) });
+                    }
+
+                    /
