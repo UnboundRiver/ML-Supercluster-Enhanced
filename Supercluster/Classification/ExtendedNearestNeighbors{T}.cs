@@ -259,4 +259,6 @@
                     // get k nearest distance
                     var topK = distances.OrderBy(d => d[1]).Take(this.K).ToArray();
 
-                    // set the distance matrix and labels matr
+                    // set the distance matrix and labels matrix
+                    weightedKNNDistance[index] = new double[this.K];
+                    weightedKNNLabels[index] = new int[this.
