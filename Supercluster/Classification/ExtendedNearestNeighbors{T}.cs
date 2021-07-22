@@ -265,4 +265,9 @@
 
                     for (int i = 0; i < this.K; i++)
                     {
-                        weightedKNNLabels[index][i] = (int
+                        weightedKNNLabels[index][i] = (int)topK[i][0];
+                        weightedKNNDistance[index][i] = topK[i][1];
+                    }
+                });
+
+            /
