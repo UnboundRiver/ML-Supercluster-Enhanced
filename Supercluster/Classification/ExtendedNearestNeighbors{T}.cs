@@ -261,4 +261,8 @@
 
                     // set the distance matrix and labels matrix
                     weightedKNNDistance[index] = new double[this.K];
-                    weightedKNNLabels[index] = new int[this.
+                    weightedKNNLabels[index] = new int[this.K];
+
+                    for (int i = 0; i < this.K; i++)
+                    {
+                        weightedKNNLabels[index][i] = (int
