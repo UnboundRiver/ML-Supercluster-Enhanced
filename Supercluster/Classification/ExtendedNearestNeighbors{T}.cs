@@ -270,4 +270,6 @@
                     }
                 });
 
-            /
+            // TODO: Make method
+            // calculate class statistics
+            var classStatistics = new double[this.Clust
