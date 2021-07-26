@@ -276,4 +276,7 @@
             // Parallel.For(0, classes, currentClassLabel =>
             for (int currentClassLabel = 0; currentClassLabel < this.Clusters; currentClassLabel++)
             {
-                var currentClassIndexes = trainingOutputs.WhereIndex(t => t =
+                var currentClassIndexes = trainingOutputs.WhereIndex(t => t == currentClassLabel).ToArray();
+                var numTraining = currentClassIndexes.Length;
+
+                var co
