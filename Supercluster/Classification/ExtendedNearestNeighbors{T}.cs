@@ -272,4 +272,8 @@
 
             // TODO: Make method
             // calculate class statistics
-            var classStatistics = new double[this.Clust
+            var classStatistics = new double[this.Clusters];
+            // Parallel.For(0, classes, currentClassLabel =>
+            for (int currentClassLabel = 0; currentClassLabel < this.Clusters; currentClassLabel++)
+            {
+                var currentClassIndexes = trainingOutputs.WhereIndex(t => t =
