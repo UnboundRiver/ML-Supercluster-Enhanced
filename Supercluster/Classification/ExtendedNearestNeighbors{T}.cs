@@ -279,4 +279,8 @@
                 var currentClassIndexes = trainingOutputs.WhereIndex(t => t == currentClassLabel).ToArray();
                 var numTraining = currentClassIndexes.Length;
 
-                var co
+                var count = 0;
+
+                // for each Point in the current class
+                for (int j = 0; j < numTraining; j++)
+               
