@@ -285,4 +285,6 @@
                 for (int j = 0; j < numTraining; j++)
                 {
                     // count the number of k neighbours that are the current class
-                    var neighboorLabels = weightedKNNL
+                    var neighboorLabels = weightedKNNLabels[currentClassIndexes[j]];
+                    var countofCurrentClass = neighboorLabels.Count(l => l == currentClassLabel);
+           
