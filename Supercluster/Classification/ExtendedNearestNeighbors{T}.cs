@@ -295,4 +295,7 @@
 
             this.WeightedKNNDistance = weightedKNNDistance;
             this.WeightedKNNLabels = weightedKNNLabels;
- 
+            this.ClassStatistics = classStatistics;
+        }
+    }
+}
