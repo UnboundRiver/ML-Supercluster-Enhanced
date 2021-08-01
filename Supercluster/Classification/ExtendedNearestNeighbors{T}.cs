@@ -290,4 +290,9 @@
                     count += countofCurrentClass;
                 }
 
-                classStatistics[currentClassLabel] = (double)count / (double)(numTraining * 
+                classStatistics[currentClassLabel] = (double)count / (double)(numTraining * this.K);
+            }
+
+            this.WeightedKNNDistance = weightedKNNDistance;
+            this.WeightedKNNLabels = weightedKNNLabels;
+ 
