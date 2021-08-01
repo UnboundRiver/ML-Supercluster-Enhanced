@@ -17,4 +17,5 @@
         /// Trains the model using a given set of labeled (supervised) data.
         /// </summary>
         /// <param name="trainingData">The training data set.</param>
-        /// <param n
+        /// <param name="trainingOutputs">The supervised classification outputs of the training data set.</param>
+        void Train(T[] trainingData, int[] trainingOutpu
