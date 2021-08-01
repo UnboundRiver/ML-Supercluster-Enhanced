@@ -18,4 +18,6 @@
         /// </summary>
         /// <param name="trainingData">The training data set.</param>
         /// <param name="trainingOutputs">The supervised classification outputs of the training data set.</param>
-        void Train(T[] trainingData, int[] trainingOutpu
+        void Train(T[] trainingData, int[] trainingOutputs);
+    }
+}
