@@ -10,4 +10,8 @@
         /// Performs classification of a single Point.
         /// </summary>
         /// <param name="dataPoint">Datum to be classified.</param>
-        /// <retur
+        /// <returns>The output-class index.</returns>
+        int Compute(T dataPoint);
+
+        /// <summary>
+        /// Trains the model using a given set of 
