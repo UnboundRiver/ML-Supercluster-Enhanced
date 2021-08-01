@@ -14,4 +14,7 @@
         int Compute(T dataPoint);
 
         /// <summary>
-        /// Trains the model using a given set of 
+        /// Trains the model using a given set of labeled (supervised) data.
+        /// </summary>
+        /// <param name="trainingData">The training data set.</param>
+        /// <param n
