@@ -3,4 +3,8 @@
     /// <summary>
     /// Interface for supervised classifiers.
     /// </summary>
-    /// <typeparam name="T">The type of data the algo
+    /// <typeparam name="T">The type of data the algorithm performs classification on.</typeparam>
+    public interface ISupervisedClassifier<in T>
+    {
+        /// <summary>
+       
