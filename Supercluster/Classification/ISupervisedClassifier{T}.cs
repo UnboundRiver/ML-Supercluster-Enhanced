@@ -7,4 +7,7 @@
     public interface ISupervisedClassifier<in T>
     {
         /// <summary>
-       
+        /// Performs classification of a single Point.
+        /// </summary>
+        /// <param name="dataPoint">Datum to be classified.</param>
+        /// <retur
