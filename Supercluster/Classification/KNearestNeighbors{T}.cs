@@ -8,4 +8,9 @@
     using Supercluster.Structures.Interfaces;
 
     /// <summary>
-    /// kNN Learning Algor
+    /// kNN Learning Algorithm.
+    /// </summary>
+    /// <remarks>
+    /// 
+    /// <h2>Introduction</h2>
+    /// <para> The <i>k</i> nearest neighbors learning algori
