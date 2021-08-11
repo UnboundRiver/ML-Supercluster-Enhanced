@@ -14,4 +14,6 @@
     /// 
     /// <h2>Introduction</h2>
     /// <para> The <i>k</i> nearest neighbors learning algorithm (kNN) is a classification algorithm. To determine class membership of a unseen input the algorithm computes the <i>k</i> nearest neighbors in the learned feature space 
-    /// and then chooses the class which is most common among the 
+    /// and then chooses the class which is most common among the <i>k</i> neighbors.</para>
+    /// 
+    /// <para> The picture below is of the output of the kNN algorithm k=3 in a 2-dimensional feature s
