@@ -17,4 +17,8 @@
     /// and then chooses the class which is most common among the <i>k</i> neighbors.</para>
     /// 
     /// <para> The picture below is of the output of the kNN algorithm k=3 in a 2-dimensional feature space with 2 classes. The blue and red dots are point belonging to class 1 and class 2 which were learned during model training.
-    ///  The green dots are new point which were classified as class 1 (meaning at least 2 of their nearest neighbors are in class 1). The yellow dots are new point which were classified as class 2 (meaning atleast 2 of their neares
+    ///  The green dots are new point which were classified as class 1 (meaning at least 2 of their nearest neighbors are in class 1). The yellow dots are new point which were classified as class 2 (meaning atleast 2 of their nearest neighbors are in class 2).</para>
+    ///  <img src="..\..\media\knn_example.png" />
+    /// 
+    /// <h3>Advantages</h3>
+    /// 
