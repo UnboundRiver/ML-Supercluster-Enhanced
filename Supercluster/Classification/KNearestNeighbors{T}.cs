@@ -22,3 +22,5 @@
     /// 
     /// <h3>Advantages</h3>
     /// 
+    /// <ul style="list-style-type:square">
+    ///  <li>The kNN learning algorithm is perhaps the simplest learning algorithm. It is 
