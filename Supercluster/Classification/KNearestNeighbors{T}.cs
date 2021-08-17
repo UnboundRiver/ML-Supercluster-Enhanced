@@ -26,4 +26,7 @@
     ///  <li>The kNN learning algorithm is perhaps the simplest learning algorithm. It is extremely easy to implement, and very easy to understand even for one who is a complete novice to machine learning.</li>
     ///  <li>When the kNN is used with a metric that is fast to compute (such as the <a href="https://en.wikipedia.org/wiki/Euclidean_distance">Euclidean Metric</a>) the model may usually be trained very quickly compared to more complex learning algorithms.</li>
     ///</ul>
- 
+    ///     
+    /// <h3>Considerations</h3>
+    /// <ul style="list-style-type:square">
+    /// <li>To prevent ties during t
