@@ -29,4 +29,5 @@
     ///     
     /// <h3>Considerations</h3>
     /// <ul style="list-style-type:square">
-    /// <li>To prevent ties during t
+    /// <li>To prevent ties during the classification step one should use an odd value of <i>k</i> if there is an even number of classes.</li>
+    /// <li>The 
