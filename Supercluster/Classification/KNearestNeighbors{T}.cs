@@ -32,4 +32,12 @@
     /// <li>To prevent ties during the classification step one should use an odd value of <i>k</i> if there is an even number of classes.</li>
     /// <li>The number of possible classification outputs must be known when using a kNN as it is a <a href="https://en.wikipedia.org/wiki/Supervised_learning">supervised learning algorithm</a>.</li>
     /// <li>The kNN learning algorithm essentially <i>memorizes</i> all supervised examples, thus very large example datasets may require much of memory.</li>
-    /// <li>kNN performs very poorly when the training data has noisy or irre
+    /// <li>kNN performs very poorly when the training data has noisy or irrelevant features.</li>
+    ///</ul>
+    /// 
+    /// </remarks>
+    /// <example>
+    /// 
+    /// <h2>This is a test.</h2>
+    /// 
+    ///
