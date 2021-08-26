@@ -40,4 +40,11 @@
     /// 
     /// <h2>This is a test.</h2>
     /// 
-    ///
+    /// <code>
+    ///  public class TestCode()
+    ///  {
+    ///     var ferret = 3;
+    ///  }
+    /// </code>
+    /// </example>
+    /// 
