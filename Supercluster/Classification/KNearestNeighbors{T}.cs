@@ -48,3 +48,6 @@
     /// </code>
     /// </example>
     /// 
+    /// <typeparam name="T">The type of the training data.</typeparam>
+    [Serializable]
+    public class KNearest
