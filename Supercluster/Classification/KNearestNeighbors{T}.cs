@@ -50,4 +50,9 @@
     /// 
     /// <typeparam name="T">The type of the training data.</typeparam>
     [Serializable]
-    public class KNearest
+    public class KNearestNeighbors<T>
+    {
+        /// <summary>
+        /// The internal dataset of the points observed.
+        /// </summary>
+        private 
