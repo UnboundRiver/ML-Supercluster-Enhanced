@@ -55,4 +55,7 @@
         /// <summary>
         /// The internal dataset of the points observed.
         /// </summary>
-        private 
+        private ISpatialQueryable<T> internalDataStructure;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="KNearestNeighbor
