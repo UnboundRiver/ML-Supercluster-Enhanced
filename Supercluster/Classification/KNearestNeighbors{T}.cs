@@ -62,4 +62,8 @@
         /// </summary>
         /// <param name="k">The number of neighbors during classification</param>
         /// <param name="dataStructure">The backing data structure</param>
-        public KNearestNeighbors(int k, Func<T
+        public KNearestNeighbors(int k, Func<T, T, double> metric, ISpatialQueryable<T> dataStructure = null)
+        {
+            this.Metric = metric;
+
+            this.K
