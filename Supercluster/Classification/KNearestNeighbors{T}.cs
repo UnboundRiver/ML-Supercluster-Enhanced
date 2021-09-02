@@ -60,4 +60,6 @@
         /// <summary>
         /// Initializes a new instance of the <see cref="KNearestNeighbors{T}"/> class.
         /// </summary>
-        /// <param name="k">The number of neighbors during classification</
+        /// <param name="k">The number of neighbors during classification</param>
+        /// <param name="dataStructure">The backing data structure</param>
+        public KNearestNeighbors(int k, Func<T
