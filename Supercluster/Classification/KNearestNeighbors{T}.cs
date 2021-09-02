@@ -58,4 +58,6 @@
         private ISpatialQueryable<T> internalDataStructure;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="KNearestNeighbor
+        /// Initializes a new instance of the <see cref="KNearestNeighbors{T}"/> class.
+        /// </summary>
+        /// <param name="k">The number of neighbors during classification</
