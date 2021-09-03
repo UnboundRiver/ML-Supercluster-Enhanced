@@ -66,4 +66,8 @@
         {
             this.Metric = metric;
 
-            this.K
+            this.K = k;
+
+            this.internalDataStructure = dataStructure ?? new MetricSpaceSubset<T>(metric);
+
+            this.clusterIndexDictionary = 
