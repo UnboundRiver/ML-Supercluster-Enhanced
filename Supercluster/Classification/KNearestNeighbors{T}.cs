@@ -70,4 +70,5 @@
 
             this.internalDataStructure = dataStructure ?? new MetricSpaceSubset<T>(metric);
 
-            this.clusterIndexDictionary = 
+            this.clusterIndexDictionary = new Dictionary<int, List<int>>();
+            this.Clusters = new ClusterDictionary<int, T>(this.internalDataStructure, this.clusterIn
