@@ -71,4 +71,9 @@
             this.internalDataStructure = dataStructure ?? new MetricSpaceSubset<T>(metric);
 
             this.clusterIndexDictionary = new Dictionary<int, List<int>>();
-            this.Clusters = new ClusterDictionary<int, T>(this.internalDataStructure, this.clusterIn
+            this.Clusters = new ClusterDictionary<int, T>(this.internalDataStructure, this.clusterIndexDictionary);
+        }
+
+        /// <summary>
+        /// The metric used to calculate distance between two point.
+        /// </
