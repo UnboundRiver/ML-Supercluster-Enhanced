@@ -81,3 +81,7 @@
 
         /// <summary>
         /// The number of clusters the model has.
+        /// </summary>
+        public ClusterDictionary<int, T> Clusters { get; }
+
+        private Dictionary<int, List<int>> clusterIndexDictionary
