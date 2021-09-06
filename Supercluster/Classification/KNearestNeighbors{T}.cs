@@ -91,4 +91,7 @@
         /// </summary>
         public int K { get; }
 
-  
+        /// <summary>
+        /// Trains the model with a single given point and an appropriate class label.
+        /// </summary>
+        /// <param name=
