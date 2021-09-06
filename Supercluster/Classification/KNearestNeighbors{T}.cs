@@ -95,4 +95,6 @@
         /// Trains the model with a single given point and an appropriate class label.
         /// </summary>
         /// <param name="point">The point to add to the model</param>
-        /// <param name="label">The class label of the given <paramref name="point"/></pa
+        /// <param name="label">The class label of the given <paramref name="point"/></param>
+        /// <exception cref="ArgumentException">Thrown if the label of the point does not exist in the current model.</exception>
+ 
