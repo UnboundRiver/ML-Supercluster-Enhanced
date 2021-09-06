@@ -102,4 +102,9 @@
             var pointIndex = this.internalDataStructure.Add(point);
             if (this.clusterIndexDictionary.ContainsKey(label))
             {
-                this.clusterIndexDictionary[label].Add(point
+                this.clusterIndexDictionary[label].Add(pointIndex);
+            }
+            else
+            {
+                this.clusterIndexDictionary.Add(label, new List<int> { pointIndex });
+    
