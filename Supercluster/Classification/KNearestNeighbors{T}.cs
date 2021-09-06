@@ -99,4 +99,7 @@
         /// <exception cref="ArgumentException">Thrown if the label of the point does not exist in the current model.</exception>
         public void Train(T point, int label)
         {
-            var pointIndex = this.internalDataStructure.Add(poi
+            var pointIndex = this.internalDataStructure.Add(point);
+            if (this.clusterIndexDictionary.ContainsKey(label))
+            {
+                this.clusterIndexDictionary[label].Add(point
