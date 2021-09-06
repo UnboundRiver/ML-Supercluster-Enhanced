@@ -76,4 +76,8 @@
 
         /// <summary>
         /// The metric used to calculate distance between two point.
-        /// </
+        /// </summary>
+        public Func<T, T, double> Metric { get; set; }
+
+        /// <summary>
+        /// The number of clusters the model has.
