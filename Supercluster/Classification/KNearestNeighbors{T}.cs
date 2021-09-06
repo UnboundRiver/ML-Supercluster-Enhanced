@@ -94,4 +94,5 @@
         /// <summary>
         /// Trains the model with a single given point and an appropriate class label.
         /// </summary>
-        /// <param name=
+        /// <param name="point">The point to add to the model</param>
+        /// <param name="label">The class label of the given <paramref name="point"/></pa
