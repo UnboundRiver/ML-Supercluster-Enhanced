@@ -84,4 +84,11 @@
         /// </summary>
         public ClusterDictionary<int, T> Clusters { get; }
 
-        private Dictionary<int, List<int>> clusterIndexDictionary
+        private Dictionary<int, List<int>> clusterIndexDictionary;
+
+        /// <summary>
+        /// The number of neighbors used during classification.
+        /// </summary>
+        public int K { get; }
+
+  
