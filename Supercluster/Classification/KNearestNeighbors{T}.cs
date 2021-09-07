@@ -107,4 +107,9 @@
             else
             {
                 this.clusterIndexDictionary.Add(label, new List<int> { pointIndex });
-    
+            }
+        }
+
+        /// <summary>
+        /// Trains the model with a set of data-points and class labels.
+        /// </summ
