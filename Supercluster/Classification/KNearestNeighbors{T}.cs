@@ -112,4 +112,6 @@
 
         /// <summary>
         /// Trains the model with a set of data-points and class labels.
-        /// </summ
+        /// </summary>
+        /// <param name="points">The set of point</param>
+        /// <param name="labels">The set of class labels.
