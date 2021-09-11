@@ -117,4 +117,7 @@
         /// <param name="labels">The set of class labels.</param>
         public void TrainAll(IEnumerable<T> points, IEnumerable<int> labels)
         {
-            if (labels.Count() != p
+            if (labels.Count() != points.Count())
+            {
+                throw new ArgumentException("The number of labels and data points is not the same.");
+     
