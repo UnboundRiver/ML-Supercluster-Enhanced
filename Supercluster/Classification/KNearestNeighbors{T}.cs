@@ -114,4 +114,7 @@
         /// Trains the model with a set of data-points and class labels.
         /// </summary>
         /// <param name="points">The set of point</param>
-        /// <param name="labels">The set of class labels.
+        /// <param name="labels">The set of class labels.</param>
+        public void TrainAll(IEnumerable<T> points, IEnumerable<int> labels)
+        {
+            if (labels.Count() != p
