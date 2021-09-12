@@ -120,4 +120,7 @@
             if (labels.Count() != points.Count())
             {
                 throw new ArgumentException("The number of labels and data points is not the same.");
-     
+            }
+
+            var pointIndexes = this.internalDataStructure.Add(points).ToArray();
+            var labelsArray = labels.ToAr
