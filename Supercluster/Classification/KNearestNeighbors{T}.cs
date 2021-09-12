@@ -123,4 +123,9 @@
             }
 
             var pointIndexes = this.internalDataStructure.Add(points).ToArray();
-            var labelsArray = labels.ToAr
+            var labelsArray = labels.ToArray();
+
+            for (int i = 0; i < pointIndexes.Length; i++)
+            {
+                var label = labelsArray[i];
+                var pointInde
