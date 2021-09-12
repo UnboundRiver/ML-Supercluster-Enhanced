@@ -128,4 +128,8 @@
             for (int i = 0; i < pointIndexes.Length; i++)
             {
                 var label = labelsArray[i];
-                var pointInde
+                var pointIndex = pointIndexes[i];
+
+                if (this.clusterIndexDictionary.ContainsKey(label))
+                {
+                    this.clusterIndex
