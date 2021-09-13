@@ -144,4 +144,8 @@
         /// <summary>
         /// Determines the class a given point belongs to.
         /// </summary>
-        /// <param name="datapoint"> The point 
+        /// <param name="datapoint"> The point to be classified</param>
+        /// <returns>A class label</returns>
+        public int Classify(T datapoint)
+        {
+            var neare
