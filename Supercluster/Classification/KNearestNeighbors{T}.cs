@@ -136,4 +136,10 @@
                 }
                 else
                 {
-                    this.clusterIndexDictio
+                    this.clusterIndexDictionary.Add(label, new List<int> { pointIndex });
+                }
+            }
+        }
+
+        /// <summary>
+        //
