@@ -132,4 +132,8 @@
 
                 if (this.clusterIndexDictionary.ContainsKey(label))
                 {
-                    this.clusterIndex
+                    this.clusterIndexDictionary[label].Add(pointIndex);
+                }
+                else
+                {
+                    this.clusterIndexDictio
