@@ -142,4 +142,6 @@
         }
 
         /// <summary>
-        //
+        /// Determines the class a given point belongs to.
+        /// </summary>
+        /// <param name="datapoint"> The point 
