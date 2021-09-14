@@ -148,4 +148,6 @@
         /// <returns>A class label</returns>
         public int Classify(T datapoint)
         {
-            var neare
+            var nearestNeighborIndexes = this.internalDataStructure.NearestNeighborIndexes(datapoint, this.K);
+
+            // NOTE: We assume that a po
