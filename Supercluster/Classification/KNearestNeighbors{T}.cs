@@ -158,4 +158,6 @@
                 for (var i = 0; i < keys.Length; i++)
                 {
                     if (this.clusterIndexDictionary[keys[i]].Contains(neighborIndex))
-  
+                    {
+                        // we found the cluster we belong to. Don't check the other clusters.
+                 
