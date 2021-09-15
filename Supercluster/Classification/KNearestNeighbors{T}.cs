@@ -152,4 +152,7 @@
 
             // NOTE: We assume that a point belongs to only one cluster
             var keys = this.clusterIndexDictionary.Keys.ToArray();
-        
+            var labelCount = new int[keys.Length];
+            foreach (var neighborIndex in nearestNeighborIndexes)
+            {
+                for (va
