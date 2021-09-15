@@ -155,4 +155,7 @@
             var labelCount = new int[keys.Length];
             foreach (var neighborIndex in nearestNeighborIndexes)
             {
-                for (va
+                for (var i = 0; i < keys.Length; i++)
+                {
+                    if (this.clusterIndexDictionary[keys[i]].Contains(neighborIndex))
+  
