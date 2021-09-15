@@ -150,4 +150,6 @@
         {
             var nearestNeighborIndexes = this.internalDataStructure.NearestNeighborIndexes(datapoint, this.K);
 
-            // NOTE: We assume that a po
+            // NOTE: We assume that a point belongs to only one cluster
+            var keys = this.clusterIndexDictionary.Keys.ToArray();
+        
