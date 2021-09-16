@@ -166,4 +166,7 @@
                 }
             }
 
-            return keys[la
+            return keys[labelCount.MaxIndex()];
+        }
+    }
+}
