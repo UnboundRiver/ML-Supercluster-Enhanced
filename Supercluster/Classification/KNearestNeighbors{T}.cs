@@ -160,4 +160,10 @@
                     if (this.clusterIndexDictionary[keys[i]].Contains(neighborIndex))
                     {
                         // we found the cluster we belong to. Don't check the other clusters.
-                 
+                        labelCount[i]++;
+                        break;
+                    }
+                }
+            }
+
+            return keys[la
