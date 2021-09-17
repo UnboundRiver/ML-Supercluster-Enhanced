@@ -91,3 +91,13 @@ namespace Supercluster.Clustering
                     // Recalculate the centroid for this class.
                     this.Centroids[centroidIndex] = this.CentralTendency(this.GetClusterData(centroidIndex));
                 }
+
+                if (this.Centroids.SequenceEqual(lastCentroidValues, this.EqualityComparer))
+                {
+                    // We have coverged we are done
+                    break;
+                }
+            }
+         }
+    }
+}
