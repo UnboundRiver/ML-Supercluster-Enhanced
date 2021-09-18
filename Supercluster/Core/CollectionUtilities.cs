@@ -6,4 +6,10 @@
 
     /// <summary>
     /// A utility class containing various extension methods to be used with the .NET collection classes.
-    /// </summa
+    /// </summary>
+    public static class CollectionUtilities
+    {
+        #region LinqToIndexes
+
+        /// <summary>
+        /// Returns the minimum value in a
