@@ -12,4 +12,6 @@
         #region LinqToIndexes
 
         /// <summary>
-        /// Returns the minimum value in a
+        /// Returns the minimum value in a sequence of <typeparamref name="TSource"/> values using
+        /// the default <see cref="Comparer{TSource}"/>.
+        
