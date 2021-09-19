@@ -14,4 +14,6 @@
         /// <summary>
         /// Returns the minimum value in a sequence of <typeparamref name="TSource"/> values using
         /// the default <see cref="Comparer{TSource}"/>.
-        
+        /// </summary>
+        /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
+        //
