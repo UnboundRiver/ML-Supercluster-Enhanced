@@ -16,4 +16,5 @@
         /// the default <see cref="Comparer{TSource}"/>.
         /// </summary>
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
-        //
+        /// <param name="source">A sequence of values to determine the index of the minimum value.</param>
+        /// <returns>The index of th
