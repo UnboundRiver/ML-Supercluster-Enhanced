@@ -22,4 +22,7 @@
         {
             var comparer = Comparer<TSource>.Default;
             using (var enumerator = source.GetEnumerator())
-    
+            {
+                enumerator.MoveNext();
+                var minElement = enumerator.Current;
+                var minInde
