@@ -18,4 +18,8 @@
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
         /// <param name="source">A sequence of values to determine the index of the minimum value.</param>
         /// <returns>The index of the minimum value in <paramref name="source"/>.</returns>
-        public static int MinIndex<TSource>(this IEnumerable<TSource> s
+        public static int MinIndex<TSource>(this IEnumerable<TSource> source)
+        {
+            var comparer = Comparer<TSource>.Default;
+            using (var enumerator = source.GetEnumerator())
+    
