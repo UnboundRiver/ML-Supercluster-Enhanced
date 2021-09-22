@@ -25,4 +25,9 @@
             {
                 enumerator.MoveNext();
                 var minElement = enumerator.Current;
-                var minInde
+                var minIndex = 0;
+
+                var i = 1;
+                while (enumerator.MoveNext())
+                {
+                    if (comparer.
