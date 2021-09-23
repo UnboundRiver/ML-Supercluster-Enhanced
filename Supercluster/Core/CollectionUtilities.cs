@@ -30,4 +30,7 @@
                 var i = 1;
                 while (enumerator.MoveNext())
                 {
-                    if (comparer.
+                    if (comparer.Compare(enumerator.Current, minElement) < 0)
+                    {
+                        minElement = enumerator.Current;
+                        mi
