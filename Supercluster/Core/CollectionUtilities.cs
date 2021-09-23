@@ -33,4 +33,12 @@
                     if (comparer.Compare(enumerator.Current, minElement) < 0)
                     {
                         minElement = enumerator.Current;
-                        mi
+                        minIndex = i;
+                    }
+
+                    i++;
+                }
+
+                return minIndex;
+            }
+  
