@@ -47,4 +47,5 @@
         /// Invokes a transform function on each element of <paramref name="source"/> and returns the index of the minimum <typeparamref name="TResult"/> value.
         /// </summary>
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
-        /// <typeparam name="TResult">The type of the result of the <paramref name="sel
+        /// <typeparam name="TResult">The type of the result of the <paramref name="selector"/>.</typeparam>
+        /// <param name="source">A sequence of values to apply the transform <see cref="sel
