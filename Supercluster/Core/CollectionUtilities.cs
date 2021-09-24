@@ -48,4 +48,6 @@
         /// </summary>
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
         /// <typeparam name="TResult">The type of the result of the <paramref name="selector"/>.</typeparam>
-        /// <param name="source">A sequence of values to apply the transform <see cref="sel
+        /// <param name="source">A sequence of values to apply the transform <see cref="selector"/> to.</param>
+        /// <param name="selector">A transform to apply to each element in <paramref name="source"/>.</param>
+        /// <
