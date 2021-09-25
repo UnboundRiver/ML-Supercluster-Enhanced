@@ -54,4 +54,7 @@
         public static int MinIndex<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector)
         {
             var comparer = Comparer<TResult>.Default;
- 
+            using (var enumerator = source.GetEnumerator())
+            {
+                enumerator.MoveNext();
+                var minEleme
