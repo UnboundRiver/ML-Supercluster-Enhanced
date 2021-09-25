@@ -51,4 +51,7 @@
         /// <param name="source">A sequence of values to apply the transform <see cref="selector"/> to.</param>
         /// <param name="selector">A transform to apply to each element in <paramref name="source"/>.</param>
         /// <returns>The index of the minimum <typeparamref name="TResult"/> value.</returns>
-        public static int MinIndex<TSource, TResult>(this IEn
+        public static int MinIndex<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector)
+        {
+            var comparer = Comparer<TResult>.Default;
+ 
