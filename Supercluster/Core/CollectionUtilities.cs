@@ -65,4 +65,6 @@
                 {
                     if (comparer.Compare(selector(enumerator.Current), minElement) < 0)
                     {
-   
+                        minElement = selector(enumerator.Current);
+                        minIndex = i;
+               
