@@ -67,4 +67,13 @@
                     {
                         minElement = selector(enumerator.Current);
                         minIndex = i;
-               
+                    }
+
+                    i++;
+                }
+
+                return minIndex;
+            }
+        }
+
+        /// <summa
