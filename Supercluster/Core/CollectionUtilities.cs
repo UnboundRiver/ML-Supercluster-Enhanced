@@ -62,4 +62,7 @@
 
                 var i = 1;
                 while (enumerator.MoveNext())
+                {
+                    if (comparer.Compare(selector(enumerator.Current), minElement) < 0)
+                    {
    
