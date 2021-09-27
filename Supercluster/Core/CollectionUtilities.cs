@@ -57,4 +57,9 @@
             using (var enumerator = source.GetEnumerator())
             {
                 enumerator.MoveNext();
-                var minEleme
+                var minElement = selector(enumerator.Current);
+                var minIndex = 0;
+
+                var i = 1;
+                while (enumerator.MoveNext())
+   
