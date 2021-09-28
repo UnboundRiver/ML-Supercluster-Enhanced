@@ -76,4 +76,6 @@
             }
         }
 
-        /// <summa
+        /// <summary>
+        /// Returns the maximum value in a sequence of <typeparamref name="TSource"/> values using
+        /// the
