@@ -90,4 +90,9 @@
             {
                 enumerator.MoveNext();
                 var maxElement = enumerator.Current;
-                var maxIndex =
+                var maxIndex = 0;
+
+                var i = 1;
+                while (enumerator.MoveNext())
+                {
+                    if (comparer.Compare(enume
