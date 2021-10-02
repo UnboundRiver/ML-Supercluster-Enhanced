@@ -98,4 +98,12 @@
                     if (comparer.Compare(enumerator.Current, maxElement) > 0)
                     {
                         maxElement = enumerator.Current;
-                        maxIndex =
+                        maxIndex = i;
+                    }
+
+                    i++;
+                }
+
+                return maxIndex;
+            }
+        }
