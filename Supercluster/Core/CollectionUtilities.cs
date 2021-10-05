@@ -111,4 +111,6 @@
         /// <summary>
         /// Invokes a transform function on each element of <paramref name="source"/> and returns the index of the maximum <typeparamref name="TResult"/> value.
         /// </summary>
-        /// <typeparam name="TSource">The type of the elements in <paramref name="sour
+        /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
+        /// <typeparam name="TResult">The type of the result of the <paramref name="selector"/>.</typeparam>
+       
