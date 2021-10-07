@@ -116,4 +116,7 @@
         /// <param name="source">A sequence of values to apply the transform <paramref name="selector"/> to.</param>
         /// <param name="selector">A transform to apply to each element in <paramref name="source"/>.</param>
         /// <returns>The index of the maximum <typeparamref name="TResult"/> value.</returns>
-        public static int MaxIndex<TSource, TResult>(this IEnumerable<TSource> source, Fu
+        public static int MaxIndex<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector)
+        {
+            var comparer = Comparer<TResult>.Default;
+            using (var enumerator = 
