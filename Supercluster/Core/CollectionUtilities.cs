@@ -130,4 +130,8 @@
                 {
                     if (comparer.Compare(selector(enumerator.Current), maxElement) > 0)
                     {
-                      
+                        maxElement = selector(enumerator.Current);
+                        maxIndex = i;
+                    }
+
+                    i++;
