@@ -122,4 +122,8 @@
             using (var enumerator = source.GetEnumerator())
             {
                 enumerator.MoveNext();
-                var maxElement = selector(enumerator.Curre
+                var maxElement = selector(enumerator.Current);
+                var maxIndex = 0;
+
+                var i = 1;
+                while (enumerator.MoveNext())
