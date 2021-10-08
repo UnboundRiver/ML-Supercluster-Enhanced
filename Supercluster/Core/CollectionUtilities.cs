@@ -127,3 +127,7 @@
 
                 var i = 1;
                 while (enumerator.MoveNext())
+                {
+                    if (comparer.Compare(selector(enumerator.Current), maxElement) > 0)
+                    {
+                      
