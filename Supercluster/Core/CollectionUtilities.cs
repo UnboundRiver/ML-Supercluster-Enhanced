@@ -119,4 +119,7 @@
         public static int MaxIndex<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector)
         {
             var comparer = Comparer<TResult>.Default;
-            using (var enumerator = 
+            using (var enumerator = source.GetEnumerator())
+            {
+                enumerator.MoveNext();
+                var maxElement = selector(enumerator.Curre
