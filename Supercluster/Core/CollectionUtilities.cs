@@ -135,3 +135,11 @@
                     }
 
                     i++;
+                }
+
+                return maxIndex;
+            }
+        }
+
+        /// <summary>
+        /// Returns the indexes of the elements in <
