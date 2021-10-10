@@ -145,4 +145,5 @@
         /// Returns the indexes of the elements in <paramref name="source"/> satisfying the predicate.
         /// </summary>
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
-        /// <param name="source">A sequence of values to filter based o
+        /// <param name="source">A sequence of values to filter based on <paramref name="predicate"/>.</param>
+        /// <param name="predicate">The predicate use to filter values in <paramref name="source"
