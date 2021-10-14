@@ -156,4 +156,9 @@
                 var i = 0;
                 while (enumerator.MoveNext())
                 {
-                    if (predicat
+                    if (predicate(enumerator.Current))
+                    {
+                        indexes.Add(i);
+                    }
+
+                 
