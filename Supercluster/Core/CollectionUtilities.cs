@@ -172,4 +172,5 @@
         /// Returns the index of the first element of a sequence that satisfies the given predicate.
         /// </summary>
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
-        /// <param name="source">A sequence of values to find the first element sa
+        /// <param name="source">A sequence of values to find the first element satisfying the <paramref name="predicate"/>.</param>
+        /// <param name="predicate">A predicate to test elements in <paramre
