@@ -169,4 +169,6 @@
         }
 
         /// <summary>
-        /// Returns the index 
+        /// Returns the index of the first element of a sequence that satisfies the given predicate.
+        /// </summary>
+        /// <typeparam name="TSource">The type of
