@@ -161,4 +161,12 @@
                         indexes.Add(i);
                     }
 
-                 
+                    i++;
+                }
+
+                return indexes;
+            }
+        }
+
+        /// <summary>
+        /// Returns the index 
