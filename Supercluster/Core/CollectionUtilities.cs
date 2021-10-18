@@ -177,4 +177,8 @@
         /// <returns>The index of the first element in <paramref name="source"/> that satisfy <paramref name="predicate"/>.</returns>
         public static int FirstIndex<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
         {
-            using (v
+            using (var enumerator = source.GetEnumerator())
+            {
+                var i = 0;
+                while (enumerator.MoveNext())
+        
