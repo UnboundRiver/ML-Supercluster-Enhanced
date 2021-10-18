@@ -185,4 +185,10 @@
                     if (predicate(enumerator.Current))
                     {
                         return i;
-        
+                    }
+
+                    i++;
+                }
+            }
+
+            throw new InvalidOperationException($"No element 
