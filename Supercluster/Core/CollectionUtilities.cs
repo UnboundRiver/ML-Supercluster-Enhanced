@@ -191,4 +191,8 @@
                 }
             }
 
-            throw new InvalidOperationException($"No element 
+            throw new InvalidOperationException($"No element satisfies the condition in {nameof(predicate)}.");
+        }
+
+        /// <summary>
+        /// Returns the index of the first element of a se
