@@ -201,4 +201,5 @@
         /// <param name="source">A sequence of values to find the first element satisfying the <paramref name="predicate"/>.</param>
         /// <param name="predicate">A predicate to test elements in <paramref name="source"/>.</param>
         /// <returns>The index of the first element in <paramref name="source"/> that satisfy <paramref name="predicate"/>.
-  
+        /// If no element satisfies the <paramref name="predicate"/> then -1 is returned.</returns>
+        public static int FirstIndexO
