@@ -204,4 +204,9 @@
         /// If no element satisfies the <paramref name="predicate"/> then -1 is returned.</returns>
         public static int FirstIndexOrDefault<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
         {
-            using (var enumerator 
+            using (var enumerator = source.GetEnumerator())
+            {
+                var i = 0;
+                while (enumerator.MoveNext())
+                {
+           
