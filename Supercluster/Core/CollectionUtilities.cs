@@ -221,4 +221,7 @@
             return -1;
         }
 
-        /// <
+        /// <summary>
+        /// Returns the index of the last element of a sequence that satisfies the given predicate.
+        /// </summary>
+        /// <typ
