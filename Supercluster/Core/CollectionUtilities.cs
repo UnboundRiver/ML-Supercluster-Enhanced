@@ -209,4 +209,9 @@
                 var i = 0;
                 while (enumerator.MoveNext())
                 {
-           
+                    if (predicate(enumerator.Current))
+                    {
+                        return i;
+                    }
+
+            
