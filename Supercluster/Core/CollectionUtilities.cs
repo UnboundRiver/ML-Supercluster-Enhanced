@@ -224,4 +224,5 @@
         /// <summary>
         /// Returns the index of the last element of a sequence that satisfies the given predicate.
         /// </summary>
-        /// <typ
+        /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
+        /// <param name="source">A sequence of values to fi
