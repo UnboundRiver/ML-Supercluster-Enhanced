@@ -227,4 +227,7 @@
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
         /// <param name="source">A sequence of values to find the last element satisfying the <paramref name="predicate"/>.</param>
         /// <param name="predicate">A predicate to test elements in <paramref name="source"/>.</param>
-        /// <returns>The index of the last element in <paramref name="source"/> that satisfy <paramref name="predicate"
+        /// <returns>The index of the last element in <paramref name="source"/> that satisfy <paramref name="predicate"/>.</returns>
+        public static int LastIndex<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
+        {
+          
