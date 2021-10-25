@@ -230,4 +230,8 @@
         /// <returns>The index of the last element in <paramref name="source"/> that satisfy <paramref name="predicate"/>.</returns>
         public static int LastIndex<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
         {
-          
+            var lastIndex = -1;
+            using (var enumerator = source.GetEnumerator())
+            {
+                var i = 0;
+                while (enume
