@@ -234,4 +234,8 @@
             using (var enumerator = source.GetEnumerator())
             {
                 var i = 0;
-                while (enume
+                while (enumerator.MoveNext())
+                {
+                    if (predicate(enumerator.Current))
+                    {
+              
