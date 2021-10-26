@@ -248,4 +248,10 @@
             if (lastIndex == -1)
             {
                 throw new InvalidOperationException($"No element satisfies the condition in {nameof(predicate)}.");
-            
+            }
+
+            return lastIndex;
+        }
+
+        /// <summary>
+        /// Returns the index of the last element of a sequence that sat
