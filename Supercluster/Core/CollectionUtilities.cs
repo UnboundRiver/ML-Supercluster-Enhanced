@@ -245,4 +245,7 @@
                 }
             }
 
-            if (lastI
+            if (lastIndex == -1)
+            {
+                throw new InvalidOperationException($"No element satisfies the condition in {nameof(predicate)}.");
+            
