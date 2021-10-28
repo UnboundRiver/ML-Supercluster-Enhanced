@@ -263,4 +263,8 @@
         /// If no element satisfies the <paramref name="predicate"/> then -1 is returned.</returns>
         public static int LastIndexOrDefault<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
         {
-            var la
+            var lastIndex = -1;
+            using (var enumerator = source.GetEnumerator())
+            {
+                var i = 0;
+                while (enum
