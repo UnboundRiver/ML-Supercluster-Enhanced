@@ -261,4 +261,6 @@
         /// <param name="predicate">A predicate to test elements in <paramref name="source"/>.</param>
         /// <returns>The index of the last element in <paramref name="source"/> that satisfy <paramref name="predicate"/>.
         /// If no element satisfies the <paramref name="predicate"/> then -1 is returned.</returns>
-    
+        public static int LastIndexOrDefault<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
+        {
+            var la
