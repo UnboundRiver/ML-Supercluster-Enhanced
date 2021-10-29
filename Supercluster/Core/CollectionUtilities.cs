@@ -281,4 +281,6 @@
             return lastIndex;
         }
 
- 
+        /// <summary>
+        /// Returns all elements of a sequence whose index is in the provided sequence of indexes.
+        /// Note: If an 
