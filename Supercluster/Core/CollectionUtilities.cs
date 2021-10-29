@@ -267,4 +267,8 @@
             using (var enumerator = source.GetEnumerator())
             {
                 var i = 0;
-                while (enum
+                while (enumerator.MoveNext())
+                {
+                    if (predicate(enumerator.Current))
+                    {
+                        last
