@@ -271,4 +271,14 @@
                 {
                     if (predicate(enumerator.Current))
                     {
-                        last
+                        lastIndex = i;
+                    }
+
+                    i++;
+                }
+            }
+
+            return lastIndex;
+        }
+
+ 
