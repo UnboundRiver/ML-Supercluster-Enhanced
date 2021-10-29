@@ -283,4 +283,6 @@
 
         /// <summary>
         /// Returns all elements of a sequence whose index is in the provided sequence of indexes.
-        /// Note: If an 
+        /// Note: If an index is greater than the number of elements in <paramref name="source"/> it is ignored.
+        /// </summary>
+        /// <typepar
