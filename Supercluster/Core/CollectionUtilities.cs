@@ -286,4 +286,6 @@
         /// Note: If an index is greater than the number of elements in <paramref name="source"/> it is ignored.
         /// </summary>
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
-        /// <param name="source">A sequence of values to extract el
+        /// <param name="source">A sequence of values to extract elements from.</param>
+        /// <param name="indexes">The indexes </param>
+        /// <returns>All elements in
