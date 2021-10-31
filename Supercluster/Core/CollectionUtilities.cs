@@ -285,4 +285,5 @@
         /// Returns all elements of a sequence whose index is in the provided sequence of indexes.
         /// Note: If an index is greater than the number of elements in <paramref name="source"/> it is ignored.
         /// </summary>
-        /// <typepar
+        /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
+        /// <param name="source">A sequence of values to extract el
