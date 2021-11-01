@@ -288,4 +288,5 @@
         /// <typeparam name="TSource">The type of the elements in <paramref name="source"/>.</typeparam>
         /// <param name="source">A sequence of values to extract elements from.</param>
         /// <param name="indexes">The indexes </param>
-        /// <returns>All elements in
+        /// <returns>All elements in <paramref name="source"/> whose index is in <paramref name="indexes"/>.</returns>
+        public static IEnumerable<TSource> WithIndexes<TSourc
