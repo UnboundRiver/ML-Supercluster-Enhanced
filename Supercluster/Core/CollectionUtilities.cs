@@ -297,4 +297,5 @@
         #endregion
 
         /// <summary>
-        /// Gets the index of the elements returned
+        /// Gets the index of the elements returned by the <c>IEnumerable.Max()</c> function. 
+        /// If there is more than one maximal element then the index return is chosen at
