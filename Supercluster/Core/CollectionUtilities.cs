@@ -291,4 +291,10 @@
         /// <returns>All elements in <paramref name="source"/> whose index is in <paramref name="indexes"/>.</returns>
         public static IEnumerable<TSource> WithIndexes<TSource>(this IEnumerable<TSource> source, IEnumerable<int> indexes)
         {
-            return indexes.Select(source.Elemen
+            return indexes.Select(source.ElementAt);
+        }
+
+        #endregion
+
+        /// <summary>
+        /// Gets the index of the elements returned
