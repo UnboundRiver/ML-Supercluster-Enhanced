@@ -309,4 +309,7 @@
 
             for (var i = 0; i < array.Length; i++)
             {
-                if (l
+                if (largestElement < array[i])
+                {
+                    largestElement = array[i];
+                    largestElementIndex = i;
