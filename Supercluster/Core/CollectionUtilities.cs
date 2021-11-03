@@ -298,4 +298,7 @@
 
         /// <summary>
         /// Gets the index of the elements returned by the <c>IEnumerable.Max()</c> function. 
-        /// If there is more than one maximal element then the index return is chosen at
+        /// If there is more than one maximal element then the index return is chosen at random.
+        /// </summary>
+        /// <param name="array">The input array</param>
+        /// <returns>The index of the
