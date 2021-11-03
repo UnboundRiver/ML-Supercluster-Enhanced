@@ -301,4 +301,7 @@
         /// If there is more than one maximal element then the index return is chosen at random.
         /// </summary>
         /// <param name="array">The input array</param>
-        /// <returns>The index of the
+        /// <returns>The index of the max element in the array.</returns>
+        public static int MaxIndexRandomTies(this double[] array)
+        {
+            var largestE
