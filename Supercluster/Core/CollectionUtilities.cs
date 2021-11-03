@@ -304,4 +304,9 @@
         /// <returns>The index of the max element in the array.</returns>
         public static int MaxIndexRandomTies(this double[] array)
         {
-            var largestE
+            var largestElement = double.MinValue;
+            var largestElementIndex = -1;
+
+            for (var i = 0; i < array.Length; i++)
+            {
+                if (l
