@@ -317,4 +317,7 @@
             }
 
             // we have more than one maximal element.Choose a random index
-            if (array.
+            if (array.Count(x => x == largestElement) > 1)
+            {
+                var indexes = array.WhereIndex(x => x == largestElement).ToArray();
+              
