@@ -313,3 +313,8 @@
                 {
                     largestElement = array[i];
                     largestElementIndex = i;
+                }
+            }
+
+            // we have more than one maximal element.Choose a random index
+            if (array.
