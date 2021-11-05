@@ -320,4 +320,7 @@
             if (array.Count(x => x == largestElement) > 1)
             {
                 var indexes = array.WhereIndex(x => x == largestElement).ToArray();
-              
+                var rand = new Random();
+                var randomIndex = rand.Next(0, indexes.Length);
+
+                return indexes[randomIndex
