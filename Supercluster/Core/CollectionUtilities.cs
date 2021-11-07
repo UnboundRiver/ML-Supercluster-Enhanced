@@ -331,4 +331,7 @@
         }
 
         /// <summary>
-        /// Gets the index of the elements returned by the <c>IE
+        /// Gets the index of the elements returned by the <c>IEnumerable.Min()</c> function.
+        /// </summary>
+        /// <param name="array">The input array</param>
+        /// <returns>The ind
