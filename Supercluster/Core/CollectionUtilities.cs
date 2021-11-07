@@ -334,4 +334,7 @@
         /// Gets the index of the elements returned by the <c>IEnumerable.Min()</c> function.
         /// </summary>
         /// <param name="array">The input array</param>
-        /// <returns>The ind
+        /// <returns>The index of the min element in the array.</returns>
+        public static int MinIndex(this int[] array)
+        {
+            var smallestElement = in
