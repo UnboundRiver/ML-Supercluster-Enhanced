@@ -323,4 +323,12 @@
                 var rand = new Random();
                 var randomIndex = rand.Next(0, indexes.Length);
 
-                return indexes[randomIndex
+                return indexes[randomIndex];
+
+            }
+
+            return largestElementIndex;
+        }
+
+        /// <summary>
+        /// Gets the index of the elements returned by the <c>IE
