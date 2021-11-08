@@ -342,3 +342,7 @@
 
             for (var i = 0; i < array.Length; i++)
             {
+                if (smallestElement > array[i])
+                {
+                    smallestElement = array[i];
+                    smal
