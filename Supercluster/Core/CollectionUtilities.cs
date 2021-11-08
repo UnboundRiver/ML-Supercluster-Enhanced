@@ -337,4 +337,8 @@
         /// <returns>The index of the min element in the array.</returns>
         public static int MinIndex(this int[] array)
         {
-            var smallestElement = in
+            var smallestElement = int.MaxValue;
+            var smallestElementIndex = -1;
+
+            for (var i = 0; i < array.Length; i++)
+            {
