@@ -353,3 +353,6 @@
         }
 
         /// <summary>
+        /// Takes a list of integers and returns its bijection with the natural numbers (includes 0)
+        /// </summary>
+    
