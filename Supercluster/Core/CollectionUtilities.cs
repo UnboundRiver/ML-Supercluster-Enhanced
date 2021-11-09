@@ -355,4 +355,5 @@
         /// <summary>
         /// Takes a list of integers and returns its bijection with the natural numbers (includes 0)
         /// </summary>
-    
+        /// <param name="source">The input array.</param>
+        /// <returns>An array that is the bijection of the <paramref
