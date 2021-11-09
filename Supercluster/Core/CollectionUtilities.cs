@@ -345,4 +345,11 @@
                 if (smallestElement > array[i])
                 {
                     smallestElement = array[i];
-                    smal
+                    smallestElementIndex = i;
+                }
+            }
+
+            return smallestElementIndex;
+        }
+
+        /// <summary>
