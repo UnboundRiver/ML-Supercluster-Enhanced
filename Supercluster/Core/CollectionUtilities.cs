@@ -363,4 +363,9 @@
             var dict = new Dictionary<int, int>();
             var returnArray = new int[source.Length];
 
-            for (int i = 0; i < distin
+            for (int i = 0; i < distinctValues.Length; i++)
+            {
+                dict.Add(distinctValues[i], i);
+            }
+
+            for (int i = 
