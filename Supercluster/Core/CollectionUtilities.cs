@@ -357,4 +357,7 @@
         /// </summary>
         /// <param name="source">The input array.</param>
         /// <returns>An array that is the bijection of the <paramref name="source"/> array with the natural numbers (includes 0)</returns>
-        public static int[] BijectWithNaturals(th
+        public static int[] BijectWithNaturals(this int[] source)
+        {
+            var distinctValues = source.Distinct().OrderBy(x => x).ToArray();
+            var dict 
