@@ -360,4 +360,7 @@
         public static int[] BijectWithNaturals(this int[] source)
         {
             var distinctValues = source.Distinct().OrderBy(x => x).ToArray();
-            var dict 
+            var dict = new Dictionary<int, int>();
+            var returnArray = new int[source.Length];
+
+            for (int i = 0; i < distin
