@@ -373,4 +373,10 @@
                 returnArray[i] = dict[source[i]];
             }
 
-            return ret
+            return returnArray;
+        }
+
+        /// <summary>
+        /// Sets all elements of a rectangular array to a given value.
+        /// </summary>
+        /
