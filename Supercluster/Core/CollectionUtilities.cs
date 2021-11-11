@@ -368,4 +368,9 @@
                 dict.Add(distinctValues[i], i);
             }
 
-            for (int i = 
+            for (int i = 0; i < source.Length; i++)
+            {
+                returnArray[i] = dict[source[i]];
+            }
+
+            return ret
