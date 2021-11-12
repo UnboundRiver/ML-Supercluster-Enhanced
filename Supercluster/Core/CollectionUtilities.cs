@@ -379,4 +379,5 @@
         /// <summary>
         /// Sets all elements of a rectangular array to a given value.
         /// </summary>
-        /
+        /// <param name="source">The rectuangular array.</param>
+        /// <param name="value">The value of which all elements should be set to
