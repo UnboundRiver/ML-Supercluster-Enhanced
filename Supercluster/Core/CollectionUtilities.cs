@@ -382,4 +382,8 @@
         /// <param name="source">The rectuangular array.</param>
         /// <param name="value">The value of which all elements should be set to.</param>
         /// <typeparam name="T">The type of the elements.</typeparam>
-        public static void SetAllElements<T>(this T[,] source, T valu
+        public static void SetAllElements<T>(this T[,] source, T value)
+        {
+            var rows = source.GetLength(0);
+            var cols = source.GetLength(1);
+            for (
