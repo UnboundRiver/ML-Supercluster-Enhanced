@@ -390,4 +390,11 @@
             {
                 for (var j = 0; j < cols; j++)
                 {
-      
+                    source[i, j] = value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// 
+        /// </sum
