@@ -401,4 +401,7 @@
         /// <typeparam name="T"></typeparam>
         /// <param name="source"></param>
         /// <param name="indexes"></param>
-  
+        /// <returns></returns>
+        public static T[][] WithIndexes<T>(this T[,] source, int[] indexes)
+        {
+            v
