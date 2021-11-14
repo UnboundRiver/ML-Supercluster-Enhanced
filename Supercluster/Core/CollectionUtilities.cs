@@ -404,4 +404,7 @@
         /// <returns></returns>
         public static T[][] WithIndexes<T>(this T[,] source, int[] indexes)
         {
-            v
+            var returnArray = new T[indexes.Length][];
+            for (int i = 0; i < indexes.Length; i++)
+            {
+                returnArray[i] = sou
