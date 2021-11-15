@@ -407,4 +407,12 @@
             var returnArray = new T[indexes.Length][];
             for (int i = 0; i < indexes.Length; i++)
             {
-                returnArray[i] = sou
+                returnArray[i] = source.GetRow(indexes[i]);
+            }
+
+            return returnArray;
+        }
+
+
+        /// <summary>
+        /// Performs
