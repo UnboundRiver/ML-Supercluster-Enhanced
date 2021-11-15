@@ -415,4 +415,7 @@
 
 
         /// <summary>
-        /// Performs
+        /// Performs addition on two arrays
+        /// </summary>
+        /// <returns></returns>
+        public static double[] ArrayAdd(this double[] array1
