@@ -431,3 +431,7 @@
         public static double[] ArraySubtract(this double[] array1, double[] array2)
         {
             var newArray = new double[array1.Length];
+            for (int i = 0; i < array1.Length; i++)
+            {
+                newArray[i] = array1[i] - array2[i];
+           
