@@ -428,4 +428,6 @@
             return newArray;
         }
 
-        public stat
+        public static double[] ArraySubtract(this double[] array1, double[] array2)
+        {
+            var newArray = new double[array1.Length];
