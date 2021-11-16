@@ -418,4 +418,8 @@
         /// Performs addition on two arrays
         /// </summary>
         /// <returns></returns>
-        public static double[] ArrayAdd(this double[] array1
+        public static double[] ArrayAdd(this double[] array1, double[] array2)
+        {
+            var newArray = new double[array1.Length];
+            for (int i = 0; i < array1.Length; i++)
+            {
