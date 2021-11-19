@@ -443,4 +443,7 @@
             var newArray = new double[array1.Length];
             for (int i = 0; i < array1.Length; i++)
             {
-                // set 
+                // set to positive or negative infinity if the dividing number is 0;
+                if (array2[i] == 0)
+                {
+                    newA
