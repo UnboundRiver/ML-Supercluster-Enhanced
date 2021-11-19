@@ -446,4 +446,7 @@
                 // set to positive or negative infinity if the dividing number is 0;
                 if (array2[i] == 0)
                 {
-                    newA
+                    newArray[i] = Math.Sign(array1[i]) >= 0 ? double.PositiveInfinity : double.NegativeInfinity;
+                }
+
+      
