@@ -449,4 +449,9 @@
                     newArray[i] = Math.Sign(array1[i]) >= 0 ? double.PositiveInfinity : double.NegativeInfinity;
                 }
 
-      
+                newArray[i] = array1[i] / array2[i];
+            }
+            return newArray;
+        }
+
+        public static T[] GetRow<T>(this T[,] 
