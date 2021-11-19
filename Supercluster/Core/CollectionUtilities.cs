@@ -439,3 +439,8 @@
         }
 
         public static double[] ArrayDivide(this double[] array1, double[] array2)
+        {
+            var newArray = new double[array1.Length];
+            for (int i = 0; i < array1.Length; i++)
+            {
+                // set 
