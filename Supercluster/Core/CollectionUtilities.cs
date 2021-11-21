@@ -454,4 +454,10 @@
             return newArray;
         }
 
-        public static T[] GetRow<T>(this T[,] 
+        public static T[] GetRow<T>(this T[,] source, int rowIndex)
+        {
+
+            var columns = source.GetLength(1);
+            var row = new T[columns];
+
+            for 
