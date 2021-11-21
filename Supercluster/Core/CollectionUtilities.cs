@@ -460,4 +460,11 @@
             var columns = source.GetLength(1);
             var row = new T[columns];
 
-            for 
+            for (int i = 0; i < columns; i++)
+            {
+                row[i] = source[rowIndex, i];
+            }
+
+            return row;
+        }
+
