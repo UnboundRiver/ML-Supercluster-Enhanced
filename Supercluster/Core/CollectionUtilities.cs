@@ -471,4 +471,9 @@
         public static T[] GetColumn<T>(this T[,] source, int colIndex)
         {
 
-            var rows = source.GetL
+            var rows = source.GetLength(0);
+            var column = new T[rows];
+
+            for (int i = 0; i < rows; i++)
+            {
+           
