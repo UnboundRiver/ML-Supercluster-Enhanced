@@ -468,3 +468,7 @@
             return row;
         }
 
+        public static T[] GetColumn<T>(this T[,] source, int colIndex)
+        {
+
+            var rows = source.GetL
