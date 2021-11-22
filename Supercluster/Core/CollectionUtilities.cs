@@ -476,4 +476,11 @@
 
             for (int i = 0; i < rows; i++)
             {
-           
+                column[i] = source[i, colIndex];
+            }
+
+            return column;
+        }
+
+        /// <summary>
+        ///   St
