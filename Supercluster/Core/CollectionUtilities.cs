@@ -483,4 +483,6 @@
         }
 
         /// <summary>
-        ///   St
+        ///   Stores a row vector into the given row position of the matrix.
+        /// </summary>
+        public static T[,] SetRow<T>(this T[,] m, int index,
