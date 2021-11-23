@@ -485,4 +485,9 @@
         /// <summary>
         ///   Stores a row vector into the given row position of the matrix.
         /// </summary>
-        public static T[,] SetRow<T>(this T[,] m, int index,
+        public static T[,] SetRow<T>(this T[,] m, int index, T[] row)
+        {
+            for (int i = 0; i < row.Length; i++)
+                m[index, i] = row[i];
+
+           
