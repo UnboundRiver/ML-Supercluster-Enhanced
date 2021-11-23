@@ -490,4 +490,8 @@
             for (int i = 0; i < row.Length; i++)
                 m[index, i] = row[i];
 
-           
+            return m;
+        }
+
+        /// <summary>
+        ///   Stores a column vector into the given column position of the matr
