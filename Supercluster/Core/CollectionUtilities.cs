@@ -494,4 +494,8 @@
         }
 
         /// <summary>
-        ///   Stores a column vector into the given column position of the matr
+        ///   Stores a column vector into the given column position of the matrix.
+        /// </summary>
+        public static T[,] SetColumn<T>(this T[,] m, int index, T[] column)
+        {
+            for (int i = 0; i <
