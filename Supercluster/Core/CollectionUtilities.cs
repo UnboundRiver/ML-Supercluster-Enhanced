@@ -498,4 +498,11 @@
         /// </summary>
         public static T[,] SetColumn<T>(this T[,] m, int index, T[] column)
         {
-            for (int i = 0; i <
+            for (int i = 0; i < column.Length; i++)
+                m[i, index] = column[i];
+
+            return m;
+        }
+
+        /// <summary>
+       
