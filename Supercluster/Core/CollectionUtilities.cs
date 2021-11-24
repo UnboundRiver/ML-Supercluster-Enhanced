@@ -505,4 +505,7 @@
         }
 
         /// <summary>
-       
+        /// Returns the mode of the array
+        /// </summary>
+        /// <param name="array">The array to be traversed.</param>
+        ///
