@@ -508,4 +508,8 @@
         /// Returns the mode of the array
         /// </summary>
         /// <param name="array">The array to be traversed.</param>
-        ///
+        /// <returns>The mode of the aray</returns>
+        public static int Mode(this int[] array)
+        {
+            // Count all the values
+    
