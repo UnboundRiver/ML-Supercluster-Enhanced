@@ -519,4 +519,10 @@
                 {
                     countDictionary[array[i]]++;
                 }
- 
+                else
+                {
+                    countDictionary.Add(array[i], 1);
+                }
+            }
+
+            /
