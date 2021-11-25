@@ -515,4 +515,8 @@
             var countDictionary = new Dictionary<int, int>();
             for (int i = 0; i < array.Length; i++)
             {
-              
+                if (countDictionary.ContainsKey(array[i]))
+                {
+                    countDictionary[array[i]]++;
+                }
+ 
