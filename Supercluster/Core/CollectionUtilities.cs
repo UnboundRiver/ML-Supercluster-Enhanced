@@ -512,4 +512,7 @@
         public static int Mode(this int[] array)
         {
             // Count all the values
-    
+            var countDictionary = new Dictionary<int, int>();
+            for (int i = 0; i < array.Length; i++)
+            {
+              
