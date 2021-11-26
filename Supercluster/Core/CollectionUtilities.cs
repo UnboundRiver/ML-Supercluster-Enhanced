@@ -525,4 +525,7 @@
                 }
             }
 
-            /
+            // Get the extry with the highest count
+            int maxKey = 0;
+            int maxValue = 0;
+            foreach
