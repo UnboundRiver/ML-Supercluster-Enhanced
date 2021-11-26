@@ -528,4 +528,8 @@
             // Get the extry with the highest count
             int maxKey = 0;
             int maxValue = 0;
-            foreach
+            foreach (KeyValuePair<int, int> kvp in countDictionary)
+            {
+                if (kvp.Value > maxValue)
+                {
+        
