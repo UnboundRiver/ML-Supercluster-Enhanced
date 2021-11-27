@@ -537,4 +537,7 @@
                 }
             }
 
-            return maxKey
+            return maxKey;
+        }
+    }
+}
