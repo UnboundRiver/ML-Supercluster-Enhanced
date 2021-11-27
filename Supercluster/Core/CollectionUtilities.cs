@@ -532,4 +532,9 @@
             {
                 if (kvp.Value > maxValue)
                 {
-        
+                    maxValue = kvp.Value;
+                    maxKey = kvp.Key;
+                }
+            }
+
+            return maxKey
