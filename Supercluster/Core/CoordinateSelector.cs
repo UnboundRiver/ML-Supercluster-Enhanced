@@ -9,4 +9,6 @@
     /// <remarks>
     /// A "Coordinate Selector" is a <see cref="Func{T,TResult}"/> which accepts any type of object and returns and array of doubles.
     /// This double array is the "coordinate" for the given instance of T. Coordinate selectors are used which an algorithm or data-structure
-    /// r
+    /// requires a specific coordinate representation for an instance of a generic type.
+    /// </remarks>
+    public static class Coordinat
