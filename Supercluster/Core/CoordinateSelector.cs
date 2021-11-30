@@ -11,4 +11,9 @@
     /// This double array is the "coordinate" for the given instance of T. Coordinate selectors are used which an algorithm or data-structure
     /// requires a specific coordinate representation for an instance of a generic type.
     /// </remarks>
-    public static class Coordinat
+    public static class CoordinateSelector
+    {
+        /// <summary>
+        /// Compiles a coordinate selector using Expression trees.
+        /// </summary>
+        /// <typep
