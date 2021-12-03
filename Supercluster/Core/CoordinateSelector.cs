@@ -16,4 +16,5 @@
         /// <summary>
         /// Compiles a coordinate selector using Expression trees.
         /// </summary>
-        /// <typep
+        /// <typeparam name="T">The type of the object for which to compile a point selector for.</typeparam>
+        /// <param name="item"
