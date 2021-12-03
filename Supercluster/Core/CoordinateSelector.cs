@@ -17,4 +17,5 @@
         /// Compiles a coordinate selector using Expression trees.
         /// </summary>
         /// <typeparam name="T">The type of the object for which to compile a point selector for.</typeparam>
-        /// <param name="item"
+        /// <param name="item">An instance of <typeparamref name="T"/>.</param>
+        /// <param name="coordinatePropertyOrFieldName">The name of the property or field that is the coordinate for <typ
