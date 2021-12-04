@@ -22,4 +22,5 @@
         /// <returns>A Func which can select the coordinate from any instance of <typeparamref name="T"/>.</returns>
         public static Func<T, double[]> CompilePointSelector<T>(T item, string coordinatePropertyOrFieldName)
         {
-       
+            // see if T has a public getter for a double array called coordinate
+            var prop = item.GetType().GetProperty(coor
