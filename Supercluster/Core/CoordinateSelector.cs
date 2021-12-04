@@ -23,4 +23,7 @@
         public static Func<T, double[]> CompilePointSelector<T>(T item, string coordinatePropertyOrFieldName)
         {
             // see if T has a public getter for a double array called coordinate
-            var prop = item.GetType().GetProperty(coor
+            var prop = item.GetType().GetProperty(coordinatePropertyOrFieldName) != null
+                       || item.GetType().GetField(coordinatePropertyOrFieldName) != null;
+
+         
