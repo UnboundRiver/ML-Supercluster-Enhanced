@@ -18,4 +18,5 @@
         /// </summary>
         /// <typeparam name="T">The type of the object for which to compile a point selector for.</typeparam>
         /// <param name="item">An instance of <typeparamref name="T"/>.</param>
-        /// <param name="coordinatePropertyOrFieldName">The name of the property or field that is the coordinate for <typ
+        /// <param name="coordinatePropertyOrFieldName">The name of the property or field that is the coordinate for <typeparamref name="T"/></param>
+        /// <returns>A Func which can select the coordinate from any instance of <typeparamref name="T"/>.</
