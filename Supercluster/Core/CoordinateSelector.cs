@@ -26,4 +26,7 @@
             var prop = item.GetType().GetProperty(coordinatePropertyOrFieldName) != null
                        || item.GetType().GetField(coordinatePropertyOrFieldName) != null;
 
-         
+            if (prop)
+            {
+                var parameter = Expression.Parameter(typeof(T), "parameter");
+    
