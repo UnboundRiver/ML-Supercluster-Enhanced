@@ -29,4 +29,6 @@
             if (prop)
             {
                 var parameter = Expression.Parameter(typeof(T), "parameter");
-    
+                var propertyExpression = Expression.PropertyOrField(parameter, coordinatePropertyOrFieldName);
+
+                var coordin
