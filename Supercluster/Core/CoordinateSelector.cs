@@ -36,4 +36,9 @@
             }
             else
             {
-                throw new ArgumentException($"The type {nameof(T)} does not have a property or fiel
+                throw new ArgumentException($"The type {nameof(T)} does not have a property or field with the name {coordinatePropertyOrFieldName}.");
+            }
+        }
+
+        /// <summary>
+        /// Creates a coordinate s
