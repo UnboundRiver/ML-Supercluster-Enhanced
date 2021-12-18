@@ -32,4 +32,8 @@
                 var propertyExpression = Expression.PropertyOrField(parameter, coordinatePropertyOrFieldName);
 
                 var coordinateSelectorExpression = Expression.Lambda<Func<T, double[]>>(propertyExpression, parameter);
-                return coordinateSelectorExpression.Co
+                return coordinateSelectorExpression.Compile();
+            }
+            else
+            {
+                throw new ArgumentException($"The type {nameof(T)} does not have a property or fiel
