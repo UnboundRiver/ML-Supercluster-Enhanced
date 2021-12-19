@@ -47,3 +47,5 @@
         /// <returns>A Func which can select a the coordinate from any instance of <typeparamref name="T"/>.</returns>
         public static Func<T, double[]> CreateDefaultCoordinateSelector<T>()
         {
+            var instance = (T)Activator.CreateInstance(typeof(T));
+            return CompilePointSelector(instance, SuperclusterContants.COORDIN
