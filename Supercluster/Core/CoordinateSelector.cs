@@ -41,4 +41,6 @@
         }
 
         /// <summary>
-        /// Creates a coordinate s
+        /// Creates a coordinate selector that returns the value of a property or field with the name "Coordinate".
+        /// </summary>
+        /// <typeparam name="T">The
