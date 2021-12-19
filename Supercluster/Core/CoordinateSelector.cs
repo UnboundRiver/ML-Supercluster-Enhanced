@@ -43,4 +43,5 @@
         /// <summary>
         /// Creates a coordinate selector that returns the value of a property or field with the name "Coordinate".
         /// </summary>
-        /// <typeparam name="T">The
+        /// <typeparam name="T">The type of the object for which to compile a point selector for.</typeparam>
+        /// <returns>A Func which can select a the coordinate from any insta
