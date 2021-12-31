@@ -14,4 +14,8 @@
 
         public int GetHashCode(double obj)
         {
-        
+            return base.GetHashCode();
+        }
+    }
+
+    public class DoubleArrayEqualityComparer : IEqualityComparer<double[]>
