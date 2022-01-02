@@ -19,3 +19,9 @@
     }
 
     public class DoubleArrayEqualityComparer : IEqualityComparer<double[]>
+    {
+        public bool Equals(double[] x, double[] y)
+        {
+            // check count
+            if (x.Length != y.Length)
+          
