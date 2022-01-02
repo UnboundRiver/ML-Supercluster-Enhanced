@@ -24,4 +24,10 @@
         {
             // check count
             if (x.Length != y.Length)
+            {
+                return false;
+            }
+
+            // check elementwise
+            for (int i = 0; i < x.Length; i++)
           
