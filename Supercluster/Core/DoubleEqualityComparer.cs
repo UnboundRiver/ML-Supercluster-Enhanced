@@ -30,4 +30,8 @@
 
             // check elementwise
             for (int i = 0; i < x.Length; i++)
-          
+            {
+                if (Math.Abs(x[i] - y[i]) > SuperclusterContants.DOUBLE_TOLERANCE)
+                {
+                    return false;
+           
