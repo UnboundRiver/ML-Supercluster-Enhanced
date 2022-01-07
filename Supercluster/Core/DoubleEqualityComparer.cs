@@ -34,4 +34,11 @@
                 if (Math.Abs(x[i] - y[i]) > SuperclusterContants.DOUBLE_TOLERANCE)
                 {
                     return false;
-           
+                }
+            }
+
+            // have same count and elements match
+            return true;
+        }
+
+        public int GetHashCo
