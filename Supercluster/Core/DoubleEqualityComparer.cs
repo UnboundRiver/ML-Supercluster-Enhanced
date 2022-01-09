@@ -41,4 +41,9 @@
             return true;
         }
 
-        public int GetHashCo
+        public int GetHashCode(double[] obj)
+        {
+            return base.GetHashCode();
+        }
+    }
+}
