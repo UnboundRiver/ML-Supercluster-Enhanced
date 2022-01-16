@@ -11,4 +11,9 @@
     public class ReverseComparer<T> : IComparer<T>
     {
         /// <inheritdoc />
-        pu
+        public int Compare(T x, T y)
+        {
+            return Comparer<T>.Default.Compare(y, x);
+        }
+    }
+}
