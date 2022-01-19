@@ -7,4 +7,5 @@
     {
         /// <summary>
         /// The tolerance used when comparing <see cref="double"/> values.
-        /// </summary
+        /// </summary>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.NamingRules", "SA1310:Field names must not contain u
