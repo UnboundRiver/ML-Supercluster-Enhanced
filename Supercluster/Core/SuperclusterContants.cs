@@ -8,4 +8,8 @@
         /// <summary>
         /// The tolerance used when comparing <see cref="double"/> values.
         /// </summary>
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.NamingRules", "SA1310:Field names must not contain u
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("StyleCop.CSharp.NamingRules", "SA1310:Field names must not contain underscore", Justification = "Library constant")]
+        public const double DOUBLE_TOLERANCE = 1E-13;
+
+        /// <summary>
+  
