@@ -12,4 +12,5 @@
         public const double DOUBLE_TOLERANCE = 1E-13;
 
         /// <summary>
-  
+        /// The name of the property or field searched for trying to detect a type's coordinate representation.
+        /// <
