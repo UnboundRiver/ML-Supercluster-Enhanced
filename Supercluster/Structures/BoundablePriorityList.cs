@@ -88,3 +88,122 @@
 
         /// <summary>
         /// Initializes a new instance of the <see cref="BoundablePriorityList{TElement, TPriority}"/> class.
+        /// Note: You should not have <paramref name="allocate"/> set to true, and the capacity set to a very large number.
+        /// Especially if you will be creating and destroying many <see cref="BoundablePriorityList{TElement,TPriority}"/> very rapidly.
+        /// If you ignore this advice you will create lots of memory pressure. If you don't understand why this is a problem you should
+        /// understand the garbage collector. Please read: https://msdn.microsoft.com/en-us/library/ee787088.aspx
+        /// </summary>
+        /// <param name="capacity">The maximum capacity of the list. If this number is negative then the list has infinite capacity.</param>
+        /// <param name="ascending">Specifies if the list should sort (by priority) in an ascending or descending fashion.</param>
+        /// <param name="allocate">If true, initializes the internal lists for the <see cref="BoundablePriorityList{TElement,TPriority}"/> with an initial capacity of <paramref name="capacity"/>.</param>
+        public BoundablePriorityList(int capacity = -1, bool ascending = true, bool allocate = false)
+        {
+            this.IsAscending = ascending;
+            this.Capacity = capacity;
+            if (allocate)
+            {
+                this.priorityList = new List<TPriority>(capacity);
+                this.elementList = new List<TElement>(capacity);
+            }
+            else
+            {
+                this.priorityList = new List<TPriority>();
+                this.elementList = new List<TElement>();
+            }
+        }
+
+        /// <summary>
+        /// Attempts to add the provided  <paramref name="item"/>. If the list
+        /// is currently at maximum capacity and the elements priority is greater
+        /// than or equal to the highest priority, the <paramref name = "item"/> is not inserted. If the
+        /// <paramref name = "item"/> is eligible for insertion, the upon insertion the <paramref name = "item"/> that previously
+        /// had the largest priority is removed from the list.
+        /// This is an O(log n) operation.
+        /// </summary>
+        /// <param name="item">The item to be inserted</param>
+        /// <param name="priority">The priority of th given item.</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void Add(TElement item, TPriority priority)
+        {
+            // Note that if no capacity was set this is never true
+            if (this.Count >= this.Capacity && this.Capacity > 0)
+            {
+                // Determine if the item should be inserted
+                if (this.IsAscending
+                        ? this.MaxPriority.CompareTo(priority) < 0
+                        : this.MinPriority.CompareTo(priority) > 0)
+                {
+                    return;
+                }
+
+                var index = this.IsAscending
+                                ? this.priorityList.BinarySearch(priority)
+                                : this.priorityList.BinarySearch(priority, this.descendingComparer);
+                index = index >= 0 ? index : ~index;
+
+                this.priorityList.Insert(index, priority);
+                this.elementList.Insert(index, item);
+
+                this.priorityList.RemoveAt(this.priorityList.Count - 1);
+                this.elementList.RemoveAt(this.elementList.Count - 1);
+            }
+            else
+            {
+                var index = this.IsAscending
+                                ? this.priorityList.BinarySearch(priority)
+                                : this.priorityList.BinarySearch(priority, this.descendingComparer);
+                index = index >= 0 ? index : ~index;
+
+                this.priorityList.Insert(index, priority);
+                this.elementList.Insert(index, item);
+            }
+        }
+
+        /// <summary>
+        /// Removes all elements that satisfy the given <paramref name="predicate"/>.
+        /// </summary>
+        /// <param name="predicate">The predicate function to apply to each priority.</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void RemoveAllPriorities(Func<TPriority, bool> predicate)
+        {
+            var indexesToKeep = this.priorityList.WhereIndex(p => !predicate(p)).ToArray();
+            this.priorityList = this.priorityList.WithIndexes(indexesToKeep).ToList();
+            this.elementList = this.elementList.WithIndexes(indexesToKeep).ToList();
+        }
+
+        /// <summary>
+        /// Removes all elements that satisfy the given <paramref name="predicate"/>.
+        /// The corresponding priorities for the elements are also removed.
+        /// </summary>
+        /// <param name="predicate">The predicate function to apply to each element.</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void RemoveAllElements(Func<TElement, bool> predicate)
+        {
+            var indexesToKeep = this.elementList.WhereIndex(e => !predicate(e)).ToArray();
+            this.priorityList = this.priorityList.WithIndexes(indexesToKeep).ToList();
+            this.elementList = this.elementList.WithIndexes(indexesToKeep).ToList();
+        }
+
+        /// <summary>
+        /// Removes an element the corresponding priority at the specified index.
+        /// </summary>
+        /// <param name="index">The index of the element to remove.</param>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void RemoveAt(int index)
+        {
+            this.priorityList.RemoveAt(index);
+            this.elementList.RemoveAt(index);
+        }
+
+        /// <summary>
+        /// Returns an enumerator that iterates through the collection.
+        /// </summary>
+        /// <returns>An enumerator.</returns>
+        public IEnumerator<TElement> GetEnumerator()
+        {
+            return this.elementList.GetEnumerator();
+        }
+
+        /// <summary>
+        /// Returns an enumerator that iterates through the collection.
+        /// </summary>
