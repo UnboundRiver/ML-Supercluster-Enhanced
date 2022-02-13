@@ -207,3 +207,10 @@
         /// <summary>
         /// Returns an enumerator that iterates through the collection.
         /// </summary>
+        /// <returns>An enumerator.</returns>
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return this.GetEnumerator();
+        }
+    }
+}
