@@ -5,4 +5,5 @@
     /// <summary>
     /// An append only data structure that supports basic spatial access methods.
     /// </summary>
-    /// <t
+    /// <typeparam name="T">The type of the objects in the collection.</typeparam>
+    public interface ISpatialQueryabl
