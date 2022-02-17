@@ -13,4 +13,9 @@
         /// </summary>
         /// <param name="items">The items to be added.</param>
         /// <returns>The indexes of the items added.</returns>
-        IEnumerable<int> Add(IEnumerable<T> ite
+        IEnumerable<int> Add(IEnumerable<T> items);
+
+        /// <summary>
+        /// Adds the item to the current collection.
+        /// </summary>
+        /// <param name="it
