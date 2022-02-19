@@ -18,4 +18,8 @@
         /// <summary>
         /// Adds the item to the current collection.
         /// </summary>
-        /// <param name="it
+        /// <param name="item">The item to be added.</param>
+        /// <returns>The index of the item added.</returns>
+        int Add(T item);
+
+      
