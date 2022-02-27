@@ -22,4 +22,6 @@
         /// <returns>The index of the item added.</returns>
         int Add(T item);
 
-      
+        /// <summary>
+        /// Searches for the <paramref name="k"/> nearest neighbors of the specified <paramref name="target"/>.
+        /
