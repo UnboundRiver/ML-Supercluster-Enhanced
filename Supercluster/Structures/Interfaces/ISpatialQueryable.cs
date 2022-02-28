@@ -26,4 +26,6 @@
         /// Searches for the <paramref name="k"/> nearest neighbors of the specified <paramref name="target"/>.
         /// Note that the target point may or may not be in the collection.
         /// </summary>
-        /// <param name="target">The point
+        /// <param name="target">The point whose neighbors will be found.</param>
+        /// <param name="k">The number of neighbors find.</param>
+        /// <
