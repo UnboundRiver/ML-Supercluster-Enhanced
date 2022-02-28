@@ -28,4 +28,5 @@
         /// </summary>
         /// <param name="target">The point whose neighbors will be found.</param>
         /// <param name="k">The number of neighbors find.</param>
-        /// <
+        /// <returns>The <paramref name="k"/> nearest neighbors of the <paramref name="target"/> point.</returns>
+        IEnumerable<T> NearestNeighbors(T targe
