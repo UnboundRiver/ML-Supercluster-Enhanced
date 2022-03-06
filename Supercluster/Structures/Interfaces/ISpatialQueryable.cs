@@ -37,4 +37,5 @@
         /// </summary>
         /// <param name="target">The point whose neighbors will be found.</param>
         /// <param name="k">The number of neighbors find.</param>
-        /// <retur
+        /// <returns>The <paramref name="k"/> indexes nearest neighbors of the <paramref name="target"/> point.</returns>
+        IEnumerable<int> 
