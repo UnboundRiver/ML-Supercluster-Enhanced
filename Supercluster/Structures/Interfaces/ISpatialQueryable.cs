@@ -41,4 +41,7 @@
         IEnumerable<int> NearestNeighborIndexes(T target, int k);
 
         /// <summary>
-        /// Searches for all points within the ball of the specified <par
+        /// Searches for all points within the ball of the specified <paramref name="radius"/>.
+        /// </summary>
+        /// <param name="center">The center of the ball to be searched.</param>
+        ///
