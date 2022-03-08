@@ -45,4 +45,5 @@
         /// </summary>
         /// <param name="center">The center of the ball to be searched.</param>
         /// <param name="radius">The radius of the ball to be searched.</param>
-        /// <returns>The points that are in the ball de
+        /// <returns>The points that are in the ball defined by <paramref name="center"/> and <paramref name="radius"/>.</returns>
+        IEnumerable<T> RadialSearch(T center, double radi
