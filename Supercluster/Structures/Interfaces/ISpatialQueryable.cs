@@ -57,4 +57,4 @@
         IEnumerable<int> RadialSearchIndexes(T center, double radius);
 
         /// <summary>
-       
+        /// Gets the instance of <typeparamref name="T"/> with the specified index. The index of an item to be retrieved should be found through the <see cref="NearestNei
