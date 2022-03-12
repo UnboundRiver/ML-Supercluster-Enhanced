@@ -60,4 +60,8 @@
         /// Gets the instance of <typeparamref name="T"/> with the specified index. The index of an item to be retrieved should be found through the <see cref="NearestNeighborIndexes"/> or <see cref="RadialSearchIndexes"/>
         /// </summary>
         /// <param name="index">The index of the item in the internal backing array of the data-structure.</param>
-        /// <returns>The instance of <typeparamref name="T"/> at the specified index.</returns
+        /// <returns>The instance of <typeparamref name="T"/> at the specified index.</returns>
+        T this[int index] { get; }
+
+        /// <summary>
+        /// Gets the instances of <typeparamref name="T"/> with an index in
