@@ -64,4 +64,6 @@
         T this[int index] { get; }
 
         /// <summary>
-        /// Gets the instances of <typeparamref name="T"/> with an index in <paramref name="indexes"/>. The index of an item to be retrieved should be found through the <see cref="NearestNeighborIndexes"/> or <see cref="R
+        /// Gets the instances of <typeparamref name="T"/> with an index in <paramref name="indexes"/>. The index of an item to be retrieved should be found through the <see cref="NearestNeighborIndexes"/> or <see cref="RadialSearchIndexes"/>
+        /// </summary>
+        /// <param name="indexes">A collection of indexes pointing to instanc
