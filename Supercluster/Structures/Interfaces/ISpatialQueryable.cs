@@ -67,4 +67,7 @@
         /// Gets the instances of <typeparamref name="T"/> with an index in <paramref name="indexes"/>. The index of an item to be retrieved should be found through the <see cref="NearestNeighborIndexes"/> or <see cref="RadialSearchIndexes"/>
         /// </summary>
         /// <param name="indexes">A collection of indexes pointing to instances of <typeparamref name="T"/> in the internal backing array of the data-structure.</param>
-        /// <returns>The instances of <typeparamref name="T"/> at th
+        /// <returns>The instances of <typeparamref name="T"/> at the specified indexes.</returns>
+        IEnumerable<T> this[IEnumerable<int> indexes] { get; }
+    }
+}
