@@ -8,4 +8,7 @@ namespace Supercluster.Structures.KDTree
     using System.Collections.Generic;
     using System.Linq;
 
-    using Supercluster.Co
+    using Supercluster.Core;
+    using Supercluster.DataStructures.KDTree;
+    using Supercluster.Structures;
+    using Supercluster.Struc
