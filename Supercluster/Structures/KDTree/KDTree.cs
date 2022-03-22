@@ -31,4 +31,7 @@ namespace Supercluster.Structures.KDTree
     /// </summary>
     public class KDNode
     {
-        /// <
+        /// <summary>
+        /// The index of the element in the internal array.
+        /// </summary>
+        public int ElementIndex { ge
