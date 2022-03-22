@@ -22,4 +22,13 @@ namespace Supercluster.Structures.KDTree
         public CoordinateWithIndex(int index, double[] Coordinate)
         {
             this.Index = index;
-            this.C
+            this.Coordinate = Coordinate;
+        }
+    }
+
+    /// <summary>
+    /// The node of a KDTree.
+    /// </summary>
+    public class KDNode
+    {
+        /// <
