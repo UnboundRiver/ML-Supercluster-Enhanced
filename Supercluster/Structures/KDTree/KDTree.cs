@@ -17,4 +17,9 @@ namespace Supercluster.Structures.KDTree
     {
         public double[] Coordinate { get; }
 
-        public int Index { get;
+        public int Index { get; }
+
+        public CoordinateWithIndex(int index, double[] Coordinate)
+        {
+            this.Index = index;
+            this.C
