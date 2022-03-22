@@ -11,4 +11,10 @@ namespace Supercluster.Structures.KDTree
     using Supercluster.Core;
     using Supercluster.DataStructures.KDTree;
     using Supercluster.Structures;
-    using Supercluster.Struc
+    using Supercluster.Structures.Interfaces;
+
+    public class CoordinateWithIndex
+    {
+        public double[] Coordinate { get; }
+
+        public int Index { get;
