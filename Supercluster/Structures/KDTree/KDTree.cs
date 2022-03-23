@@ -34,4 +34,9 @@ namespace Supercluster.Structures.KDTree
         /// <summary>
         /// The index of the element in the internal array.
         /// </summary>
-        public int ElementIndex { ge
+        public int ElementIndex { get; set; }
+
+        /// <summary>
+        /// The left child of the node.
+        /// </summary>
+        public KDNode L
