@@ -39,4 +39,11 @@ namespace Supercluster.Structures.KDTree
         /// <summary>
         /// The left child of the node.
         /// </summary>
-        public KDNode L
+        public KDNode Left;
+
+        /// <summary>
+        /// The right child of of the node;
+        /// </summary>
+        public KDNode Right;
+
+        /// <summary>
