@@ -49,4 +49,7 @@ namespace Supercluster.Structures.KDTree
         /// <summary>
         /// The parent of the current node. If the current node is the root node, then its parent is null.
         /// </summary>
-    
+        public KDNode Parent;
+
+        public KDNode(int index, KDNode parent = null, KDNode left = null, KDNode right = null)
+        {
