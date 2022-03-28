@@ -53,3 +53,8 @@ namespace Supercluster.Structures.KDTree
 
         public KDNode(int index, KDNode parent = null, KDNode left = null, KDNode right = null)
         {
+            this.ElementIndex = index;
+            this.Left = left;
+            this.Right = right;
+            this.Parent = parent;
+        
