@@ -57,4 +57,9 @@ namespace Supercluster.Structures.KDTree
             this.Left = left;
             this.Right = right;
             this.Parent = parent;
-        
+        }
+    }
+
+    /// <summary>
+    /// Represents a KD-Tree. KD-Trees are used for fast spatial searches. Searching in a
+    /// balanced KD-Tree is O(log 
