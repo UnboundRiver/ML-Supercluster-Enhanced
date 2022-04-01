@@ -62,4 +62,5 @@ namespace Supercluster.Structures.KDTree
 
     /// <summary>
     /// Represents a KD-Tree. KD-Trees are used for fast spatial searches. Searching in a
-    /// balanced KD-Tree is O(log 
+    /// balanced KD-Tree is O(log n) where linear search is O(n). Points in the KD-Tree are
+    /// equi-length arrays of type <typeparamref name="double"/>. The node ob
