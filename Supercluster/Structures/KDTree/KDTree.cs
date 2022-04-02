@@ -67,4 +67,5 @@ namespace Supercluster.Structures.KDTree
     /// with the points is an array of type <typeparamref name="TNode"/>.
     /// </summary>
     /// <remarks>
-    /// KD
+    /// KDTrees can be fairly difficult to understand at first. The following references helped me
+    /// understand what exactly 
