@@ -68,4 +68,5 @@ namespace Supercluster.Structures.KDTree
     /// </summary>
     /// <remarks>
     /// KDTrees can be fairly difficult to understand at first. The following references helped me
-    /// understand what exactly 
+    /// understand what exactly a KDTree is doing and the contain the best descriptions of searches in a KDTree.
+    /// Samet's book is the best reference 
