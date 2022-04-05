@@ -69,4 +69,6 @@ namespace Supercluster.Structures.KDTree
     /// <remarks>
     /// KDTrees can be fairly difficult to understand at first. The following references helped me
     /// understand what exactly a KDTree is doing and the contain the best descriptions of searches in a KDTree.
-    /// Samet's book is the best reference 
+    /// Samet's book is the best reference of multidimensional data structures I have ever seen. Wikipedia is also a good starting place.
+    /// References:
+    //
