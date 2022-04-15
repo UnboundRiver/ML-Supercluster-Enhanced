@@ -76,4 +76,8 @@ namespace Supercluster.Structures.KDTree
     /// <li> <a href="https://en.wikipedia.org/wiki/K-d_tree"> https://en.wikipedia.org/wiki/K-d_tree</a> </li>
     /// </ul>
     /// </remarks>
-    [Serializab
+    [Serializable]
+    public class KDTree<TNode> : ISpatialQueryable<TNode>
+    {
+        /// <summary>
+        /// The number of points in the KDT
