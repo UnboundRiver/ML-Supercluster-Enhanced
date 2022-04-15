@@ -73,4 +73,7 @@ namespace Supercluster.Structures.KDTree
     /// References:
     /// <ul style="list-style-type:none">
     /// <li> <a href="http://store.elsevier.com/product.jsp?isbn=9780123694461">Foundations of Multidimensional and Metric Data Structures, 1st Edition, by Hanan Samet. ISBN: 9780123694461</a> </li>
-    /// <li> <a href="https://en.wikipedia.
+    /// <li> <a href="https://en.wikipedia.org/wiki/K-d_tree"> https://en.wikipedia.org/wiki/K-d_tree</a> </li>
+    /// </ul>
+    /// </remarks>
+    [Serializab
