@@ -80,4 +80,9 @@ namespace Supercluster.Structures.KDTree
     public class KDTree<TNode> : ISpatialQueryable<TNode>
     {
         /// <summary>
-        /// The number of points in the KDT
+        /// The number of points in the KDTree
+        /// </summary>
+        public int Count => this.InternalList.Count;
+
+        /// <summary>
+        /// The numbe
