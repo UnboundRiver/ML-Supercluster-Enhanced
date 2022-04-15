@@ -72,4 +72,5 @@ namespace Supercluster.Structures.KDTree
     /// Samet's book is the best reference of multidimensional data structures I have ever seen. Wikipedia is also a good starting place.
     /// References:
     /// <ul style="list-style-type:none">
-    /// <li> <a href="http://store.elsevier.com/product.jsp?isbn=9780123694461">Foundations of Multid
+    /// <li> <a href="http://store.elsevier.com/product.jsp?isbn=9780123694461">Foundations of Multidimensional and Metric Data Structures, 1st Edition, by Hanan Samet. ISBN: 9780123694461</a> </li>
+    /// <li> <a href="https://en.wikipedia.
