@@ -92,4 +92,8 @@ namespace Supercluster.Structures.KDTree
         /// <summary>
         /// The metric function used to calculate distance between points.
         /// </summary>
-        public Func<dou
+        public Func<double[], double[], double> Metric { get; set; }
+
+        private List<TNode> InternalList { get; }
+
+        public KDTreeNavigator<TNode> Root => new KD
