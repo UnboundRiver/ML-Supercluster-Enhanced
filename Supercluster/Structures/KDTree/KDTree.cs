@@ -89,4 +89,7 @@ namespace Supercluster.Structures.KDTree
         /// </summary>
         public int Dimensions { get; }
 
-        /// <su
+        /// <summary>
+        /// The metric function used to calculate distance between points.
+        /// </summary>
+        public Func<dou
