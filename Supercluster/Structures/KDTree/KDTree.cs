@@ -103,4 +103,6 @@ namespace Supercluster.Structures.KDTree
         /// <summary>
         /// Initializes a new instance of the <see cref="KDTree{TNode}"/> class.
         /// </summary>
-        /// <param name="dimen
+        /// <param name="dimensions">The number of dimensions in the data set.</param>
+        /// <param name="nodes">The nodes associated with each point.</param>
+        /// <param name="metri
