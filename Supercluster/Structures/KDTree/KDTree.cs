@@ -85,4 +85,8 @@ namespace Supercluster.Structures.KDTree
         public int Count => this.InternalList.Count;
 
         /// <summary>
-        /// The numbe
+        /// The numbers of dimensions that the tree has.
+        /// </summary>
+        public int Dimensions { get; }
+
+        /// <su
