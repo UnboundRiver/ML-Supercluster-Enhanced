@@ -101,4 +101,6 @@ namespace Supercluster.Structures.KDTree
         private KDNode rootNode = new KDNode(-1);
 
         /// <summary>
-        /// 
+        /// Initializes a new instance of the <see cref="KDTree{TNode}"/> class.
+        /// </summary>
+        /// <param name="dimen
