@@ -96,4 +96,9 @@ namespace Supercluster.Structures.KDTree
 
         private List<TNode> InternalList { get; }
 
-        public KDTreeNavigator<TNode> Root => new KD
+        public KDTreeNavigator<TNode> Root => new KDTreeNavigator<TNode>(this, this.rootNode);
+
+        private KDNode rootNode = new KDNode(-1);
+
+        /// <summary>
+        /// 
