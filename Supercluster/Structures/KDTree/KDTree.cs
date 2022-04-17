@@ -105,4 +105,7 @@ namespace Supercluster.Structures.KDTree
         /// </summary>
         /// <param name="dimensions">The number of dimensions in the data set.</param>
         /// <param name="nodes">The nodes associated with each point.</param>
-        /// <param name="metric">The metric function which implicitly defines the metric space in which the KDTree operates in. This should satisfy the
+        /// <param name="metric">The metric function which implicitly defines the metric space in which the KDTree operates in. This should satisfy the triangle inequality.</param>
+        public KDTree(
+            int dimensions,
+            Func<double[], double[], doubl
