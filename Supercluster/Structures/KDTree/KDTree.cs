@@ -108,4 +108,7 @@ namespace Supercluster.Structures.KDTree
         /// <param name="metric">The metric function which implicitly defines the metric space in which the KDTree operates in. This should satisfy the triangle inequality.</param>
         public KDTree(
             int dimensions,
-            Func<double[], double[], doubl
+            Func<double[], double[], double> metric,
+            Func<TNode, double[]> selector = null)
+        {
+            this.PointSelector = selector ?? CoordinateSele
