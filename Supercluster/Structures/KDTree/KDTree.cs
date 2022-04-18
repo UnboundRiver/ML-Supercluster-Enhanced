@@ -123,4 +123,8 @@ namespace Supercluster.Structures.KDTree
             Func<TNode, double[]> selector = null)
         {
             this.PointSelector = selector ?? CoordinateSelector.CreateDefaultCoordinateSelector<TNode>();
-            this.InternalList = new List<TNode>(
+            this.InternalList = new List<TNode>(nodes);
+            this.Dimensions = dimensions;
+            this.Metric = metric;
+
+            var points = this.InternalList.Select((p, i) => new Coordinate
