@@ -127,4 +127,8 @@ namespace Supercluster.Structures.KDTree
             this.Dimensions = dimensions;
             this.Metric = metric;
 
-            var points = this.InternalList.Select((p, i) => new Coordinate
+            var points = this.InternalList.Select((p, i) => new CoordinateWithIndex(i, this.PointSelector(p))).ToArray();
+            this.GenerateTree(ref this.rootNode, null, 0, points);
+        }
+
+        
