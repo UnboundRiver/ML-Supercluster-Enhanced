@@ -113,4 +113,10 @@ namespace Supercluster.Structures.KDTree
         {
             this.PointSelector = selector ?? CoordinateSelector.CreateDefaultCoordinateSelector<TNode>();
             this.InternalList = new List<TNode>();
-            this.Dimen
+            this.Dimensions = dimensions;
+            this.Metric = metric;
+        }
+
+        public KDTree(int dimensions,
+            IEnumerable<TNode> nodes,
+   
