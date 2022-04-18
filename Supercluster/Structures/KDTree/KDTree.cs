@@ -134,4 +134,8 @@ namespace Supercluster.Structures.KDTree
         private Func<TNode, double[]> PointSelector { get; }
 
         /// <inheritdoc />
-        public IEnumerable<int> Add(IEnumerable<TNode> 
+        public IEnumerable<int> Add(IEnumerable<TNode> items)
+        {
+            var originalMaxIndex = this.InternalList.Count - 1;
+            this.InternalList.AddRange(items);
+            var afterAddMa
