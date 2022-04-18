@@ -131,4 +131,7 @@ namespace Supercluster.Structures.KDTree
             this.GenerateTree(ref this.rootNode, null, 0, points);
         }
 
-        
+        private Func<TNode, double[]> PointSelector { get; }
+
+        /// <inheritdoc />
+        public IEnumerable<int> Add(IEnumerable<TNode> 
