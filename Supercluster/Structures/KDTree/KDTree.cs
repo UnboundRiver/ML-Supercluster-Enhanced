@@ -111,4 +111,6 @@ namespace Supercluster.Structures.KDTree
             Func<double[], double[], double> metric,
             Func<TNode, double[]> selector = null)
         {
-            this.PointSelector = selector ?? CoordinateSele
+            this.PointSelector = selector ?? CoordinateSelector.CreateDefaultCoordinateSelector<TNode>();
+            this.InternalList = new List<TNode>();
+            this.Dimen
