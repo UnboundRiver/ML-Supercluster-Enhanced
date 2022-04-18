@@ -119,4 +119,7 @@ namespace Supercluster.Structures.KDTree
 
         public KDTree(int dimensions,
             IEnumerable<TNode> nodes,
-   
+            Func<double[], double[], double> metric,
+            Func<TNode, double[]> selector = null)
+        {
+            this
