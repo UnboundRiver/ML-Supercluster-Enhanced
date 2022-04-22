@@ -139,4 +139,6 @@ namespace Supercluster.Structures.KDTree
             var originalMaxIndex = this.InternalList.Count - 1;
             this.InternalList.AddRange(items);
             var afterAddMaxIndex = this.InternalList.Count - 1;
-            var coordinatesWithIndex = this.InternalList.Select((p, i) => new CoordinateWithIndex(i, this.PointSel
+            var coordinatesWithIndex = this.InternalList.Select((p, i) => new CoordinateWithIndex(i, this.PointSelector(p))).ToArray();
+            this.GenerateTree(ref this.rootNode, null, 0, coordinatesWithIndex);
+            return Enumerable.Range(originalMaxIn
