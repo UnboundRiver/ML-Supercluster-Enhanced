@@ -141,4 +141,10 @@ namespace Supercluster.Structures.KDTree
             var afterAddMaxIndex = this.InternalList.Count - 1;
             var coordinatesWithIndex = this.InternalList.Select((p, i) => new CoordinateWithIndex(i, this.PointSelector(p))).ToArray();
             this.GenerateTree(ref this.rootNode, null, 0, coordinatesWithIndex);
-            return Enumerable.Range(originalMaxIn
+            return Enumerable.Range(originalMaxIndex + 1, afterAddMaxIndex - originalMaxIndex);
+        }
+
+        /// <inheritdoc />
+        public int Add(TNode item)
+        {
+            this.Interna
