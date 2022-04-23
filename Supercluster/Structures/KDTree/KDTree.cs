@@ -147,4 +147,5 @@ namespace Supercluster.Structures.KDTree
         /// <inheritdoc />
         public int Add(TNode item)
         {
-            this.Interna
+            this.InternalList.Add(item);
+            var coordinatesWithIndex = this.InternalList.Select((p, i) => new CoordinateWithIndex(i, this.PointSelector(p))).ToA
