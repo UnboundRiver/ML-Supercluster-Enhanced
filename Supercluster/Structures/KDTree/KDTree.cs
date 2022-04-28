@@ -151,3 +151,7 @@ namespace Supercluster.Structures.KDTree
             var coordinatesWithIndex = this.InternalList.Select((p, i) => new CoordinateWithIndex(i, this.PointSelector(p))).ToArray();
             this.GenerateTree(ref this.rootNode, null, 0, coordinatesWithIndex);
             return this.InternalList.Count - 1;
+        }
+
+        /// <inheritdoc />
+        public IEnumerable<TNode> NearestNeighbors(TNode target, int k) => this[th
