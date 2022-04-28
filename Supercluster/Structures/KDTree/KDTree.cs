@@ -154,4 +154,8 @@ namespace Supercluster.Structures.KDTree
         }
 
         /// <inheritdoc />
-        public IEnumerable<TNode> NearestNeighbors(TNode target, int k) => this[th
+        public IEnumerable<TNode> NearestNeighbors(TNode target, int k) => this[this.NearestNeighborIndexes(target, k)];
+
+        /// <inheritdoc />
+        public IEnumerable<int> NearestNeighborIndexes(TNode target, int k)
+ 
