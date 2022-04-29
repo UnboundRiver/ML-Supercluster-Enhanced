@@ -162,4 +162,8 @@ namespace Supercluster.Structures.KDTree
             var point = this.PointSelector(target);
             var nearestNeighborList = new BoundablePriorityList<int, double>(k, true);
             var rect = HyperRect<double>.Infinite(this.Dimensions, double.MaxValue, double.MinValue);
-            this.SearchForNearestNeighbors(
+            this.SearchForNearestNeighbors(this.rootNode, point, rect, 0, nearestNeighborList, double.MaxValue);
+            return nearestNeighborList;
+        }
+
+        /// 
