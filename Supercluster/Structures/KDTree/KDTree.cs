@@ -160,4 +160,6 @@ namespace Supercluster.Structures.KDTree
         public IEnumerable<int> NearestNeighborIndexes(TNode target, int k)
         {
             var point = this.PointSelector(target);
-            var nearestNeighborList = new BoundablePriorityList<int, double>(k, true
+            var nearestNeighborList = new BoundablePriorityList<int, double>(k, true);
+            var rect = HyperRect<double>.Infinite(this.Dimensions, double.MaxValue, double.MinValue);
+            this.SearchForNearestNeighbors(
