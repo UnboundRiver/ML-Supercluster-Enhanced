@@ -166,4 +166,6 @@ namespace Supercluster.Structures.KDTree
             return nearestNeighborList;
         }
 
-        /// 
+        /// <inheritdoc />
+        public IEnumerable<TNode> RadialSearch(TNode center, double radius)
+            => this.InternalList.WithInde
