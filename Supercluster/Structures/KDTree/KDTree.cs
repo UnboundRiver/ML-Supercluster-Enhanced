@@ -171,4 +171,7 @@ namespace Supercluster.Structures.KDTree
             => this.InternalList.WithIndexes(this.RadialSearchIndexes(center, radius));
 
         /// <inheritdoc />
-        public IEnumerable<int> RadialSearchIndexes(TNode
+        public IEnumerable<int> RadialSearchIndexes(TNode center, double radius)
+        {
+            var nearestNeighbors = new BoundablePriorityList<int, double>();
+            var centerPoint = this
