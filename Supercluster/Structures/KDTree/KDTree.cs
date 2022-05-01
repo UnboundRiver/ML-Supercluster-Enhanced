@@ -168,4 +168,7 @@ namespace Supercluster.Structures.KDTree
 
         /// <inheritdoc />
         public IEnumerable<TNode> RadialSearch(TNode center, double radius)
-            => this.InternalList.WithInde
+            => this.InternalList.WithIndexes(this.RadialSearchIndexes(center, radius));
+
+        /// <inheritdoc />
+        public IEnumerable<int> RadialSearchIndexes(TNode
