@@ -174,4 +174,8 @@ namespace Supercluster.Structures.KDTree
         public IEnumerable<int> RadialSearchIndexes(TNode center, double radius)
         {
             var nearestNeighbors = new BoundablePriorityList<int, double>();
-            var centerPoint = this
+            var centerPoint = this.PointSelector(center);
+            this.SearchForNearestNeighbors(
+                this.rootNode,
+                centerPoint,
+                HyperR
