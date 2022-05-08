@@ -178,4 +178,6 @@ namespace Supercluster.Structures.KDTree
             this.SearchForNearestNeighbors(
                 this.rootNode,
                 centerPoint,
-                HyperR
+                HyperRect<double>.Infinite(this.Dimensions, double.MaxValue, double.MinValue),
+                0,
+                nearestNeighbors
