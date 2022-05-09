@@ -180,4 +180,11 @@ namespace Supercluster.Structures.KDTree
                 centerPoint,
                 HyperRect<double>.Infinite(this.Dimensions, double.MaxValue, double.MinValue),
                 0,
-                nearestNeighbors
+                nearestNeighbors,
+                radius);
+
+            return nearestNeighbors;
+        }
+
+        /// <inheritdoc />
+        public TNode this[int index] => this.InternalLi
