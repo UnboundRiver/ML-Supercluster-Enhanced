@@ -187,4 +187,7 @@ namespace Supercluster.Structures.KDTree
         }
 
         /// <inheritdoc />
-        public TNode this[int index] => this.InternalLi
+        public TNode this[int index] => this.InternalList[index];
+
+        /// <inheritdoc />
+        public IEnumerable<TNode> this[IEnumerable<int> indexes] => this.InternalList.WithIndexes(index
