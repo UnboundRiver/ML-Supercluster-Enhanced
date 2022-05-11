@@ -196,4 +196,5 @@ namespace Supercluster.Structures.KDTree
         /// Grows a KD tree recursively via median splitting. We find the median by doing a full sort.
         /// </summary>
         /// <param name="currentNode">The array index for the current node.</param>
-        /// <param n
+        /// <param name="dim">The current splitting dimension.</param>
+        /// <param name="points">The set of points remaining to be added to
