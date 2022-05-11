@@ -197,4 +197,7 @@ namespace Supercluster.Structures.KDTree
         /// </summary>
         /// <param name="currentNode">The array index for the current node.</param>
         /// <param name="dim">The current splitting dimension.</param>
-        /// <param name="points">The set of points remaining to be added to
+        /// <param name="points">The set of points remaining to be added to the KDTree.</param>
+        /// <param name="nodes">The set of nodes RE</param>
+        private void GenerateTree(
+            ref KDNode curren
