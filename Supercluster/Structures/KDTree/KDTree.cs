@@ -208,4 +208,7 @@ namespace Supercluster.Structures.KDTree
             // See wikipedia for a good explanation KDTree construction.
             // https://en.wikipedia.org/wiki/K-d_tree
 
-            // sort the point
+            // sort the points along the current dimension
+            var sortedPoints = points.OrderBy(z => z.Coordinate[dim]).ToArray();
+
+            // ge
