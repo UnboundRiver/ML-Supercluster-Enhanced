@@ -213,4 +213,6 @@ namespace Supercluster.Structures.KDTree
 
             // get the point which has the median value of the current dimension.
             var medianPoint = sortedPoints[points.Count / 2];
-        
+            var medianPointIdx = sortedPoints.Length / 2;
+
+            // The point with the median value all the current dimens
