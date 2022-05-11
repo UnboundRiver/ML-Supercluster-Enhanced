@@ -190,4 +190,7 @@ namespace Supercluster.Structures.KDTree
         public TNode this[int index] => this.InternalList[index];
 
         /// <inheritdoc />
-        public IEnumerable<TNode> this[IEnumerable<int> indexes] => this.InternalList.WithIndexes(index
+        public IEnumerable<TNode> this[IEnumerable<int> indexes] => this.InternalList.WithIndexes(indexes);
+
+        /// <summary>
+        /// Grows a KD tree recursively via median splitting. We find the median by doing a full 
