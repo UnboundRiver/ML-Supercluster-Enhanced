@@ -205,4 +205,7 @@ namespace Supercluster.Structures.KDTree
             int dim,
             IReadOnlyCollection<CoordinateWithIndex> points)
         {
-            //
+            // See wikipedia for a good explanation KDTree construction.
+            // https://en.wikipedia.org/wiki/K-d_tree
+
+            // sort the point
