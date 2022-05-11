@@ -211,4 +211,6 @@ namespace Supercluster.Structures.KDTree
             // sort the points along the current dimension
             var sortedPoints = points.OrderBy(z => z.Coordinate[dim]).ToArray();
 
-            // ge
+            // get the point which has the median value of the current dimension.
+            var medianPoint = sortedPoints[points.Count / 2];
+        
