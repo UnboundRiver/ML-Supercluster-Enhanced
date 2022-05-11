@@ -200,4 +200,9 @@ namespace Supercluster.Structures.KDTree
         /// <param name="points">The set of points remaining to be added to the KDTree.</param>
         /// <param name="nodes">The set of nodes RE</param>
         private void GenerateTree(
-            ref KDNode curren
+            ref KDNode currentNode,
+            KDNode previousNode,
+            int dim,
+            IReadOnlyCollection<CoordinateWithIndex> points)
+        {
+            //
