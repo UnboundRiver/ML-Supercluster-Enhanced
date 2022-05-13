@@ -215,4 +215,5 @@ namespace Supercluster.Structures.KDTree
             var medianPoint = sortedPoints[points.Count / 2];
             var medianPointIdx = sortedPoints.Length / 2;
 
-            // The point with the median value all the current dimens
+            // The point with the median value all the current dimension now becomes the value of the current tree node
+            // The previous node becomes the parents of the current node.
