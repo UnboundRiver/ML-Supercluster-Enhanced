@@ -217,3 +217,7 @@ namespace Supercluster.Structures.KDTree
 
             // The point with the median value all the current dimension now becomes the value of the current tree node
             // The previous node becomes the parents of the current node.
+            currentNode = new KDNode(medianPoint.Index, previousNode);
+            previousNode = currentNode;
+
+            // We 
