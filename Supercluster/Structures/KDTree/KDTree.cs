@@ -220,4 +220,6 @@ namespace Supercluster.Structures.KDTree
             currentNode = new KDNode(medianPoint.Index, previousNode);
             previousNode = currentNode;
 
-            // We 
+            // We now split the sorted points into 2 groups
+            // 1st group: points before the median
+            var leftPoin
