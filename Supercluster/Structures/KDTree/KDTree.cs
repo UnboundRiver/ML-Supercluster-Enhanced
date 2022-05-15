@@ -239,4 +239,6 @@ namespace Supercluster.Structures.KDTree
             // each recursion call. We also forward cycle to the next dimension.
             var nextDim = (dim + 1) % this.Dimensions; // select next dimension
 
-            // We only need to recurse if the point
+            // We only need to recurse if the point array contains more than one point
+            // If the array has no points then the node stay a null value
+            if (leftPoints.Le
