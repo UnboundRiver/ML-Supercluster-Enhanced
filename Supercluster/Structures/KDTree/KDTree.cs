@@ -227,3 +227,8 @@ namespace Supercluster.Structures.KDTree
 
             // 2nd group: Points after the median
             var rightPoints = new CoordinateWithIndex[sortedPoints.Length - (medianPointIdx + 1)];
+            Array.Copy(
+                sortedPoints,
+                medianPointIdx + 1,
+                rightPoints,
+                0,
