@@ -235,4 +235,5 @@ namespace Supercluster.Structures.KDTree
                 rightPoints.Length);
 
             // We new recurse, passing the left and right arrays for arguments.
-            // The current no
+            // The current node's left and right values become the "roots" for
+            // each recursion call. We also forward cycle to the next dimension.
