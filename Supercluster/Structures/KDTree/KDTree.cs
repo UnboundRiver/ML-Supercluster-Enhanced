@@ -232,3 +232,7 @@ namespace Supercluster.Structures.KDTree
                 medianPointIdx + 1,
                 rightPoints,
                 0,
+                rightPoints.Length);
+
+            // We new recurse, passing the left and right arrays for arguments.
+            // The current no
