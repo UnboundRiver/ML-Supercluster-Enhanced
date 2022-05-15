@@ -237,3 +237,6 @@ namespace Supercluster.Structures.KDTree
             // We new recurse, passing the left and right arrays for arguments.
             // The current node's left and right values become the "roots" for
             // each recursion call. We also forward cycle to the next dimension.
+            var nextDim = (dim + 1) % this.Dimensions; // select next dimension
+
+            // We only need to recurse if the point
