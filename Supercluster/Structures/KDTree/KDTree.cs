@@ -222,4 +222,7 @@ namespace Supercluster.Structures.KDTree
 
             // We now split the sorted points into 2 groups
             // 1st group: points before the median
-            var leftPoin
+            var leftPoints = new CoordinateWithIndex[medianPointIdx];
+            Array.Copy(sortedPoints, leftPoints, leftPoints.Length);
+
+            // 2nd 
