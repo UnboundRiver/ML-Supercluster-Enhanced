@@ -241,4 +241,8 @@ namespace Supercluster.Structures.KDTree
 
             // We only need to recurse if the point array contains more than one point
             // If the array has no points then the node stay a null value
-            if (leftPoints.Le
+            if (leftPoints.Length <= 1)
+            {
+                if (leftPoints.Length == 1)
+                {
+                    currentNode.Left = 
