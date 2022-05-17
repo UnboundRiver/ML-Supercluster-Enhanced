@@ -250,4 +250,8 @@ namespace Supercluster.Structures.KDTree
             }
             else
             {
-               
+                this.GenerateTree(ref currentNode.Left, currentNode, nextDim, leftPoints);
+            }
+
+            // Do the same for the right points
+ 
