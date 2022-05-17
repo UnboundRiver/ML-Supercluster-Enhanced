@@ -254,4 +254,8 @@ namespace Supercluster.Structures.KDTree
             }
 
             // Do the same for the right points
- 
+            if (rightPoints.Length <= 1)
+            {
+                if (rightPoints.Length == 1)
+                {
+          
