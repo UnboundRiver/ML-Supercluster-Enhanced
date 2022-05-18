@@ -258,4 +258,8 @@ namespace Supercluster.Structures.KDTree
             {
                 if (rightPoints.Length == 1)
                 {
-          
+                    currentNode.Right = new KDNode(rightPoints[0].Index, previousNode);
+                }
+            }
+            else
+      
