@@ -262,4 +262,9 @@ namespace Supercluster.Structures.KDTree
                 }
             }
             else
-      
+            {
+                this.GenerateTree(ref currentNode.Right, currentNode, nextDim, rightPoints);
+            }
+        }
+
+        /// <summar
