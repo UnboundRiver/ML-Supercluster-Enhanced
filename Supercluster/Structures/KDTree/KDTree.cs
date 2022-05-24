@@ -271,4 +271,5 @@ namespace Supercluster.Structures.KDTree
         /// A top-down recursive method to find the nearest neighbors of a given point.
         /// </summary>
         /// <param name="node">The index of the node for the current recursion branch.</param>
-        /// <param name="target">The point wh
+        /// <param name="target">The point whose neighbors we are trying to find.</param>
+        /// <param name="rect">The <see cref="HyperRect{T}"/> containing the pos
