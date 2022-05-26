@@ -274,4 +274,4 @@ namespace Supercluster.Structures.KDTree
         /// <param name="target">The point whose neighbors we are trying to find.</param>
         /// <param name="rect">The <see cref="HyperRect{T}"/> containing the possible nearest neighbors.</param>
         /// <param name="dimension">The current splitting dimension for this recursion branch.</param>
-    
+        /// <param name="nearestNeighbors">The <see cref="BoundedPriorityList{TElement,TPriority}"/> containing the nearest neighbo
