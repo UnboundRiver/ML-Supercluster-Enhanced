@@ -275,4 +275,7 @@ namespace Supercluster.Structures.KDTree
         /// <param name="rect">The <see cref="HyperRect{T}"/> containing the possible nearest neighbors.</param>
         /// <param name="dimension">The current splitting dimension for this recursion branch.</param>
         /// <param name="nearestNeighbors">The <see cref="BoundedPriorityList{TElement,TPriority}"/> containing the nearest neighbors already discovered.</param>
-        /// <param name="maxSearchRadius">The radius of the current largest distance to 
+        /// <param name="maxSearchRadius">The radius of the current largest distance to search from the <paramref name="target"/></param>
+        private void SearchForNearestNeighbors(
+            KDNode node,
+            d
