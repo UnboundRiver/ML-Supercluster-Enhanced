@@ -289,4 +289,7 @@ namespace Supercluster.Structures.KDTree
                 return;
             }
 
-            
+            // Work out the current dimension
+            var dim = dimension % this.Dimensions;
+
+            // Get the coordinate of the cur
