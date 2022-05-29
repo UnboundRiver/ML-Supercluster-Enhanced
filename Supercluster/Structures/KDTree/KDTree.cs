@@ -282,4 +282,11 @@ namespace Supercluster.Structures.KDTree
             HyperRect<double> rect,
             int dimension,
             BoundablePriorityList<int, double> nearestNeighbors,
-        
+            double maxSearchRadius)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            
