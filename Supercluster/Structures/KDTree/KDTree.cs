@@ -278,4 +278,8 @@ namespace Supercluster.Structures.KDTree
         /// <param name="maxSearchRadius">The radius of the current largest distance to search from the <paramref name="target"/></param>
         private void SearchForNearestNeighbors(
             KDNode node,
-            d
+            double[] target,
+            HyperRect<double> rect,
+            int dimension,
+            BoundablePriorityList<int, double> nearestNeighbors,
+        
