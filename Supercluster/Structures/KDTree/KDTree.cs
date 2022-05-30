@@ -295,4 +295,6 @@ namespace Supercluster.Structures.KDTree
             // Get the coordinate of the current node.
             var coordinate = this.PointSelector(this.InternalList[node.ElementIndex]);
 
-            // Split our 
+            // Split our hyper-rectangle into 2 sub rectangles along the current
+            // node's point on the current dimension
+            var leftRect = rect.Clone(
