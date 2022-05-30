@@ -304,4 +304,7 @@ namespace Supercluster.Structures.KDTree
             rightRect.MinPoint[dim] = coordinate[dim];
 
             // Determine which side the target resides in
-            var compariso
+            var comparison = target[dim] <= coordinate[dim];
+
+            var nearerRect = comparison ? leftRect : rightRect;
+            var furtherRect =
