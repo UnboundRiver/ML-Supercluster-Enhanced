@@ -310,4 +310,8 @@ namespace Supercluster.Structures.KDTree
             var furtherRect = comparison ? rightRect : leftRect;
 
             var nearerNode = comparison ? node.Left : node.Right;
-            var furtherNode = comp
+            var furtherNode = comparison ? node.Right : node.Left;
+
+            // Move down into the nearer branch
+            this.SearchForNearestNeighbors(
+       
