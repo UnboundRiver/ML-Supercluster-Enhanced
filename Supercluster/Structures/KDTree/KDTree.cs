@@ -297,4 +297,8 @@ namespace Supercluster.Structures.KDTree
 
             // Split our hyper-rectangle into 2 sub rectangles along the current
             // node's point on the current dimension
-            var leftRect = rect.Clone(
+            var leftRect = rect.Clone();
+            leftRect.MaxPoint[dim] = coordinate[dim];
+
+            var rightRect = rect.Clone();
+            rightRect.Min
