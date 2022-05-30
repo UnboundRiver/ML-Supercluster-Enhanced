@@ -307,4 +307,7 @@ namespace Supercluster.Structures.KDTree
             var comparison = target[dim] <= coordinate[dim];
 
             var nearerRect = comparison ? leftRect : rightRect;
-            var furtherRect =
+            var furtherRect = comparison ? rightRect : leftRect;
+
+            var nearerNode = comparison ? node.Left : node.Right;
+            var furtherNode = comp
