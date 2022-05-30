@@ -301,4 +301,7 @@ namespace Supercluster.Structures.KDTree
             leftRect.MaxPoint[dim] = coordinate[dim];
 
             var rightRect = rect.Clone();
-            rightRect.Min
+            rightRect.MinPoint[dim] = coordinate[dim];
+
+            // Determine which side the target resides in
+            var compariso
