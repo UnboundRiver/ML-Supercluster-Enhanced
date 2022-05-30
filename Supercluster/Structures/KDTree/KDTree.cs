@@ -292,4 +292,7 @@ namespace Supercluster.Structures.KDTree
             // Work out the current dimension
             var dim = dimension % this.Dimensions;
 
-            // Get the coordinate of the cur
+            // Get the coordinate of the current node.
+            var coordinate = this.PointSelector(this.InternalList[node.ElementIndex]);
+
+            // Split our 
