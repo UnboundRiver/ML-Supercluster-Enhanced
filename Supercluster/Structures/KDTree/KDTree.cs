@@ -314,4 +314,8 @@ namespace Supercluster.Structures.KDTree
 
             // Move down into the nearer branch
             this.SearchForNearestNeighbors(
-       
+                nearerNode,
+                target,
+                nearerRect,
+                dimension + 1,
+                ne
