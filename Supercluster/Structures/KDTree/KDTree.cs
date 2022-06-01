@@ -318,4 +318,7 @@ namespace Supercluster.Structures.KDTree
                 target,
                 nearerRect,
                 dimension + 1,
-                ne
+                nearestNeighbors,
+                maxSearchRadius);
+
+            // Walk down into the further branch but only if our capacity hasn't bee
