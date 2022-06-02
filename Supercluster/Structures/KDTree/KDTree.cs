@@ -321,4 +321,6 @@ namespace Supercluster.Structures.KDTree
                 nearestNeighbors,
                 maxSearchRadius);
 
-            // Walk down into the further branch but only if our capacity hasn't bee
+            // Walk down into the further branch but only if our capacity hasn't been reached
+            // OR if there's a region in the further rectangle that's closer to the target than our
+            // current furtherest neare
