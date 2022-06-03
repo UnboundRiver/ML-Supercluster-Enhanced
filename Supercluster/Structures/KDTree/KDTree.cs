@@ -329,3 +329,6 @@ namespace Supercluster.Structures.KDTree
 
             if (distanceToTarget.CompareTo(maxSearchRadius) <= 0)
             {
+                if (nearestNeighbors.IsFull)
+                {
+                    if (distanceToTarget.CompareTo(nearestNeighbors.MaxPriority)
