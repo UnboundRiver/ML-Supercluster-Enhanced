@@ -323,4 +323,6 @@ namespace Supercluster.Structures.KDTree
 
             // Walk down into the further branch but only if our capacity hasn't been reached
             // OR if there's a region in the further rectangle that's closer to the target than our
-            // current furtherest neare
+            // current furtherest nearest neighbor
+            var closestPointInFurtherRect = furtherRect.GetClosestPoint(target);
+            var distanceToTarget = th
