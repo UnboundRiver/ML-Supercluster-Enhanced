@@ -325,4 +325,7 @@ namespace Supercluster.Structures.KDTree
             // OR if there's a region in the further rectangle that's closer to the target than our
             // current furtherest nearest neighbor
             var closestPointInFurtherRect = furtherRect.GetClosestPoint(target);
-            var distanceToTarget = th
+            var distanceToTarget = this.Metric(closestPointInFurtherRect, target);
+
+            if (distanceToTarget.CompareTo(maxSearchRadius) <= 0)
+            {
