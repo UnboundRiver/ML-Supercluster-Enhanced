@@ -338,4 +338,9 @@ namespace Supercluster.Structures.KDTree
                             target,
                             furtherRect,
                             dimension + 1,
-                           
+                            nearestNeighbors,
+                            maxSearchRadius);
+                    }
+                }
+                else
+                {
