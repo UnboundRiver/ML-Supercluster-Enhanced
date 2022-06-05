@@ -344,3 +344,7 @@ namespace Supercluster.Structures.KDTree
                 }
                 else
                 {
+                    this.SearchForNearestNeighbors(
+                        furtherNode,
+                        target,
+  
