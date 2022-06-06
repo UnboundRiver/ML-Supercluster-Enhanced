@@ -347,4 +347,7 @@ namespace Supercluster.Structures.KDTree
                     this.SearchForNearestNeighbors(
                         furtherNode,
                         target,
-  
+                        furtherRect,
+                        dimension + 1,
+                        nearestNeighbors,
+             
