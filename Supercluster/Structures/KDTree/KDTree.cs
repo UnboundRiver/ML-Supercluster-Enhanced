@@ -350,4 +350,8 @@ namespace Supercluster.Structures.KDTree
                         furtherRect,
                         dimension + 1,
                         nearestNeighbors,
-             
+                        maxSearchRadius);
+                }
+            }
+
+            // Try to add the current node to our nearest neighbors l
