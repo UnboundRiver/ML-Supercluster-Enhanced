@@ -361,3 +361,6 @@ namespace Supercluster.Structures.KDTree
                 nearestNeighbors.Add(node.ElementIndex, distanceToTarget);
             }
         }
+    }
+
+}
