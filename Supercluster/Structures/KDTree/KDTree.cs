@@ -356,4 +356,8 @@ namespace Supercluster.Structures.KDTree
 
             // Try to add the current node to our nearest neighbors list
             distanceToTarget = this.Metric(coordinate, target);
-            if (distanceToTarget.CompareTo(maxSearchRadius
+            if (distanceToTarget.CompareTo(maxSearchRadius) <= 0)
+            {
+                nearestNeighbors.Add(node.ElementIndex, distanceToTarget);
+            }
+        }
