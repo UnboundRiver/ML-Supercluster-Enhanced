@@ -1,4 +1,8 @@
 # Supercluster.KDTree
 This is a [KD-Tree](https://en.wikipedia.org/wiki/K-d_tree) written completely in C#.  This project originally 
 started as a fork of the KD-Tree Written by [CodeandCats](https://github.com/codeandcats), however, the 
-structure and intention of this project has 
+structure and intention of this project has changed drastically from its origin. 
+
+## About the Project
+
+This is a KD-Tree that is optimized for machine learn
