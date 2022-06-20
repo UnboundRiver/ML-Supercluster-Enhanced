@@ -5,4 +5,4 @@ structure and intention of this project has changed drastically from its origin.
 
 ## About the Project
 
-This is a KD-Tree that is optimized for machine learn
+This is a KD-Tree that is optimized for machine learning applications, **however, it can used for less intensive purposes as well**. (In fact, I am writing this for my machine learning lib
