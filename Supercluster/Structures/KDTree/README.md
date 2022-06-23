@@ -9,4 +9,5 @@ This is a KD-Tree that is optimized for machine learning applications, **however
  are often built, re-built, and built again. Also, in machine learning, algorithms need to be **fast** 
 for look ups but it is more acceptable to be slow for construction.
 Thus the tree bas been designed with this philosophy in mind. General characteristics are:
-* **The a nuget package is av
+* **The a nuget package is available.** just run `Install-Package Supercluster.KDTree` to install it.
+* **The code is unit tested and well documented.** Style-cop, 
