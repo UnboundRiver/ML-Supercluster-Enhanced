@@ -10,4 +10,6 @@ This is a KD-Tree that is optimized for machine learning applications, **however
 for look ups but it is more acceptable to be slow for construction.
 Thus the tree bas been designed with this philosophy in mind. General characteristics are:
 * **The a nuget package is available.** just run `Install-Package Supercluster.KDTree` to install it.
-* **The code is unit tested and well documented.** Style-cop, 
+* **The code is unit tested and well documented.** Style-cop, unit-test, wiki tutorials and MSDN style docs. It's all here.
+* **The tree is extremely fast for search.** 
+    * For a 10,000 3-nearest-neighbo
