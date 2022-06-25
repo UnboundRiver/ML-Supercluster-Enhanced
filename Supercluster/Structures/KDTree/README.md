@@ -13,4 +13,6 @@ Thus the tree bas been designed with this philosophy in mind. General characteri
 * **The code is unit tested and well documented.** Style-cop, unit-test, wiki tutorials and MSDN style docs. It's all here.
 * **The tree is extremely fast for search.** 
     * For a 10,000 3-nearest-neighbor searches on a 1,000,000 node 2-Dimensional tree using floats is about 7.5 times than the KD-Tree 
-by [CodeandCats](https://git
+by [CodeandCats](https://github.com/codeandcats) (number based off of a 1,000,000 sample
+independent T-test for mean comparisons, equal variance assumed). 
+    * The near
