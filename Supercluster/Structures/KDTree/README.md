@@ -15,4 +15,5 @@ Thus the tree bas been designed with this philosophy in mind. General characteri
     * For a 10,000 3-nearest-neighbor searches on a 1,000,000 node 2-Dimensional tree using floats is about 7.5 times than the KD-Tree 
 by [CodeandCats](https://github.com/codeandcats) (number based off of a 1,000,000 sample
 independent T-test for mean comparisons, equal variance assumed). 
-    * The nearest-neighbor list is a custom data structure (called a BoundedPriorityList) that remains sorted and has O(log n) insert, but it is often muc
+    * The nearest-neighbor list is a custom data structure (called a BoundedPriorityList) that remains sorted and has O(log n) insert, but it is often much faster than O(log n) as an item is ignored if it is larger than the lists current max-element.
+    * Utilizes .NET's new [aggressi
