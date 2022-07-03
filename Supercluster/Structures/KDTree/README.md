@@ -19,4 +19,5 @@ independent T-test for mean comparisons, equal variance assumed).
     * Utilizes .NET's new [aggressive inlining](https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.methodimploptions.aspx) optimization *where appropriate*.
     * The KD-Tree is implemented as an array. Index arithmetic is used to traverse nodes. This is faster (only slightly, but a statistically significant difference)
 than traversing node objects.
-    * The tree is built in the standard-way using an 
+    * The tree is built in the standard-way using an exact median finding algorithm. 
+This is slower than the [quickselect](https://en.wikipedia.org/wiki/Quickselect) or [median-of-medians](https://
