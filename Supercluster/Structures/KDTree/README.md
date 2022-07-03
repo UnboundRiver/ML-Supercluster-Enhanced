@@ -16,4 +16,5 @@ Thus the tree bas been designed with this philosophy in mind. General characteri
 by [CodeandCats](https://github.com/codeandcats) (number based off of a 1,000,000 sample
 independent T-test for mean comparisons, equal variance assumed). 
     * The nearest-neighbor list is a custom data structure (called a BoundedPriorityList) that remains sorted and has O(log n) insert, but it is often much faster than O(log n) as an item is ignored if it is larger than the lists current max-element.
-    * Utilizes .NET's new [aggressive inlining](https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.methodimploptions.aspx) optimizati
+    * Utilizes .NET's new [aggressive inlining](https://msdn.microsoft.com/en-us/library/system.runtime.compilerservices.methodimploptions.aspx) optimization *where appropriate*.
+    * The KD-Tree is implemented as an array. Index arithmetic is used to traverse nodes. This is faster (only slightl
