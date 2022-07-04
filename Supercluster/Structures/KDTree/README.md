@@ -20,4 +20,5 @@ independent T-test for mean comparisons, equal variance assumed).
     * The KD-Tree is implemented as an array. Index arithmetic is used to traverse nodes. This is faster (only slightly, but a statistically significant difference)
 than traversing node objects.
     * The tree is built in the standard-way using an exact median finding algorithm. 
-This is slower than the [quickselect](https://en.wikipedia.org/wiki/Quickselect) or [median-of-medians](https://
+This is slower than the [quickselect](https://en.wikipedia.org/wiki/Quickselect) or [median-of-medians](https://en.wikipedia.org/wiki/Median_of_medians) algorithm but is more 
+likely to create a balanced tree. This allows for search time to be as
