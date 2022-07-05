@@ -23,4 +23,5 @@ than traversing node objects.
 This is slower than the [quickselect](https://en.wikipedia.org/wiki/Quickselect) or [median-of-medians](https://en.wikipedia.org/wiki/Median_of_medians) algorithm but is more 
 likely to create a balanced tree. This allows for search time to be as close to O(log n) as possible.
 
-* **There is no delete method.** If you want to change the tree, rebuild it.
+* **There is no delete method.** If you want to change the tree, rebuild it. Many KD-Tree implementations simply
+rebuild the tree to "balance" the tree after deletion. This is because balancing a KD-Tr
