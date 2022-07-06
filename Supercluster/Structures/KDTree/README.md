@@ -24,4 +24,5 @@ This is slower than the [quickselect](https://en.wikipedia.org/wiki/Quickselect)
 likely to create a balanced tree. This allows for search time to be as close to O(log n) as possible.
 
 * **There is no delete method.** If you want to change the tree, rebuild it. Many KD-Tree implementations simply
-rebuild the tree to "balance" the tree after deletion. This is because balancing a KD-Tr
+rebuild the tree to "balance" the tree after deletion. This is because balancing a KD-Tree is much more 
+complicated than AVL or Red-Black trees. There do exist adaptive KD-Trees which auto-balance, look it up if you
