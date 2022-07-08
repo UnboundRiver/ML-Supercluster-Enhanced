@@ -28,4 +28,4 @@ rebuild the tree to "balance" the tree after deletion. This is because balancing
 complicated than AVL or Red-Black trees. There do exist adaptive KD-Trees which auto-balance, look it up if you need one.
 * **There is no node object used in the KDTree class.** but there is a **NodeNavigator** class which allows you to traverse the tree (or any array) using familiar, left, right, parent properties of a node. 
 * The tree is generic. Only [`IComparable<T>`](https://msdn.microsoft.com/en-us/library/4d7sx9hd.aspx) is required.
-* The tree requires a metric (a distance measure fu
+* The tree requires a metric (a distance measure function) `Func`. KD-Trees are spatial data-structures and one only needs a metric function to implicitly define the [metric space](http
