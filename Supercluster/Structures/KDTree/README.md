@@ -31,4 +31,5 @@ complicated than AVL or Red-Black trees. There do exist adaptive KD-Trees which 
 * The tree requires a metric (a distance measure function) `Func`. KD-Trees are spatial data-structures and one only needs a metric function to implicitly define the [metric space](https://en.wikipedia.org/wiki/Metric_space) in which the KD-Tree lives.
 
 **Documentation and Tutorial**:
-*  MSDN Style Documentation: http://math
+*  MSDN Style Documentation: http://mathferret1013.github.io/Supercluster.KDTree
+*  Wiki and Tutorials: https://github.com/MathFerret1013/Supercluster.KDTr
