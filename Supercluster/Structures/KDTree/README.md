@@ -32,4 +32,8 @@ complicated than AVL or Red-Black trees. There do exist adaptive KD-Trees which 
 
 **Documentation and Tutorial**:
 *  MSDN Style Documentation: http://mathferret1013.github.io/Supercluster.KDTree
-*  Wiki and Tutorials: https://github.com/MathFerret1013/Supercluster.KDTr
+*  Wiki and Tutorials: https://github.com/MathFerret1013/Supercluster.KDTree/wiki
+*  Nuget Package: `Install-Package Supercluster.KDTree`
+
+### TODO:
+* Add support for non-[Minkowski metric](https://en
