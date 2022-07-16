@@ -36,4 +36,5 @@ complicated than AVL or Red-Black trees. There do exist adaptive KD-Trees which 
 *  Nuget Package: `Install-Package Supercluster.KDTree`
 
 ### TODO:
-* Add support for non-[Minkowski metric](https://en
+* Add support for non-[Minkowski metric](https://en.wikipedia.org/wiki/Minkowski_distance) functions.
+* Revert back to using Node objects. This would substantially reduce the memory compl
