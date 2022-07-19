@@ -41,4 +41,5 @@ complicated than AVL or Red-Black trees. There do exist adaptive KD-Trees which 
 
 #### Special Thanks
 
-* Thanks to [CodeandCats](https://github.com/codeandcats) for the original implementation that this 
+* Thanks to [CodeandCats](https://github.com/codeandcats) for the original implementation that this was based off. I had fun ~~tearing apart~~ reading your code. ;)
+* Thanks to [César Souza](https://github.com/cesarsouza) for your work
