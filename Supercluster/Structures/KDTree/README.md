@@ -43,4 +43,4 @@ complicated than AVL or Red-Black trees. There do exist adaptive KD-Trees which 
 
 * Thanks to [CodeandCats](https://github.com/codeandcats) for the original implementation that this was based off. I had fun ~~tearing apart~~ reading your code. ;)
 * Thanks to [César Souza](https://github.com/cesarsouza) for your work on machine learning for .NET. It has inspired me to try and do better!
-* Also a small thanks to [BlueRaja](https://github.com/BlueR
+* Also a small thanks to [BlueRaja](https://github.com/BlueRaja). While I didn't use any of your code your [high speed priority queue](https://github.com/BlueRaja/High-Speed-Priority-Queue-for-C-Sha
