@@ -3,4 +3,10 @@
 namespace Supercluster.MTree.NewDesign
 {
     using System.Diagnostics;
-    using Sy
+    using System.Runtime.CompilerServices;
+
+    public class MNode<TValue>
+    {
+
+        /// <summary>
+        /// The node entry that is the parent of t
