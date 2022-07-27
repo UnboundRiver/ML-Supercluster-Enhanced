@@ -25,4 +25,8 @@ namespace Supercluster.MTree.NewDesign
 
             set
             {
-                t
+                this.entries = value;
+                foreach (var entry in this.entries)
+                {
+                    entry.EnclosingNode = this;
+        
