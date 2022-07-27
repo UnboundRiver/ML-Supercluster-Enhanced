@@ -17,4 +17,12 @@ namespace Supercluster.MTree.NewDesign
         /// The entries of the node.
         /// </summary>
         public List<MNodeEntry<TValue>> Entries
-     
+        {
+            get
+            {
+                return this.entries;
+            }
+
+            set
+            {
+                t
