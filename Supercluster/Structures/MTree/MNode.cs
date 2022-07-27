@@ -29,4 +29,10 @@ namespace Supercluster.MTree.NewDesign
                 foreach (var entry in this.entries)
                 {
                     entry.EnclosingNode = this;
-        
+                }
+            }
+        } // TODO: Should probably not have setter
+
+        /// <summary>
+        /// 
+       
