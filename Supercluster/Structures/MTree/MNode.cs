@@ -37,4 +37,7 @@ namespace Supercluster.MTree.NewDesign
         /// 
         /// 
         /// Note: We assume that the <see cref="MNodeEntry{TValue}"/> DistanceFromParent
-        /// and Value properties 
+        /// and Value properties have been set.
+        /// </summary>
+        /// <param name="newEntry"></param>
+        public void Add(MNodeEntry<TVa
