@@ -35,4 +35,6 @@ namespace Supercluster.MTree.NewDesign
 
         /// <summary>
         /// 
-       
+        /// 
+        /// Note: We assume that the <see cref="MNodeEntry{TValue}"/> DistanceFromParent
+        /// and Value properties 
