@@ -46,4 +46,8 @@ namespace Supercluster.MTree.NewDesign
             this.Entries.Add(newEntry);
         }
 
-        public void AddRange(IEnum
+        public void AddRange(IEnumerable<MNodeEntry<TValue>> newEntries)
+        {
+            foreach (var mNodeEntry in newEntries)
+            {
+                this.A
