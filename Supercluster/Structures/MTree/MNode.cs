@@ -40,4 +40,10 @@ namespace Supercluster.MTree.NewDesign
         /// and Value properties have been set.
         /// </summary>
         /// <param name="newEntry"></param>
-        public void Add(MNodeEntry<TVa
+        public void Add(MNodeEntry<TValue> newEntry)
+        {
+            newEntry.EnclosingNode = this;
+            this.Entries.Add(newEntry);
+        }
+
+        public void AddRange(IEnum
