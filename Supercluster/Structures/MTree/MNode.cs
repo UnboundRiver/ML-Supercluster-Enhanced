@@ -50,4 +50,10 @@ namespace Supercluster.MTree.NewDesign
         {
             foreach (var mNodeEntry in newEntries)
             {
-                this.A
+                this.Add(mNodeEntry);
+            }
+
+        }
+
+        /// <summary>
+        /// Returns true if the node is 
