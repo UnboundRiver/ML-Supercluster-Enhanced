@@ -56,4 +56,8 @@ namespace Supercluster.MTree.NewDesign
         }
 
         /// <summary>
-        /// Returns true if the node is 
+        /// Returns true if the node is full.
+        /// </summary>
+        public bool IsFull => this.Entries.Count == this.Capacity;
+
+        /// <s
