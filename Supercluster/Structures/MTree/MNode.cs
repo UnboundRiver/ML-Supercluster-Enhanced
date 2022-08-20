@@ -60,4 +60,7 @@ namespace Supercluster.MTree.NewDesign
         /// </summary>
         public bool IsFull => this.Entries.Count == this.Capacity;
 
-        /// <s
+        /// <summary>
+        /// The number of entries allowed in the node.
+        /// </summary>
+        /// // TODO: This REALLY needs to be write only,
