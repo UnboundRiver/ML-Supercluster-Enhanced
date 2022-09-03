@@ -63,4 +63,9 @@ namespace Supercluster.MTree.NewDesign
         /// <summary>
         /// The number of entries allowed in the node.
         /// </summary>
-        /// // TODO: This REALLY needs to be write only,
+        /// // TODO: This REALLY needs to be write only, set in a constructor.
+        public int Capacity { get; set; }
+
+        private List<MNodeEntry<TValue>> entries;
+
+        
