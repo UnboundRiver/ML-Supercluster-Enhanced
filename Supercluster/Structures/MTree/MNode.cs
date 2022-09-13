@@ -68,4 +68,7 @@ namespace Supercluster.MTree.NewDesign
 
         private List<MNodeEntry<TValue>> entries;
 
-        
+        /// <summary>
+        /// Returns true if the node is not a leaf node.
+        /// </summary>
+        public bool IsInternalNode => !thi
