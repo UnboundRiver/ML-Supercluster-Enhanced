@@ -71,4 +71,8 @@ namespace Supercluster.MTree.NewDesign
         /// <summary>
         /// Returns true if the node is not a leaf node.
         /// </summary>
-        public bool IsInternalNode => !thi
+        public bool IsInternalNode => !this.Entries.TrueForAll(x => x.ChildNode == null);
+
+        public MNode()
+        {
+            this.entries = new List<MNodeEntry<
