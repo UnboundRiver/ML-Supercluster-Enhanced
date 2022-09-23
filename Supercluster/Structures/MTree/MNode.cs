@@ -75,4 +75,10 @@ namespace Supercluster.MTree.NewDesign
 
         public MNode()
         {
-            this.entries = new List<MNodeEntry<
+            this.entries = new List<MNodeEntry<TValue>>();
+        }
+
+
+        public void SetEntryAtIndex(int index, MNodeEntry<TValue> entry)
+        {
+            this.ent
