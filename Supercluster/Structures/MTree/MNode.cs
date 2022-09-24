@@ -81,4 +81,8 @@ namespace Supercluster.MTree.NewDesign
 
         public void SetEntryAtIndex(int index, MNodeEntry<TValue> entry)
         {
-            this.ent
+            this.entries[index] = entry;
+            this.entries[index].EnclosingNode = this;
+        }
+    }
+}
