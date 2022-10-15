@@ -9,4 +9,7 @@ namespace Supercluster.MTree.NewDesign
     /// <typeparam name="TValue">The </typeparam>
     public class MNodeEntry<TValue>
     {
-        private MNode<TValue> childNode = nu
+        private MNode<TValue> childNode = null;
+
+        /// <summary>
+        /// The covering radius of the routing object. If the node entry is a leaf-node entry, then 
