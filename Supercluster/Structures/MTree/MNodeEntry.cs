@@ -12,4 +12,9 @@ namespace Supercluster.MTree.NewDesign
         private MNode<TValue> childNode = null;
 
         /// <summary>
-        /// The covering radius of the routing object. If the node entry is a leaf-node entry, then 
+        /// The covering radius of the routing object. If the node entry is a leaf-node entry, then the radius is -1.
+        /// </summary>
+        public double CoveringRadius { get; set; } = -1;
+
+        /// <summary>
+   
