@@ -17,4 +17,5 @@ namespace Supercluster.MTree.NewDesign
         public double CoveringRadius { get; set; } = -1;
 
         /// <summary>
-   
+        /// The distance from the node entry's parent routing object. If the node entry is an entry in the root
+        /// node then the distance fr
