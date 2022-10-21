@@ -18,4 +18,8 @@ namespace Supercluster.MTree.NewDesign
 
         /// <summary>
         /// The distance from the node entry's parent routing object. If the node entry is an entry in the root
-        /// node then the distance fr
+        /// node then the distance from the nodes parent is -1.
+        /// </summary>
+        public double DistanceFromParent { get; set; } = -1;
+
+        /// <summary>
