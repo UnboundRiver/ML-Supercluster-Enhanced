@@ -23,3 +23,6 @@ namespace Supercluster.MTree.NewDesign
         public double DistanceFromParent { get; set; } = -1;
 
         /// <summary>
+        /// The child node of the node entry. This property is null if we are a leaf node entry.
+        /// </summary>
+        publ
