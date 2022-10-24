@@ -33,4 +33,10 @@ namespace Supercluster.MTree.NewDesign
             }
 
             set
-     
+            {
+                this.childNode = value;
+                this.ChildNode.ParentEntry = this;
+            }
+        }
+
+  
