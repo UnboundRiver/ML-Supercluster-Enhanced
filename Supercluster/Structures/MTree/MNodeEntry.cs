@@ -25,4 +25,12 @@ namespace Supercluster.MTree.NewDesign
         /// <summary>
         /// The child node of the node entry. This property is null if we are a leaf node entry.
         /// </summary>
-        publ
+        public MNode<TValue> ChildNode
+        {
+            get
+            {
+                return this.childNode;
+            }
+
+            set
+     
