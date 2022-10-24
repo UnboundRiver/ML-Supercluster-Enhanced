@@ -39,4 +39,5 @@ namespace Supercluster.MTree.NewDesign
             }
         }
 
-  
+        /// <summary>
+        /// The parent node containing this node entry. Should never be null. All node entries should 
