@@ -40,4 +40,9 @@ namespace Supercluster.MTree.NewDesign
         }
 
         /// <summary>
-        /// The parent node containing this node entry. Should never be null. All node entries should 
+        /// The parent node containing this node entry. Should never be null. All node entries should be contained in a node.
+        /// </summary>
+        public MNode<TValue> EnclosingNode { get; set; } = null;
+
+        /// <summary>
+        /// The val
