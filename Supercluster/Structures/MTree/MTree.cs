@@ -137,3 +137,135 @@
         /// The root node of the MTree.
         /// </summary>
         public MNode<int> Root { get; private set; }
+
+        /// <summary>
+        /// The metric used for distance computations between points in the tree. This metric function
+        /// must satisfy the triangle inequality or the search functions will return incorrect results.
+        /// </summary>
+        public Func<T, T, double> Metric { get; }
+
+        /// <summary>
+        /// Attempts to add the <see cref="MNodeEntry{TValue}"/> to the specified node in the tree. If the node cannot be added the tree will create new nodes and rebalance.
+        /// </summary>
+        /// <param name="node">The node to add the new entry to.</param>
+        /// <param name="newNodeEntry">The new node entry to add.</param>
+        private void Add(MNode<int> node, MNodeEntry<int> newNodeEntry)
+        {
+            /*
+                NOTE: The insertion, split, partition and promotion methods are quite complicated. If you are trying to understand this code you should
+                really consider reading the original paper:
+                P. Ciaccia, M. Patella, and P. Zezula. M-tree: an efficient access method for similarity search in metric spaces.
+            */
+
+            // If we are trying to insert into an internal node then we determine if the new entry resides in the ball of any
+            // entry in the current node. If it does reside in a ball, then we recurse in to that entry's child node.
+            // If the new entry does NOT reside in any of the balls then we picks the entry whose ball should expand the least to enclose
+            // the new node entry.
+            if (node.IsInternalNode)
+            {
+                // Anonymous type to store the entries and their distance from the new node entry.
+                var entriesWithDistance = node.Entries.Select(n => new { Node = n, Distance = this.Metric(this[n.Value], this[newNodeEntry.Value]) }).ToArray();
+
+                // This would be all the entries
+                var ballsContainingEntry = entriesWithDistance.Where(d => d.Distance < d.Node.CoveringRadius).ToArray();
+                MNodeEntry<int> closestEntry;
+
+                if (ballsContainingEntry.Any())
+                {
+                    // New entry is currently in the region of a ball
+                    closestEntry = ballsContainingEntry[ballsContainingEntry.Select(b => b.Distance).MinIndex()].Node;
+                }
+                else
+                {
+                    // The new element does not currently reside in any of the current regions balls.
+                    // Since we are not in any of the balls we find which whose radius we must increase the least
+                    var closestEntryIndex = entriesWithDistance.Select(d => d.Distance - d.Node.CoveringRadius).MinIndex();
+                    closestEntry = entriesWithDistance[closestEntryIndex].Node;
+                    closestEntry.CoveringRadius = entriesWithDistance[closestEntryIndex].Distance;
+                }
+
+                // Recurse into the closest elements subtree
+                this.Add(closestEntry.ChildNode, newNodeEntry);
+            }
+            else
+            {
+                if (!node.IsFull)
+                {
+                    // Node is a leaf node. If the node is not full we simply add to that node.
+                    if (node == this.Root)
+                    {
+                        node.Add(newNodeEntry);
+                    }
+                    else
+                    {
+                        newNodeEntry.DistanceFromParent = this.Metric(this.internalArray[node.ParentEntry.Value], this.internalArray[newNodeEntry.Value]);
+                        node.Add(newNodeEntry);
+                    }
+                }
+                else
+                {
+                    this.Split(node, newNodeEntry);
+                }
+            }
+
+        }
+
+        /// <summary>
+        /// Splits a leaf node and adds the <paramref name="newEntry"/>
+        /// </summary>
+        /// <param name="node"></param>
+        /// <param name="newEntry"></param>
+        private void Split(MNode<int> node, MNodeEntry<int> newEntry)
+        {
+            var nodeIsRoot = node == this.Root;
+            MNode<int> parent = null;
+            var parentEntryIndex = -1;
+
+            if (!nodeIsRoot)
+            {
+                // keep reference to parent node
+                parent = node.ParentEntry.EnclosingNode;
+                parentEntryIndex = parent.Entries.IndexOf(node.ParentEntry);
+                //if we are not the root, the get the parent of the current node.
+            }
+
+            // Create local copy of entries
+            var entries = node.Entries.ToList();
+            entries.Add(newEntry);
+
+            var newNode = new MNode<int> { Capacity = this.Capacity };
+            var promotionResult = this.Promote(entries.ToArray(), node.IsInternalNode);
+
+            // TODO: Does not need to be an array
+            node.Entries = promotionResult.FirstPartition;
+            newNode.Entries = promotionResult.SecondPartition;
+
+            // Set child nodes of promotion objects
+            promotionResult.FirstPromotionObject.ChildNode = node;
+            promotionResult.SecondPromotionObject.ChildNode = newNode;
+
+            if (nodeIsRoot)
+            {
+                // if we are the root node, then create a new root and assign the promoted objects to them
+                var newRoot = new MNode<int> { ParentEntry = null, Capacity = this.Capacity };
+                newRoot.AddRange(
+                    new List<MNodeEntry<int>>
+                        {
+                                promotionResult.FirstPromotionObject,
+                                promotionResult.SecondPromotionObject
+                        });
+
+                this.Root = newRoot;
+            }
+            else // we are not the root
+            {
+                // Set distance from parent
+                if (parent == this.Root)
+                {
+                    promotionResult.FirstPromotionObject.DistanceFromParent = -1;
+                }
+                else
+                {
+                    promotionResult.FirstPromotionObject.DistanceFromParent =
+                        this.Metric(this.internalArray[promotionResult.FirstPromotionObject.Value], this.internalArray[parent.ParentEntry.Value]);
+                }
