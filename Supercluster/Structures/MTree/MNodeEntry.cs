@@ -45,4 +45,8 @@ namespace Supercluster.MTree.NewDesign
         public MNode<TValue> EnclosingNode { get; set; } = null;
 
         /// <summary>
-        /// The val
+        /// The value of the current node entry.
+        /// </summary>
+        public TValue Value { get; set; }
+    }
+}
