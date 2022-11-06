@@ -269,3 +269,129 @@
                     promotionResult.FirstPromotionObject.DistanceFromParent =
                         this.Metric(this.internalArray[promotionResult.FirstPromotionObject.Value], this.internalArray[parent.ParentEntry.Value]);
                 }
+
+                parent.SetEntryAtIndex(parentEntryIndex, promotionResult.FirstPromotionObject);
+                if (parent.IsFull)
+                {
+                    this.Split(parent, promotionResult.SecondPromotionObject);
+                }
+                else
+                {
+                    // Set distance from parent
+                    if (parent == this.Root)
+                    {
+                        promotionResult.SecondPromotionObject.DistanceFromParent = -1;
+                    }
+                    else
+                    {
+                        promotionResult.SecondPromotionObject.DistanceFromParent =
+                            this.Metric(this.internalArray[promotionResult.SecondPromotionObject.Value], this.internalArray[parent.ParentEntry.Value]);
+                    }
+
+                    parent.Add(promotionResult.SecondPromotionObject);
+                }
+            }
+        }
+
+        // TODO: If we are willing to take a performance hit, we could abstract both the promote and partition methods
+        // TODO: Some partition methods actually DEPEND on the partition method.
+
+        /// <summary>
+        /// Chooses two <see cref="MNodeEntry{T}"/>s to be promoted up the tree. The two nodes are chosen 
+        /// according to the mM_RAD split policy with balanced partitions defined in reference [1] pg. 431.
+        /// </summary>
+        /// <param name="entries">The entries for which two node will be choose from.</param>
+        /// <param name="isInternalNode">Specifies if the <paramref name="entries"/> list parameter comes from an internal node.</param>
+        /// <returns>The indexes of the element pairs which are the two objects to promote</returns>
+        private PromotionResult<int> Promote(MNodeEntry<int>[] entries, bool isInternalNode)
+        {
+            var uniquePairs = Utilities.UniquePairs(entries.Length);
+            var distanceMatrix = new DistanceMatrix<T>(entries.Select(e => this.internalArray[e.Value]).ToArray(), this.Metric);
+            // we only store the indexes of the pairs
+            // var uniqueDistances = uniquePairs.Select(p => this.Metric(entries[p.Item1].Value, entries[p.Item2].Value)).Reverse().ToArray();
+
+            /*
+                2. mM_RAD Promotion an Balanced Partitioning
+                Part of performing the mM_RAD promotion algorithm is
+                implicitly calculating all possible partitions. 
+                For each pair of objects we calculate a balanced partition.
+                The pair for which the maximum of the two covering radii is the smallest
+                is the objects we promote.
+                In the iterations below, every thing is index-based to keep it as fast as possible.
+            */
+
+            // The minimum values which will be traced through out the mM_RAD algorithm
+            var minPair = new Tuple<int, int>(-1, -1);
+            var minMaxRadius = double.MaxValue;
+            var minFirstPartition = new List<int>();
+            var minSecondPartition = new List<int>();
+            var minFirstPromotedObject = new MNodeEntry<int>();
+            var minSecondPromotedObject = new MNodeEntry<int>();
+
+            // We iterate through each pair performing a balanced partition of the remaining points.
+            foreach (var pair in uniquePairs)
+            {
+                // Get the indexes of the points not in the current pair
+                var pointsNotInPair =
+                    Enumerable.Range(0, entries.Length).Except(new[] { pair.Item1, pair.Item2 }).ToList();
+                // TODO: Optimize
+
+                var partitions = this.BalancedPartition(pair, pointsNotInPair, distanceMatrix);
+                var localFirstPartition = partitions.Item1;
+                var localSecondPartition = partitions.Item2;
+
+                /*
+                    As specified in reference [1] pg. 430. If we are splitting a leaf node,
+                    then the covering radius of promoted object O_1 with partition P_1 is
+                    coveringRadius_O_1 = max{ distance(O_1, O_i) | where O_i in P_1 }
+                    If we are splitting an internal node then the covering radius
+                    of promoted object O_1 with partition P_1 is
+                    coveringRadius_O_1 = max{ distance(O_1, O_i) + CoveringRadius of O_i | where O_i in P_1 }
+                */
+
+                var firstPromotedObjectCoveringRadius = localFirstPartition.MaxDistanceFromFirst(distanceMatrix);
+                var secondPromotedObjectCoveringRadius = localSecondPartition.MaxDistanceFromFirst(distanceMatrix);
+                var localMinMaxRadius = Math.Max(
+                    firstPromotedObjectCoveringRadius,
+                    secondPromotedObjectCoveringRadius);
+                if (isInternalNode)
+                {
+                    firstPromotedObjectCoveringRadius = this.CalculateCoveringRadius(
+                        pair.Item1,
+                        localFirstPartition,
+                        distanceMatrix,
+                        entries);
+
+                    secondPromotedObjectCoveringRadius = this.CalculateCoveringRadius(
+                        pair.Item2,
+                        localSecondPartition,
+                        distanceMatrix,
+                        entries);
+                }
+
+                if (localMinMaxRadius < minMaxRadius)
+                {
+                    minMaxRadius = localMinMaxRadius;
+                    minPair = pair;
+
+                    minFirstPromotedObject.CoveringRadius = firstPromotedObjectCoveringRadius;
+                    minFirstPartition = localFirstPartition;
+
+                    minSecondPromotedObject.CoveringRadius = secondPromotedObjectCoveringRadius;
+                    minSecondPartition = localSecondPartition;
+                }
+            }
+
+            /*
+                3. Creating the MNodeEntry Objects
+                Now that we have correctly identified the objects to be promoted an each partition
+                we start setting and/or calculating some of the properties on the node entries
+            */
+
+            // set values of promoted objects
+            var firstPartition = new List<MNodeEntry<int>>();
+            var secondPartition = new List<MNodeEntry<int>>();
+            minFirstPromotedObject.Value = entries[minPair.Item1].Value;
+            minSecondPromotedObject.Value = entries[minPair.Item2].Value;
+
+            // TODO: Set distance from parent in partition
