@@ -395,3 +395,114 @@
             minSecondPromotedObject.Value = entries[minPair.Item2].Value;
 
             // TODO: Set distance from parent in partition
+            firstPartition.AddRange(entries.WithIndexes(minFirstPartition));
+            for (int i = 0; i < firstPartition.Count; i++)
+            {
+                firstPartition[i].DistanceFromParent = distanceMatrix[minFirstPartition[0], minFirstPartition[i]];
+            }
+
+            secondPartition.AddRange(entries.WithIndexes(minSecondPartition));
+            for (int i = 0; i < secondPartition.Count; i++)
+            {
+                secondPartition[i].DistanceFromParent = distanceMatrix[minSecondPartition[0], minSecondPartition[i]];
+            }
+
+            var promotionResult = new PromotionResult<int>
+            {
+                FirstPromotionObject = minFirstPromotedObject,
+                SecondPromotionObject = minSecondPromotedObject,
+                FirstPartition = firstPartition,
+                SecondPartition = secondPartition
+            };
+
+            // TODO: This method is called from the split method. In the split method we call both promote an partition in one method
+
+            return promotionResult;
+        }
+
+        private double CalculateCoveringRadius(
+            int promotedObjectIndex,
+            IReadOnlyList<int> partitionIndexes,
+            DistanceMatrix<T> distanceMatrix,
+            IReadOnlyList<MNodeEntry<int>> entries)
+        {
+            var maxRadius = double.MinValue;
+
+            foreach (int index in partitionIndexes)
+            {
+                var radius = distanceMatrix[index, promotedObjectIndex] + entries[index].CoveringRadius;
+                maxRadius = Math.Max(radius, maxRadius);
+            }
+
+            return maxRadius;
+        }
+
+        private void RadialSearch(MNode<int> node, T ballCenter, double ballRadius, ICollection<int> results)
+        {
+            if (node == this.Root) // node is the root
+            {
+                foreach (var entry in node.Entries)
+                {
+                    this.RadialSearch(entry.ChildNode, ballCenter, ballRadius, results);
+                }
+            }
+            else
+            {
+                var distanceParentToCenter = this.Metric(this.internalArray[node.ParentEntry.Value], ballCenter);
+
+                if (node.IsInternalNode)
+                {
+                    foreach (var entry in node.Entries)
+                    {
+
+                        var combinedRadius = entry.CoveringRadius + ballRadius;
+                        var test = Math.Abs(distanceParentToCenter - entry.DistanceFromParent);
+                        if (test <= combinedRadius)
+                        {
+                            var distanceCurrentToCenter = this.Metric(this.internalArray[entry.Value], ballCenter);
+                            if (distanceCurrentToCenter <= combinedRadius)
+                            {
+                                this.RadialSearch(entry.ChildNode, ballCenter, ballRadius, results);
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    foreach (var entry in node.Entries)
+                    {
+                        var test = Math.Abs(distanceParentToCenter - entry.DistanceFromParent);
+                        if (test <= ballRadius)
+                        {
+                            var distanceCurrentToCenter = this.Metric(this.internalArray[entry.Value], ballCenter);
+                            if (distanceCurrentToCenter <= ballRadius)
+                            {
+                                results.Add(entry.Value);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void KnnNodeSearch(
+            MNode<int> node,
+            T queryObject,
+            BoundablePriorityList<MNodeEntry<int>, double> nearestNeighboorList,
+            BoundablePriorityList<MNode<int>, double> priorityQueue)
+        {
+            foreach (var entry in node.Entries)
+            {
+                var maxPriority = nearestNeighboorList.MaxPriority;
+                if (node.IsInternalNode)
+                {
+                    if ((node.ParentEntry == null)
+                        || (Math.Abs(
+                                this.Metric(this.internalArray[node.ParentEntry.Value], queryObject)
+                                - entry.DistanceFromParent) <= entry.CoveringRadius + maxPriority))
+                    {
+                        var distanceFromQueryObject = this.Metric(this.internalArray[entry.Value], queryObject);
+                        var dMin = Math.Max(distanceFromQueryObject - entry.CoveringRadius, 0);
+                        if (dMin < maxPriority)
+                        {
+                            priorityQueue.Add(entry.ChildNode, dMin);
