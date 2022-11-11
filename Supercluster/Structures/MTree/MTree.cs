@@ -506,3 +506,81 @@
                         if (dMin < maxPriority)
                         {
                             priorityQueue.Add(entry.ChildNode, dMin);
+
+                            var dMax = distanceFromQueryObject + entry.CoveringRadius;
+                            if (dMax < maxPriority)
+                            {
+                                nearestNeighboorList.Add(null, dMax);
+                                maxPriority = Math.Max(dMax, maxPriority);
+                                priorityQueue.RemoveAllPriorities(p => p > maxPriority);
+                            }
+                        }
+                    }
+                }
+                else if (Math.Abs(this.Metric(this.internalArray[node.ParentEntry.Value], queryObject) - entry.DistanceFromParent)
+                         < maxPriority)
+                {
+                    var distanceFromQueryObject = this.Metric(this.internalArray[entry.Value], queryObject);
+                    if (distanceFromQueryObject < maxPriority)
+                    {
+                        nearestNeighboorList.Add(entry, distanceFromQueryObject);
+                        nearestNeighboorList.RemoveAllElements(e => e == null);
+                        maxPriority = Math.Max(distanceFromQueryObject, maxPriority);
+                        priorityQueue.RemoveAllPriorities(p => p > maxPriority);
+                    }
+                }
+            }
+        }
+
+        public Tuple<List<int>, List<int>> BalancedPartition(
+            Tuple<int, int> pair,
+            List<int> pointsNotInPair,
+            DistanceMatrix<T> distanceMatrix)
+        {
+            var firstPartition = new List<int> { pair.Item1 };
+            var secondPartition = new List<int> { pair.Item2 };
+
+            int minIndex = -1;
+            int k = 0;
+            while (pointsNotInPair.Count > 0)
+            {
+                var dist = double.MaxValue;
+
+                if (k % 2 == 0)
+                {
+                    // Find which Point is closest to the first promotion object
+                    for (int i = 0; i < pointsNotInPair.Count; i++)
+                    {
+                        if (distanceMatrix[pointsNotInPair[i], pair.Item1] < dist)
+                        {
+                            dist = distanceMatrix[pointsNotInPair[i], pair.Item1];
+                            minIndex = i;
+                        }
+                    }
+
+                    firstPartition.Add(pointsNotInPair[minIndex]);
+                }
+                else
+                {
+                    // Here we calculate the index of the pair in the unique distances array
+                    // this calculation depends on the unique distances array being reversed
+                    for (int i = 0; i < pointsNotInPair.Count; i++)
+                    {
+                        if (distanceMatrix[pointsNotInPair[i], pair.Item2] < dist)
+                        {
+                            dist = distanceMatrix[pointsNotInPair[i], pair.Item2];
+                            minIndex = i;
+                        }
+                    }
+
+                    secondPartition.Add(pointsNotInPair[minIndex]);
+                }
+
+                pointsNotInPair.RemoveAt(minIndex);
+                k++;
+            }
+
+            return new Tuple<List<int>, List<int>>(firstPartition, secondPartition);
+        }
+    }
+}
