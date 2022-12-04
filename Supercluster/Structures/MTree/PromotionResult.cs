@@ -9,4 +9,8 @@
     {
         public MNodeEntry<T> FirstPromotionObject;
         public MNodeEntry<T> SecondPromotionObject;
-        pub
+        public List<MNodeEntry<T>> FirstPartition;
+        public List<MNodeEntry<T>> SecondPartition;
+
+    }
+}
