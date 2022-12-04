@@ -104,3 +104,18 @@
         public IEnumerable<T> RadialSearch(T center, double radius)
         {
             return this.source.Where(point => this.Metric(point, center) <= radius).ToList();
+        }
+
+        /// <inheritdoc />
+        public IEnumerable<int> RadialSearchIndexes(T center, double radius)
+        {
+            return this.source.WhereIndex(point => this.Metric(point, center) <= radius);
+        }
+
+        /// <inheritdoc />
+        public T this[int index] => this.source[index];
+
+        /// <inheritdoc />
+        public IEnumerable<T> this[IEnumerable<int> indexes] => this.source.WithIndexes(indexes);
+    }
+}
