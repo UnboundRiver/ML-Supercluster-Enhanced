@@ -35,3 +35,12 @@ namespace Supercluster.MTree
         {
             var len = source.Count();
             var maxDist = double.MinValue;
+            var promotionObject = source.First();
+            foreach (var element in source)
+            {
+                maxDist = Math.Max(maxDist, distanceMatrix[promotionObject, element]);
+            }
+            return maxDist;
+        }
+    }
+}
