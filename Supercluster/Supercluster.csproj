@@ -22,4 +22,5 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-   
+    <DocumentationFile>bin\Debug\Supercluster.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>Supercluster.ruleset</CodeAn
