@@ -23,4 +23,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\Supercluster.XML</DocumentationFile>
-    <CodeAnalysisRuleSet>Supercluster.ruleset</CodeAn
+    <CodeAnalysisRuleSet>Supercluster.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <
