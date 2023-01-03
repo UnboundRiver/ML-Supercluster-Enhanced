@@ -32,4 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodeAnalysisRuleSet>Supercluster.ruleset</CodeAna
+    <CodeAnalysisRuleSet>Supercluster.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\Supercluster.XML</DocumentationFile>
+  </Prope
