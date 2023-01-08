@@ -46,4 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classification\ExtendedNearestNeighbors{T}.cs" />
-    <Compile Include="Classification\ISupervisedClassifier{
+    <Compile Include="Classification\ISupervisedClassifier{T}.cs" />
+    <Compile Include="Classification\KNearestNeighbors{T}.cs" />
+    <Compile Include="Clustering\KMeans{T}.cs" />
+    <Compi
