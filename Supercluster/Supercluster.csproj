@@ -51,4 +51,6 @@
     <Compile Include="Clustering\KMeans{T}.cs" />
     <Compile Include="Core\CollectionUtilities.cs" />
     <Compile Include="Core\Metrics.cs" />
-    <Compile Include="Structures\Bounda
+    <Compile Include="Structures\BoundablePriorityList.cs" />
+    <Compile Include="Structures\ClusterDictionary.cs" />
+    <Compile Include="Structures
