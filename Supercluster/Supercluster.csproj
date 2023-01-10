@@ -49,4 +49,6 @@
     <Compile Include="Classification\ISupervisedClassifier{T}.cs" />
     <Compile Include="Classification\KNearestNeighbors{T}.cs" />
     <Compile Include="Clustering\KMeans{T}.cs" />
-    <Compi
+    <Compile Include="Core\CollectionUtilities.cs" />
+    <Compile Include="Core\Metrics.cs" />
+    <Compile Include="Structures\Bounda
