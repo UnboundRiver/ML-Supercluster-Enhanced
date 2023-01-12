@@ -53,4 +53,6 @@
     <Compile Include="Core\Metrics.cs" />
     <Compile Include="Structures\BoundablePriorityList.cs" />
     <Compile Include="Structures\ClusterDictionary.cs" />
-    <Compile Include="Structures
+    <Compile Include="Structures\Interfaces\ISpatialQueryable.cs" />
+    <Compile Include="Structures\KDTree\KDTree.cs" />
+    <Compile Include="Structures\KDTree\HyperRect.
