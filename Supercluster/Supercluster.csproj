@@ -55,4 +55,7 @@
     <Compile Include="Structures\ClusterDictionary.cs" />
     <Compile Include="Structures\Interfaces\ISpatialQueryable.cs" />
     <Compile Include="Structures\KDTree\KDTree.cs" />
-    <Compile Include="Structures\KDTree\HyperRect.
+    <Compile Include="Structures\KDTree\HyperRect.cs" />
+    <Compile Include="Structures\KDTree\KDTreeNavigator.cs" />
+    <Compile Include="Core\CoordinateSelector.cs" />
+    <Compile I
