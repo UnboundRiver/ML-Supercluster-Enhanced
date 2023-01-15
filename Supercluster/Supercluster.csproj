@@ -58,4 +58,6 @@
     <Compile Include="Structures\KDTree\HyperRect.cs" />
     <Compile Include="Structures\KDTree\KDTreeNavigator.cs" />
     <Compile Include="Core\CoordinateSelector.cs" />
-    <Compile I
+    <Compile Include="Structures\MTree\DistanceMatrix.cs" />
+    <Compile Include="Structures\MTree\MNode.cs" />
+    <Compile Include="Stru
