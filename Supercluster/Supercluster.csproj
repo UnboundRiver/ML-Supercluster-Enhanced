@@ -60,4 +60,6 @@
     <Compile Include="Core\CoordinateSelector.cs" />
     <Compile Include="Structures\MTree\DistanceMatrix.cs" />
     <Compile Include="Structures\MTree\MNode.cs" />
-    <Compile Include="Stru
+    <Compile Include="Structures\MTree\MNodeEntry.cs" />
+    <Compile Include="Structures\MTree\PromotionResult.cs" />
+    <Compile Include="
