@@ -62,4 +62,7 @@
     <Compile Include="Structures\MTree\MNode.cs" />
     <Compile Include="Structures\MTree\MNodeEntry.cs" />
     <Compile Include="Structures\MTree\PromotionResult.cs" />
-    <Compile Include="
+    <Compile Include="Structures\MTree\Utilities.cs" />
+    <Compile Include="Structures\MTree\MTree.cs" />
+    <Compile Include="Core\DoubleEqualityComparer.cs" />
+    <Co
