@@ -67,4 +67,8 @@
     <Compile Include="Core\DoubleEqualityComparer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structures\MetricSpaceSubset.cs" />
-    <Compile Include="Core\
+    <Compile Include="Core\SuperclusterContants.cs" />
+    <Compile Include="Core\ReverseComparer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None
