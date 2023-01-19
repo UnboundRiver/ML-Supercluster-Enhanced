@@ -71,4 +71,6 @@
     <Compile Include="Core\ReverseComparer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None
+    <None Include="packages.config" />
+    <AdditionalFiles Include="stylecop.json" />
+    <None Include="Supercluster.ruleset" 
