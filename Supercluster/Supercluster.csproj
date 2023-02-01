@@ -77,4 +77,8 @@
     <None Include="Supercluster.pfx" />
     <None Include="Structures\KDTree\LICENSE" />
     <None Include="Structures\KDTree\README.md" />
-    <Non
+    <None Include="Structures\MTree\README.md" />
+    <None Include="TODO.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\StyleCop.Analyzer
