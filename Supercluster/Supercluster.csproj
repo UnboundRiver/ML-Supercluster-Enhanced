@@ -73,4 +73,8 @@
   <ItemGroup>
     <None Include="packages.config" />
     <AdditionalFiles Include="stylecop.json" />
-    <None Include="Supercluster.ruleset" 
+    <None Include="Supercluster.ruleset" />
+    <None Include="Supercluster.pfx" />
+    <None Include="Structures\KDTree\LICENSE" />
+    <None Include="Structures\KDTree\README.md" />
+    <Non
