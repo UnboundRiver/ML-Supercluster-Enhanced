@@ -88,4 +88,5 @@
   <ItemGroup>
     <Folder Include="Structures\KDTree\Utilities\" />
   </ItemGroup>
-  <I
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of 
