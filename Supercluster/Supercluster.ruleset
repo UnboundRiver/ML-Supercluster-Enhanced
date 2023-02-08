@@ -1,2 +1,3 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RuleSet Name="Rules for Supercluster.KDTr
+<RuleSet Name="Rules for Supercluster.KDTree" Description="Code analysis rules for Supercluster.KDTree.csproj." ToolsVersion="14.0">
+  <Rules AnalyzerId="Microsoft.Analyze
