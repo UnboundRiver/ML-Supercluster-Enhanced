@@ -34,4 +34,7 @@
     <Rule Id="CA2123" Action="Warning" />
     <Rule Id="CA2124" Action="Warning" />
     <Rule Id="CA2126" Action="Warning" />
-    
+    <Rule Id="CA2131" Action="Warning" />
+    <Rule Id="CA2132" Action="Warning" />
+    <Rule Id="CA2133" Action="Warning" />
+    <Rule Id="CA2134" Act
