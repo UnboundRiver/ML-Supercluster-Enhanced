@@ -5,4 +5,7 @@
 
 
 1. Finish all unit tests
-2. Document ClusterDic
+2. Document ClusterDictionary Class
+3. Document KDTreeNodeNavigator
+4. Simplify ISpatialQuerrable tests with inheritance
+5. Do KnnSpeedTests for 
