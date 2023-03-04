@@ -8,4 +8,9 @@
 2. Document ClusterDictionary Class
 3. Document KDTreeNodeNavigator
 4. Simplify ISpatialQuerrable tests with inheritance
-5. Do KnnSpeedTests for 
+5. Do KnnSpeedTests for KNN Classification ALgorithm.
+6. All ISpatialQueryables Should have a constructor with no data.
+
+
+# Files to possibly remove.
+1. DoubleEqu
