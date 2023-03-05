@@ -13,4 +13,5 @@
 
 
 # Files to possibly remove.
-1. DoubleEqu
+1. DoubleEqualityComparer
+2.
