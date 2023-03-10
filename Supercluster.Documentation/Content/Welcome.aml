@@ -7,4 +7,6 @@ content to your help project.</para>
 		</introduction>
 
 		<section>
-			<title>Getting Sta
+			<title>Getting Started</title>
+			<content>
+				<para>To get started, add a documentation source to the project (a Visual Studio solution, project, 
