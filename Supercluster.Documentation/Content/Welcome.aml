@@ -14,4 +14,6 @@ assembly and XML comments file).  See the <legacyBold>Getting Started</legacyBol
 File Builder's help file for more information.  The following default items are included in this project:</para>
 
 				<list class="bullet">
-					<listI
+					<listItem>
+						<para><localUri>ContentLayout.content</localUri> - Use the content layout file to manage the
+conceptual content in the proj
