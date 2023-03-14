@@ -26,3 +26,5 @@ elements.  If you will not have any images in the file, you may remove this fold
 					</listItem>
 
 					<listItem>
+						<para>The <localUri>.\icons</localUri> folder - This contains a default logo for the help file.  You
+may replace it or remo
