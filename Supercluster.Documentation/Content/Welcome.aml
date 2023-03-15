@@ -28,4 +28,5 @@ elements.  If you will not have any images in the file, you may remove this fold
 					<listItem>
 						<para>The <localUri>.\icons</localUri> folder - This contains a default logo for the help file.  You
 may replace it or remove it and the folder if not wanted.  If removed or if you change the file name, update
-the <ui>Transform Args</ui> project prop
+the <ui>Transform Args</ui> project properties page by removing or changing the filename in the
+<codeInline>logoFile</codeInline> transform argument.  Note that unlike images refer
