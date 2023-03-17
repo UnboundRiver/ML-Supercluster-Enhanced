@@ -30,4 +30,9 @@ elements.  If you will not have any images in the file, you may remove this fold
 may replace it or remove it and the folder if not wanted.  If removed or if you change the file name, update
 the <ui>Transform Args</ui> project properties page by removing or changing the filename in the
 <codeInline>logoFile</codeInline> transform argument.  Note that unlike images referenced from conceptual topics,
-the logo file should have its <legacyBold>BuildAction</legacyBold> property set to <codeInline>Content</codeInline>.</p
+the logo file should have its <legacyBold>BuildAction</legacyBold> property set to <codeInline>Content</codeInline>.</para>
+					</listItem>
+
+					<listItem>
+						<para>The <localUri>.\Content</localUri> folder - Use this to store your conceptual topics.  You may
+name the file
