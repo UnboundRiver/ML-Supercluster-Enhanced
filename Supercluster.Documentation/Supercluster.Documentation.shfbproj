@@ -11,4 +11,7 @@
     <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
     <AssemblyName>Supercluster_Documentation</AssemblyName>
     <RootNamespace>Supercluster_Documentation</RootNamespace>
-    <Name>Supercluster_Docum
+    <Name>Supercluster_Documentation</Name>
+    <!-- SHFB properties -->
+    <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
+    <OutputPath>.\Help
