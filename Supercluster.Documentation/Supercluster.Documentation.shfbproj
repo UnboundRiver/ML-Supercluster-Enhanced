@@ -14,4 +14,7 @@
     <Name>Supercluster_Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.5</FrameworkVersion>
-    <OutputPath>.\Help
+    <OutputPath>.\Help\</OutputPath>
+    <HtmlHelpName>Supercluster_Documentation</HtmlHelpName>
+    <Language>en-US</Language>
+    <TransformComponentArgu
