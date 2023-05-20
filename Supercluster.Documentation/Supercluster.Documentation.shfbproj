@@ -17,4 +17,7 @@
     <OutputPath>.\Help\</OutputPath>
     <HtmlHelpName>Supercluster_Documentation</HtmlHelpName>
     <Language>en-US</Language>
-    <TransformComponentArgu
+    <TransformComponentArguments>
+      <Argument Key="logoFile" Value="Help.png" xmlns="" />
+      <Argument Key="logoHeight" Value="" xmlns="" />
+      <Argument Ke
