@@ -20,4 +20,6 @@
     <TransformComponentArguments>
       <Argument Key="logoFile" Value="Help.png" xmlns="" />
       <Argument Key="logoHeight" Value="" xmlns="" />
-      <Argument Ke
+      <Argument Key="logoWidth" Value="" xmlns="" />
+      <Argument Key="logoAltText" Value="" xmlns="" />
+      <Argument Key="logoPlacemen
