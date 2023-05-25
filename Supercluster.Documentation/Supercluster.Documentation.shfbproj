@@ -24,4 +24,7 @@
       <Argument Key="logoAltText" Value="" xmlns="" />
       <Argument Key="logoPlacement" Value="left" xmlns="" />
       <Argument Key="logoAlignment" Value="left" xmlns="" />
-      <Argument Key="maxVersionParts" Valu
+      <Argument Key="maxVersionParts" Value="" xmlns="" />
+    </TransformComponentArguments>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="..\Supercluster\Supercluster.csproj
