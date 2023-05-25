@@ -27,4 +27,7 @@
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
     <DocumentationSources>
-      <DocumentationSource sourceFile="..\Supercluster\Supercluster.csproj
+      <DocumentationSource sourceFile="..\Supercluster\Supercluster.csproj" xmlns="" />
+    </DocumentationSources>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <HelpFileFormat>HtmlHelp1,
