@@ -41,4 +41,7 @@
     <SyntaxFilters>Standard</SyntaxFilters>
     <SdkLinkTarget>Blank</SdkLinkTarget>
     <RootNamespaceContainer>False</RootNamespaceContainer>
-    <PresentationStyle>VS2013</PresentationSt
+    <PresentationStyle>VS2013</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <HelpTitle>Supercluster Clustering Libr
