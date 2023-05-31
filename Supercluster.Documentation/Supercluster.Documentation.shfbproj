@@ -44,4 +44,6 @@
     <PresentationStyle>VS2013</PresentationStyle>
     <Preliminary>False</Preliminary>
     <NamingMethod>Guid</NamingMethod>
-    <HelpTitle>Supercluster Clustering Libr
+    <HelpTitle>Supercluster Clustering Library</HelpTitle>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <ProjectSummary>Supercluster is a machine learning li
