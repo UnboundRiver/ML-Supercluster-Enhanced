@@ -46,4 +46,5 @@
     <NamingMethod>Guid</NamingMethod>
     <HelpTitle>Supercluster Clustering Library</HelpTitle>
     <ContentPlacement>AboveNamespaces</ContentPlacement>
-    <ProjectSummary>Supercluster is a machine learning li
+    <ProjectSummary>Supercluster is a machine learning library focused on clustring and metric learning algorithms. The library is currently in development.</ProjectSummary>
+  </PropertyGroup>
