@@ -49,4 +49,5 @@
     <ProjectSummary>Supercluster is a machine learning library focused on clustring and metric learning algorithms. The library is currently in development.</ProjectSummary>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
-			 the build.  The others
+			 the build.  The others are optional common platform types that may appear. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug
