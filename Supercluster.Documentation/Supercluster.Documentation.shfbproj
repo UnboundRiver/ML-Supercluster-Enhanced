@@ -68,4 +68,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Content" />
-    <Folder Include="Content\VersionHist
+    <Folder Include="Content\VersionHistory" />
+    <Folder Include="icons" />
+    <Folder Include="media" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\VersionHistory\v1.0.0.
