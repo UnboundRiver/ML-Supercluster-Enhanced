@@ -78,4 +78,8 @@
     <None Include="Content\Welcome.aml" />
   </ItemGroup>
   <ItemGroup>
- 
+    <ContentLayout Include="ContentLayout.content" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icons\Help.png">
+      <ImageId>supe
