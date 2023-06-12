@@ -82,4 +82,8 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="icons\Help.png">
-      <ImageId>supe
+      <ImageId>supercluser_icon</ImageId>
+      <AlternateText>supercluser icon</AlternateText>
+    </Image>
+  </ItemGroup>
+  <!-- Import the SHFB build
