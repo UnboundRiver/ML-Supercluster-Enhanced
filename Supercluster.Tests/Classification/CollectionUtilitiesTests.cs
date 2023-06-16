@@ -8,4 +8,10 @@
 
     /// <summary>
     /// Unit tests for the <see cref="CollectionUtilities"/> class.
-    /// </su
+    /// </summary>
+    [TestFixture]
+    public class CollectionUtilitiesTests
+    {
+        #region LinqToIndexes Tests
+
+        public class Tes
