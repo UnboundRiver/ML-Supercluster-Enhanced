@@ -2,4 +2,10 @@
 {
     using System.Linq;
 
-    using NUnit.Fra
+    using NUnit.Framework;
+
+    using Supercluster;
+
+    /// <summary>
+    /// Unit tests for the <see cref="CollectionUtilities"/> class.
+    /// </su
