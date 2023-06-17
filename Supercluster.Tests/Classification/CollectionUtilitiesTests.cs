@@ -20,4 +20,8 @@
             public int Value { get; set; }
         }
 
-        public
+        public int[] numbers = { 33, 99, 0, 1, -13, 56, 3, -1 };
+
+        public TestPoco[] numberWithStrings =
+            {
+                new Tes
