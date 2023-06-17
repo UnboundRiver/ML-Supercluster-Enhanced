@@ -14,4 +14,10 @@
     {
         #region LinqToIndexes Tests
 
-        public class Tes
+        public class TestPoco
+        {
+            public string Name { get; set; }
+            public int Value { get; set; }
+        }
+
+        public
