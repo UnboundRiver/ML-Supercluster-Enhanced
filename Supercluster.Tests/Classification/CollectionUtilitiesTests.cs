@@ -24,4 +24,6 @@
 
         public TestPoco[] numberWithStrings =
             {
-                new Tes
+                new TestPoco { Name = "Test", Value = 33 },
+                new TestPoco { Name = "Test", Value = 99 },
+                new TestPoco { Name = "Test", 
