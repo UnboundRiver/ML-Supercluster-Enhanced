@@ -26,4 +26,7 @@
             {
                 new TestPoco { Name = "Test", Value = 33 },
                 new TestPoco { Name = "Test", Value = 99 },
-                new TestPoco { Name = "Test", 
+                new TestPoco { Name = "Test", Value = 0 },
+                new TestPoco { Name = "Test", Value = 1 },
+                new TestPoco { Name = "Test", Value = -13 },
+               
