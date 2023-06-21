@@ -31,4 +31,10 @@
                 new TestPoco { Name = "Test", Value = -13 },
                 new TestPoco { Name = "Test", Value = 56 },
                 new TestPoco { Name = "Test", Value = 3 },
-                new TestPoco { Name = 
+                new TestPoco { Name = "Test", Value = -1 }
+            };
+
+        [Test]
+        public void MaxIndexTest()
+        {
+            var maxIndex = this.numbe
