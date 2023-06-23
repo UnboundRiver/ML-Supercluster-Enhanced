@@ -37,4 +37,9 @@
         [Test]
         public void MaxIndexTest()
         {
-            var maxIndex = this.numbe
+            var maxIndex = this.numbers.MaxIndex();
+            Assert.That(maxIndex, Is.EqualTo(1));
+        }
+
+        [Test]
+        public void MinIndexTest(
