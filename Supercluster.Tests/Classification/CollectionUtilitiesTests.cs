@@ -42,4 +42,10 @@
         }
 
         [Test]
-        public void MinIndexTest(
+        public void MinIndexTest()
+        {
+            var minIndex = this.numbers.MinIndex();
+            Assert.That(minIndex, Is.EqualTo(4));
+        }
+
+       
