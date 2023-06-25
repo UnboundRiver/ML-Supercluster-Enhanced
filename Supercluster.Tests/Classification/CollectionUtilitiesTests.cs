@@ -48,4 +48,7 @@
             Assert.That(minIndex, Is.EqualTo(4));
         }
 
-       
+        [Test]
+        public void MinIndexTest_WithSelector()
+        {
+            var minIndex = this.numberWithStrings.MinIndex(
