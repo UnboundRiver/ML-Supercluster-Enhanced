@@ -51,4 +51,10 @@
         [Test]
         public void MinIndexTest_WithSelector()
         {
-            var minIndex = this.numberWithStrings.MinIndex(
+            var minIndex = this.numberWithStrings.MinIndex(p => p.Value);
+            Assert.That(minIndex, Is.EqualTo(4));
+        }
+
+        [Test]
+        public void MaxIndexTest_WithSelector()
+   
