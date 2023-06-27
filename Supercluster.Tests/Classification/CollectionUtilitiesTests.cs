@@ -57,4 +57,6 @@
 
         [Test]
         public void MaxIndexTest_WithSelector()
-   
+        {
+            var maxIndex = this.numberWithStrings.MaxIndex(p => p.Value);
+            Assert.That(maxIndex, Is.EqualTo(1));
