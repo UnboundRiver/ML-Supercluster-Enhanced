@@ -60,3 +60,10 @@
         {
             var maxIndex = this.numberWithStrings.MaxIndex(p => p.Value);
             Assert.That(maxIndex, Is.EqualTo(1));
+        }
+
+
+        [Test]
+        public void FirstIndexTest()
+        {
+            var firstIndex = this.numbers.FirstIndex(n => n
