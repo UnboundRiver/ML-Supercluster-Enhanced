@@ -66,4 +66,9 @@
         [Test]
         public void FirstIndexTest()
         {
-            var firstIndex = this.numbers.FirstIndex(n => n
+            var firstIndex = this.numbers.FirstIndex(n => n < 0);
+            Assert.That(firstIndex, Is.EqualTo(4));
+        }
+
+        [Test]
+        public void FirstIndexOrD
