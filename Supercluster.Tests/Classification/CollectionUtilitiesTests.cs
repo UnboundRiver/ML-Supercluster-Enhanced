@@ -74,4 +74,7 @@
         public void FirstIndexOrDefaultTest()
         {
             var firstIndex = this.numbers.FirstIndexOrDefault(n => n < 0);
-            Assert.That(firstIn
+            Assert.That(firstIndex, Is.EqualTo(4));
+
+            var defaultIndex = this.numbers.FirstIndexOrDefault(n => n > 100);
+            Assert.That(de
