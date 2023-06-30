@@ -71,4 +71,7 @@
         }
 
         [Test]
-        public void FirstIndexOrD
+        public void FirstIndexOrDefaultTest()
+        {
+            var firstIndex = this.numbers.FirstIndexOrDefault(n => n < 0);
+            Assert.That(firstIn
