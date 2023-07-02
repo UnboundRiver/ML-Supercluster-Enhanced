@@ -77,4 +77,10 @@
             Assert.That(firstIndex, Is.EqualTo(4));
 
             var defaultIndex = this.numbers.FirstIndexOrDefault(n => n > 100);
-            Assert.That(de
+            Assert.That(defaultIndex, Is.EqualTo(-1));
+        }
+
+        [Test]
+        public void LastIndexTest()
+        {
+            var lastIndex = this.numbers.La
