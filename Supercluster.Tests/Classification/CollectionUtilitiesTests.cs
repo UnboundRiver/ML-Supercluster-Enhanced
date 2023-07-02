@@ -83,4 +83,9 @@
         [Test]
         public void LastIndexTest()
         {
-            var lastIndex = this.numbers.La
+            var lastIndex = this.numbers.LastIndex(n => n < 0);
+            Assert.That(lastIndex, Is.EqualTo(7));
+        }
+
+        [Test]
+        public void LastIndexOrDefaultTest(
