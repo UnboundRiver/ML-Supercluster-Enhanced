@@ -88,4 +88,7 @@
         }
 
         [Test]
-        public void LastIndexOrDefaultTest(
+        public void LastIndexOrDefaultTest()
+        {
+            var firstIndex = this.numbers.LastIndexOrDefault(n => n < 0);
+            Assert.That(firstIndex, Is
