@@ -94,4 +94,12 @@
             Assert.That(firstIndex, Is.EqualTo(7));
 
             var defaultIndex = this.numbers.LastIndexOrDefault(n => n > 100);
-            Assert.That(defaultIndex, Is.Eq
+            Assert.That(defaultIndex, Is.EqualTo(-1));
+        }
+
+        #endregion
+
+        [Test]
+        public void ModeIndexTest()
+        {
+            var intArray = new int[] { 1, 2, 2, 
