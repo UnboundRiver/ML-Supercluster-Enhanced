@@ -102,4 +102,11 @@
         [Test]
         public void ModeIndexTest()
         {
-            var intArray = new int[] { 1, 2, 2, 
+            var intArray = new int[] { 1, 2, 2, 5, 5, 5, 5, 10, 10 };
+
+            var mode = intArray.Mode();
+
+            Assert.That(mode, Is.EqualTo(5));
+        }
+
+   
