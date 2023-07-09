@@ -109,4 +109,11 @@
             Assert.That(mode, Is.EqualTo(5));
         }
 
-   
+        [Test]
+        public void BijectWithNaturalsTest()
+        {
+
+            // -99 0
+            // -1 1
+            // 2 2
+  
