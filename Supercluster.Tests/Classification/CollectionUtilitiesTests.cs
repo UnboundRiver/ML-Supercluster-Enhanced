@@ -122,4 +122,7 @@
             // 356 6
 
 
-            var testArray = new int[] { -99, 4, 356, 
+            var testArray = new int[] { -99, 4, 356, 3, 2, 2, 2, 2, -1, 90 };
+            testArray = testArray.BijectWithNaturals();
+
+            Assert.That(testArray.SequenceEqual(ne
