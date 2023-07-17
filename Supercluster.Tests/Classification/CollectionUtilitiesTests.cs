@@ -131,4 +131,7 @@
         [Test]
         public void GetRowTest()
         {
-            var matrix = 
+            var matrix = new double[,]
+                             {
+                                 { 1, 1, 1 },
+                                 {
