@@ -134,4 +134,9 @@
             var matrix = new double[,]
                              {
                                  { 1, 1, 1 },
-                                 {
+                                 { 1, -1, 1 },
+                                 { 0, 1, 2 }
+                             };
+
+            var row = matrix.GetRow(1);
+
