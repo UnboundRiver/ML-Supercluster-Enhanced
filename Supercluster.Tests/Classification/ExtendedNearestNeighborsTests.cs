@@ -113,3 +113,93 @@ namespace Supercluster_Tests
             }
 
             // Check equality of content
+            for (int i = 0; i < WeightedKNNLabels.Length; i++)
+            {
+                Assert.That(WeightedKNNLabels[i].SequenceEqual(expectedKNNLabels[i]));
+            }
+
+            // Check equality of content
+            for (int i = 0; i < ClassStatistics.Length; i++)
+            {
+                Assert.That(ClassStatistics.SequenceEqual(expectedClassStatistics, new DoubleEqualityComparer(1E-3)));
+            }
+
+        }
+
+        [Test]
+        public void PredictionTest()
+        {
+            var enn = new ExtendedNearestNeighbors<double[]>(k: 3, clusters: 2);
+            enn.Metric = (x, y) =>
+            {
+                double sumOfSquaredDifference = 0;
+                for (int i = 0; i < x.Length; i++)
+                {
+                    sumOfSquaredDifference += Math.Pow(x[i] - y[i], 2);
+                }
+
+                return Math.Sqrt(sumOfSquaredDifference);
+            };
+
+            double[][] trainingData;
+            double[][] testingData;
+            int[] trainingLabels;
+            int[] testingLabels;
+            int[] PredictionLabels;
+            // load the training data provided by the authors of [1]
+            using (var fs = new FileStream(@"..\..\data\ENN\TrainingData.dat", FileMode.Open))
+            {
+                trainingData = (double[][])(new BinaryFormatter().Deserialize(fs));
+            }
+
+            using (var fs = new FileStream(@"..\..\data\ENN\TrainingLabel.dat", FileMode.Open))
+            {
+                trainingLabels = (int[])(new BinaryFormatter().Deserialize(fs));
+            }
+            trainingLabels = trainingLabels.BijectWithNaturals();
+            using (var fs = new FileStream(@"..\..\data\ENN\TestingData.dat", FileMode.Open))
+            {
+                testingData = (double[][])(new BinaryFormatter().Deserialize(fs));
+            }
+            using (var fs = new FileStream(@"..\..\data\ENN\TestingLabel.dat", FileMode.Open))
+            {
+                testingLabels = (int[])(new BinaryFormatter().Deserialize(fs));
+            }
+            testingLabels = trainingLabels.BijectWithNaturals();
+
+            using (var fs = new FileStream(@"..\..\data\ENN\PredictionLabel.dat", FileMode.Open))
+            {
+                PredictionLabels = (int[])(new BinaryFormatter().Deserialize(fs));
+            }
+            PredictionLabels = PredictionLabels.BijectWithNaturals();
+
+
+            // Use out implementation to calculate the  the distance and label maps
+            enn.Train(trainingData, trainingLabels);
+            var predictedLabels = testingData.Select(t => enn.Compute(t)).ToArray();
+
+            Assert.That(PredictionLabels.SequenceEqual(predictedLabels));
+        }
+
+
+        public class DoubleEqualityComparer : IEqualityComparer<double>
+        {
+            private readonly double tolerance;
+            public DoubleEqualityComparer(double tolerance)
+            {
+                this.tolerance = tolerance;
+            }
+
+            public bool Equals(double x, double y)
+            {
+                return Math.Abs(x - y) <= this.tolerance;
+            }
+
+            public int GetHashCode(double obj)
+            {
+                return base.GetHashCode();
+            }
+        }
+
+    }
+}
