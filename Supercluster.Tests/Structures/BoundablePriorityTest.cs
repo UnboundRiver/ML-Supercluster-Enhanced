@@ -2,4 +2,11 @@
 {
     using NUnit.Framework;
 
-    using Supercluster.Struc
+    using Supercluster.Structures;
+
+    [TestFixture]
+    public class BoundedPriorityTest
+    {
+        [Test]
+        public void InsertTest()
+        {
