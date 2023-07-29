@@ -27,4 +27,7 @@
         [Test]
         public void SetMaxPriorityTest()
         {
-            var bp = new Bou
+            var bp = new BoundablePriorityList<int, double>(3, true)
+                         {
+                             { 34, 98744.90383 },
+                 
