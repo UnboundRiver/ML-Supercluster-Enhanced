@@ -21,4 +21,10 @@
 
             Assert.That(bp[0], Is.EqualTo(2));
             Assert.That(bp[1], Is.EqualTo(89));
-            Assert.That(bp
+            Assert.That(bp[2], Is.EqualTo(23));
+        }
+
+        [Test]
+        public void SetMaxPriorityTest()
+        {
+            var bp = new Bou
