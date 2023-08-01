@@ -11,3 +11,8 @@
     using NUnit.Framework;
 
 
+    [TestFixture]
+    public class MTreeUnitTests
+    {
+        /// <summary>
+        /// Test a specific build of a two dimensional M-T
