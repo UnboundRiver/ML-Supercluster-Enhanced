@@ -15,4 +15,8 @@
     public class MTreeUnitTests
     {
         /// <summary>
-        /// Test a specific build of a two dimensional M-T
+        /// Test a specific build of a two dimensional M-Tree with real valued coordinates.
+        /// Test distance, properties, and placements of nodes.
+        /// </summary>
+        [Test]
+       
