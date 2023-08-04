@@ -19,4 +19,9 @@
         /// Test distance, properties, and placements of nodes.
         /// </summary>
         [Test]
-       
+        public void MtreeBuildTest()
+        {
+
+            var points = new double[][]
+                  {
+                      n
