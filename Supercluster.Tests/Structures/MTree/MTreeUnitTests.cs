@@ -24,4 +24,7 @@
 
             var points = new double[][]
                   {
-                      n
+                      new double[] { 1, 3 },
+                      new double[] { 2, 1 },
+                      new double[] { 4, 2 },
+          
