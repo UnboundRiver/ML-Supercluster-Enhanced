@@ -30,4 +30,8 @@
                       new double[] { 10, 10 },
                       new double[] { 9, 9 },
                       new double[] { 8, 9 },
-                      ne
+                      new double[] { 9.5, 9.5 },
+                      new double[] { 9.75, 9.75 }
+                  };
+
+            var mtree = new 
