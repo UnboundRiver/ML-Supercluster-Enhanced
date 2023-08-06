@@ -27,4 +27,7 @@
                       new double[] { 1, 3 },
                       new double[] { 2, 1 },
                       new double[] { 4, 2 },
-          
+                      new double[] { 10, 10 },
+                      new double[] { 9, 9 },
+                      new double[] { 8, 9 },
+                      ne
