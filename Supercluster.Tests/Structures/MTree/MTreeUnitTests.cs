@@ -34,4 +34,6 @@
                       new double[] { 9.75, 9.75 }
                   };
 
-            var mtree = new 
+            var mtree = new MTree<double[]>(Metrics.L2Norm, 3, points);
+            /*
+                1. Ensure all node values are in the right pl
