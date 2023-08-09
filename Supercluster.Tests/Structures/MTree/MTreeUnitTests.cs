@@ -36,4 +36,11 @@
 
             var mtree = new MTree<double[]>(Metrics.L2Norm, 3, points);
             /*
-                1. Ensure all node values are in the right pl
+                1. Ensure all node values are in the right place
+            */
+
+            /*
+
+            The M-Tree node entry values should look like the following:
+
+                  
