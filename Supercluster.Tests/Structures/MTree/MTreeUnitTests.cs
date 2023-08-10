@@ -43,4 +43,6 @@
 
             The M-Tree node entry values should look like the following:
 
+                                        +-------------+
+                                        |(1,3),(10,10)|
                   
