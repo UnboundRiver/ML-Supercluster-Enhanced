@@ -66,4 +66,10 @@
             var leafEntries = new List<MNodeEntry<int>>();
 
             foreach (var entry in middleEntries)
-        
+            {
+                leafEntries.AddRange(entry.ChildNode.Entries);
+            }
+
+            // Check node entry values
+
+      
