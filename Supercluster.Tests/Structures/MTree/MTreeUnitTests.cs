@@ -62,4 +62,8 @@
             */
 
             var rootEntries = mtree.Root.Entries;
-            var middleEntries = rootEntries[0].ChildNode.Entries.Concat(rootEntr
+            var middleEntries = rootEntries[0].ChildNode.Entries.Concat(rootEntries[1].ChildNode.Entries).ToArray();
+            var leafEntries = new List<MNodeEntry<int>>();
+
+            foreach (var entry in middleEntries)
+        
