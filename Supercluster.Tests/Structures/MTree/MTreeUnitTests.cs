@@ -59,4 +59,7 @@
             |(1,3),(2,1)|    |(4,2),(8,9)|   |(10,10),(9.75,9.75)|   |(9,9),(9.5,9.5)|
             +-----------+    ------------+   +-------------------+   +---------------+
 
-        
+            */
+
+            var rootEntries = mtree.Root.Entries;
+            var middleEntries = rootEntries[0].ChildNode.Entries.Concat(rootEntr
