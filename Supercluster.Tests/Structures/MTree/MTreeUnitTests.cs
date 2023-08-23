@@ -72,4 +72,6 @@
 
             // Check node entry values
 
-      
+            // Test Root entries
+            Assert.That(mtree[rootEntries[0].Value], Is.EqualTo(points[0]));
+            Assert.That(mtree[rootEntries[
