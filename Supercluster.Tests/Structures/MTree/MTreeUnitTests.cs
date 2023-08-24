@@ -77,4 +77,6 @@
             Assert.That(mtree[rootEntries[1].Value], Is.EqualTo(points[3]));
 
             // Test mid entries
-            Assert.That(mtree[midd
+            Assert.That(mtree[middleEntries[0].Value], Is.EqualTo(points[0]));
+            Assert.That(mtree[middleEntries[1].Value], Is.EqualTo(points[2]));
+            Asser
