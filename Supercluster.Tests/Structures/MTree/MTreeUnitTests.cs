@@ -88,4 +88,5 @@
             Assert.That(mtree[leafEntries[2].Value], Is.EqualTo(points[2]));
             Assert.That(mtree[leafEntries[3].Value], Is.EqualTo(points[5]));
             Assert.That(mtree[leafEntries[4].Value], Is.EqualTo(points[3]));
-            As
+            Assert.That(mtree[leafEntries[5].Value], Is.EqualTo(points[7]));
+            Assert.That(mtree[leafEntries[6].Value], Is.EqualTo(po
