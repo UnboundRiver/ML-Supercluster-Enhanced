@@ -92,4 +92,7 @@
             Assert.That(mtree[leafEntries[6].Value], Is.EqualTo(points[4]));
             Assert.That(mtree[leafEntries[7].Value], Is.EqualTo(points[6]));
 
-            //    2
+            //    2. Ensure all node properties are correct at each level
+
+            // Ensure that root node has no parent entry
+            Assert.That(mtree.Root.Pare
