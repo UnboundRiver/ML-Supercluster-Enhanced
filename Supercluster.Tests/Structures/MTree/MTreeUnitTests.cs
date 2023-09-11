@@ -95,4 +95,9 @@
             //    2. Ensure all node properties are correct at each level
 
             // Ensure that root node has no parent entry
-            Assert.That(mtree.Root.Pare
+            Assert.That(mtree.Root.ParentEntry, Is.Null);
+
+            // Check node entry properties
+            foreach (var entry in rootEntries)
+            {
+              
