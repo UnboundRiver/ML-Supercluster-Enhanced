@@ -104,4 +104,8 @@
                 Assert.That(entry.ChildNode, Is.Not.Null);
                 Assert.That(entry.DistanceFromParent, Is.EqualTo(-1));
                 Assert.That(entry.CoveringRadius, Is.GreaterThan(0));
-             
+                Assert.That(entry.EnclosingNode.IsInternalNode, Is.True);
+            }
+
+            foreach (var entry in middleEntries)
+            {
