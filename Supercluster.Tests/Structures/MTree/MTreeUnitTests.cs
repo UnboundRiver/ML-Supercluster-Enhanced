@@ -100,4 +100,6 @@
             // Check node entry properties
             foreach (var entry in rootEntries)
             {
+                Assert.That(entry.EnclosingNode, Is.EqualTo(mtree.Root));
+                Assert.That(entry.ChildNode, Is.Not.Null);
               
