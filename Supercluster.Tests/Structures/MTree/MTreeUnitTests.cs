@@ -109,3 +109,5 @@
 
             foreach (var entry in middleEntries)
             {
+                Assert.That(entry.EnclosingNode.ParentEntry.EnclosingNode, Is.EqualTo(mtree.Root));
+                Assert.That(entry.ChildNode
