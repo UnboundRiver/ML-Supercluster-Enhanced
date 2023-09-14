@@ -116,4 +116,6 @@
                 Assert.That(entry.EnclosingNode.IsInternalNode, Is.True);
             }
 
-            foreach 
+            foreach (var entry in leafEntries)
+            {
+                Assert.That(entry.EnclosingNode.ParentEntry.EnclosingNode.ParentEntry.EnclosingNode, Is.Eq
