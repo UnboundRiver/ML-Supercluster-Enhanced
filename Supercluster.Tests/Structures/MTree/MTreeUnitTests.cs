@@ -110,4 +110,6 @@
             foreach (var entry in middleEntries)
             {
                 Assert.That(entry.EnclosingNode.ParentEntry.EnclosingNode, Is.EqualTo(mtree.Root));
-                Assert.That(entry.ChildNode
+                Assert.That(entry.ChildNode, Is.Not.Null);
+                Assert.That(entry.DistanceFromParent, Is.GreaterThanOrEqualTo(0));
+                Assert.That(entry.CoveringRadius,
