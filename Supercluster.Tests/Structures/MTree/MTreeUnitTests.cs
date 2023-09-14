@@ -112,4 +112,8 @@
                 Assert.That(entry.EnclosingNode.ParentEntry.EnclosingNode, Is.EqualTo(mtree.Root));
                 Assert.That(entry.ChildNode, Is.Not.Null);
                 Assert.That(entry.DistanceFromParent, Is.GreaterThanOrEqualTo(0));
-                Assert.That(entry.CoveringRadius,
+                Assert.That(entry.CoveringRadius, Is.GreaterThan(0));
+                Assert.That(entry.EnclosingNode.IsInternalNode, Is.True);
+            }
+
+            foreach 
