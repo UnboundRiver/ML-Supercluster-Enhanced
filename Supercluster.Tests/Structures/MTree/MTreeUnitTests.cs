@@ -118,4 +118,6 @@
 
             foreach (var entry in leafEntries)
             {
-                Assert.That(entry.EnclosingNode.ParentEntry.EnclosingNode.ParentEntry.EnclosingNode, Is.Eq
+                Assert.That(entry.EnclosingNode.ParentEntry.EnclosingNode.ParentEntry.EnclosingNode, Is.EqualTo(mtree.Root));
+                Assert.That(entry.ChildNode, Is.Null);
+                Assert.That(entry.DistanceFromPar
