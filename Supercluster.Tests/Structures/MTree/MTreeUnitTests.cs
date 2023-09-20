@@ -125,4 +125,7 @@
                 Assert.That(entry.EnclosingNode.IsInternalNode, Is.False);
             }
 
-            //  3. Ensure all Distance from par
+            //  3. Ensure all Distance from parents are correct
+            //  Root entries have a distance from parent of -1, so they are not checked here
+
+            var distanceMat
