@@ -129,4 +129,6 @@
             //  Root entries have a distance from parent of -1, so they are not checked here
 
             var distanceMatrix = new DistanceMatrix<double[]>(points, Metrics.L2Norm);
-            Assert.That(middleEntries[0].DistanceFromParent, Is.E
+            Assert.That(middleEntries[0].DistanceFromParent, Is.EqualTo(distanceMatrix[0, 0]));
+            Assert.That(middleEntries[1].DistanceFromParent, Is.EqualTo(distanceMatrix[0, 2]));
+      
