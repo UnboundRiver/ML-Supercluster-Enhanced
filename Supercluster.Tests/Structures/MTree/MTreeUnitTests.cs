@@ -136,4 +136,6 @@
 
             Assert.That(leafEntries[0].DistanceFromParent, Is.EqualTo(distanceMatrix[0, 0]));
             Assert.That(leafEntries[1].DistanceFromParent, Is.EqualTo(distanceMatrix[0, 1]));
-            Assert.That(leafEntries[2].DistanceFromParent, Is.EqualTo(distanc
+            Assert.That(leafEntries[2].DistanceFromParent, Is.EqualTo(distanceMatrix[2, 2]));
+            Assert.That(leafEntries[3].DistanceFromParent, Is.EqualTo(distanceMatrix[2, 5]));
+      
