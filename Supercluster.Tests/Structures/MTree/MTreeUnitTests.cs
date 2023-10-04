@@ -146,3 +146,6 @@
         }
 
         /// <summary>
+        /// Unit test to ensure the correct distances between points of the computed by the distance matrix.
+        /// </summary>
+        
