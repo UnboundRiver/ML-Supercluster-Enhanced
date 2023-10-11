@@ -157,4 +157,8 @@
                                  new double[] { 4.8363, 2.93732 },
                                  new double[] { 2.974 , 38.098 },
                                  new double[] { 1, 2 },
-                               
+                                 new double[] { 10, 3.5 },
+                                 new double[] { Math.PI, Math.E }
+                             };
+
+     
