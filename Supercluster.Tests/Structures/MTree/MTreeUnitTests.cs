@@ -167,4 +167,9 @@
             {
                 for (int j = 0; j < points.Length; j++)
                 {
-                    Assert.That(
+                    Assert.That(Metrics.L2Norm(points[i], points[j]), Is.EqualTo(distMatrix[i, j]));
+                }
+            }
+        }
+
+        [Test]
