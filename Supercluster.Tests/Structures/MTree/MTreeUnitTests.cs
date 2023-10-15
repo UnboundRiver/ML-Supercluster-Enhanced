@@ -164,3 +164,7 @@
             var distMatrix = new DistanceMatrix<double[]>(points, Metrics.L2Norm);
 
             for (int i = 0; i < points.Length; i++)
+            {
+                for (int j = 0; j < points.Length; j++)
+                {
+                    Assert.That(
