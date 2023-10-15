@@ -161,4 +161,6 @@
                                  new double[] { Math.PI, Math.E }
                              };
 
-     
+            var distMatrix = new DistanceMatrix<double[]>(points, Metrics.L2Norm);
+
+            for (int i = 0; i < points.Length; i++)
