@@ -182,4 +182,7 @@
 
             var treeData = global::Supercluster.Tests.Utilities.GenerateDoubles(dataSize, range, 5);
             var testData = global::Supercluster.Tests.Utilities.GenerateDoubles(testDataSize, range, 5);
-            
+            var tree = new MTree<double[]>(Metrics.L2Norm, 3, treeData);
+
+            // perform searches
+            var resultsList = tree.R
