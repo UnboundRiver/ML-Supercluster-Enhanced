@@ -177,4 +177,7 @@
         {
             var dataSize = 1000;
             var testDataSize = 1;
-            var range = 1
+            var range = 1000;
+            var radius = 50;
+
+            var treeData = global::Supercluster.Tests.Utilities.GenerateDoubles(dataSize, r
