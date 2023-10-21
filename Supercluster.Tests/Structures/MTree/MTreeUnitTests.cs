@@ -190,4 +190,7 @@
             var linearResults = Utilities.LinearRadialSearch(testData[0], radius, treeData, Metrics.L2Norm);
 
             // sort results
-            var sortedTreeResults = resultsList.OrderBy(r => r[0]).ThenBy(r => 
+            var sortedTreeResults = resultsList.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
+            var sortedLinearResults = linearResults.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
+
+      
