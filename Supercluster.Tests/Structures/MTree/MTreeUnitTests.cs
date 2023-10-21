@@ -185,4 +185,6 @@
             var tree = new MTree<double[]>(Metrics.L2Norm, 3, treeData);
 
             // perform searches
-            var resultsList = tree.R
+            var resultsList = tree.RadialSearch(testData[0], radius);
+
+            var linearResults = Utilities.LinearRadialSearch(testData[0], rad
