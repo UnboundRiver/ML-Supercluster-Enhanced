@@ -194,4 +194,10 @@
             var sortedLinearResults = linearResults.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
 
             Assert.That(sortedTreeResults.Length == sortedLinearResults.Length);
-            for (int i = 0; i < sortedLinearResul
+            for (int i = 0; i < sortedLinearResults.Length; i++)
+            {
+                Assert.That(sortedLinearResults[i].SequenceEqual(sortedTreeResults[i]));
+            }
+        }
+
+      
