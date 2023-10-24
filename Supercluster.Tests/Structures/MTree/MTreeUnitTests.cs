@@ -205,3 +205,7 @@
         {
             var dataSize = 10000;
             var testDataSize = 10;
+            var range = 100;
+            var neighboors = 10;
+
+            var testData = global::Supercluster.Tests.Utilities.Gen
