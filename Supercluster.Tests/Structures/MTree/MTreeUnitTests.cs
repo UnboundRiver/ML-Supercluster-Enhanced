@@ -200,4 +200,8 @@
             }
         }
 
-      
+        [Test]
+        public void NearestNeighboorsTest()
+        {
+            var dataSize = 10000;
+            var testDataSize = 10;
