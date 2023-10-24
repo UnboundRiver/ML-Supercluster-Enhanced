@@ -208,4 +208,8 @@
             var range = 100;
             var neighboors = 10;
 
-            var testData = global::Supercluster.Tests.Utilities.Gen
+            var testData = global::Supercluster.Tests.Utilities.GenerateDoubles(testDataSize, range, 5);
+            for (int index = 0; index < testData.Length; index++)
+            {
+
+                var treeDat
