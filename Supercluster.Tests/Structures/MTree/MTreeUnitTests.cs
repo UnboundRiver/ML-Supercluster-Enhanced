@@ -212,4 +212,6 @@
             for (int index = 0; index < testData.Length; index++)
             {
 
-                var treeDat
+                var treeData = global::Supercluster.Tests.Utilities.GenerateDoubles(dataSize, range, 5);
+
+                Console.WriteLine($"Test {index} of {testData.Le
