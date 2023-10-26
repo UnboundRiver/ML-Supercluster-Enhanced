@@ -214,4 +214,10 @@
 
                 var treeData = global::Supercluster.Tests.Utilities.GenerateDoubles(dataSize, range, 5);
 
-                Console.WriteLine($"Test {index} of {testData.Le
+                Console.WriteLine($"Test {index} of {testData.Length}");
+
+
+                var target = testData[index];
+
+                // load tree
+                var mtree = new MT
