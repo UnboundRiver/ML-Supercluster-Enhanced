@@ -220,4 +220,8 @@
                 var target = testData[index];
 
                 // load tree
-                var mtree = new MT
+                var mtree = new MTree<double[]>(Metrics.L2Norm, 3, treeData);
+
+
+                // linear search
+                var linearResults = Utilities.LinearNearestN
