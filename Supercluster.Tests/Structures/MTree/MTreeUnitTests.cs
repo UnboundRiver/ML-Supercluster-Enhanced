@@ -224,4 +224,7 @@
 
 
                 // linear search
-                var linearResults = Utilities.LinearNearestN
+                var linearResults = Utilities.LinearNearestNeighboors(target, neighboors, treeData, Metrics.L2Norm);
+
+                // tree knn
+                var resultsList = mtree.NearestNeighb
