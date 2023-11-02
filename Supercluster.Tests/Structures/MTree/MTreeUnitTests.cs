@@ -227,4 +227,9 @@
                 var linearResults = Utilities.LinearNearestNeighboors(target, neighboors, treeData, Metrics.L2Norm);
 
                 // tree knn
-                var resultsList = mtree.NearestNeighb
+                var resultsList = mtree.NearestNeighbors(target, neighboors).ToArray();
+
+                for (int i = 0; i < resultsList.Length; i++)
+                {
+                    var result = resultsList[i];
+    
