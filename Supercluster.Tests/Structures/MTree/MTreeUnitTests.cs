@@ -232,4 +232,6 @@
                 for (int i = 0; i < resultsList.Length; i++)
                 {
                     var result = resultsList[i];
-    
+                    var lin = linearResults[i];
+                    var treeDist = Metrics.L2Norm(result, target);
+         
