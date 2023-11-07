@@ -234,4 +234,7 @@
                     var result = resultsList[i];
                     var lin = linearResults[i];
                     var treeDist = Metrics.L2Norm(result, target);
-         
+                    var linDist = Metrics.L2Norm(lin, target);
+
+                    var check = treeDist == linDist;
+                    if (
