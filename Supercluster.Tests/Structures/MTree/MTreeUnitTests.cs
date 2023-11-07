@@ -237,4 +237,8 @@
                     var linDist = Metrics.L2Norm(lin, target);
 
                     var check = treeDist == linDist;
-                    if (
+                    if (!check)
+                    {
+                        Console.WriteLine($"MTree: {treeDist} Linear: {linDist}");
+                    }
+         
