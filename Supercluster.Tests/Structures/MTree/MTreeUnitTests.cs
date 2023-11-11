@@ -241,4 +241,9 @@
                     {
                         Console.WriteLine($"MTree: {treeDist} Linear: {linDist}");
                     }
-         
+                    Assert.That(treeDist == linDist);
+                }
+            }
+        }
+    }
+}
