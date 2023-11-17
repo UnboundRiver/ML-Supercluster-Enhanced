@@ -13,4 +13,9 @@ namespace Supercluster.Tests.Structures
     using Utilities = Supercluster.Tests.Utilities;
 
     [TestFixture]
-   
+    public class MetricSpaceSubsetTests
+    {
+        [Test]
+        public void RadialSearchTest()
+        {
+            var dataSize
