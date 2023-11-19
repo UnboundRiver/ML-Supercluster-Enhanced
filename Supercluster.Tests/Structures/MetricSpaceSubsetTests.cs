@@ -28,4 +28,7 @@ namespace Supercluster.Tests.Structures
             var metricSpaceSubset = new MetricSpaceSubset<double[]>(realData, Metrics.L2Norm);
 
             // structure search
-            var resultsList = me
+            var resultsList = metricSpaceSubset.RadialSearch(testData[0], radius);
+
+            // linear search
+            var linearResults = realData.Where(point => Metrics.
