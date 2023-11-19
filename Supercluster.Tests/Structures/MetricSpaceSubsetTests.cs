@@ -18,4 +18,9 @@ namespace Supercluster.Tests.Structures
         [Test]
         public void RadialSearchTest()
         {
-            var dataSize
+            var dataSize = 1000;
+            var testDataSize = 1;
+            var range = 1000;
+            var radius = 100;
+
+            var realData = 
