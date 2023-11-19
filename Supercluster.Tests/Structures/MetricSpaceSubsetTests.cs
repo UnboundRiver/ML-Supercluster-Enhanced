@@ -23,4 +23,6 @@ namespace Supercluster.Tests.Structures
             var range = 1000;
             var radius = 100;
 
-            var realData = 
+            var realData = Utilities.GenerateDoubles(dataSize, range, 2);
+            var testData = Utilities.GenerateDoubles(testDataSize, range, 2);
+            va
