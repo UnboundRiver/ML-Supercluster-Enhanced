@@ -25,4 +25,7 @@ namespace Supercluster.Tests.Structures
 
             var realData = Utilities.GenerateDoubles(dataSize, range, 2);
             var testData = Utilities.GenerateDoubles(testDataSize, range, 2);
-            va
+            var metricSpaceSubset = new MetricSpaceSubset<double[]>(realData, Metrics.L2Norm);
+
+            // structure search
+            var resultsList = me
