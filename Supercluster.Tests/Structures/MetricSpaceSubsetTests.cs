@@ -31,4 +31,7 @@ namespace Supercluster.Tests.Structures
             var resultsList = metricSpaceSubset.RadialSearch(testData[0], radius);
 
             // linear search
-            var linearResults = realData.Where(point => Metrics.
+            var linearResults = realData.Where(point => Metrics.L2Norm(point, testData[0]) <= radius);
+
+            // sort results
+            var sortedResults = resultsList.OrderBy(r => r[0]).ThenBy
