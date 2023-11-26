@@ -34,4 +34,7 @@ namespace Supercluster.Tests.Structures
             var linearResults = realData.Where(point => Metrics.L2Norm(point, testData[0]) <= radius);
 
             // sort results
-            var sortedResults = resultsList.OrderBy(r => r[0]).ThenBy
+            var sortedResults = resultsList.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
+            var sortedLinearResults = linearResults.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
+
+    
