@@ -37,4 +37,6 @@ namespace Supercluster.Tests.Structures
             var sortedResults = resultsList.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
             var sortedLinearResults = linearResults.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
 
-    
+            // test results
+            Assert.That(sortedResults.Length == sortedLinearResults.Length);
+            for (int i = 0
