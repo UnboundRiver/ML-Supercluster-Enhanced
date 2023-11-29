@@ -42,4 +42,12 @@ namespace Supercluster.Tests.Structures
             for (int i = 0; i < sortedLinearResults.Length; i++)
             {
                 Assert.That(sortedLinearResults[i].SequenceEqual(sortedResults[i]));
- 
+            }
+        }
+
+
+        [Test]
+        public void NearestNeighborsTest()
+        {
+            var dataSize = 10000;
+            var testData
