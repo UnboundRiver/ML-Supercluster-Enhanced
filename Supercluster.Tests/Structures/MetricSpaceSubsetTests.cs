@@ -50,4 +50,8 @@ namespace Supercluster.Tests.Structures
         public void NearestNeighborsTest()
         {
             var dataSize = 10000;
-            var testData
+            var testDataSize = 1;
+            var range = 1000;
+            var neighboors = 100;
+
+            var realData = Utilities.GenerateDoubles(dataSize, rang
