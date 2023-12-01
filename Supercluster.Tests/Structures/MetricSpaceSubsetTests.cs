@@ -54,4 +54,6 @@ namespace Supercluster.Tests.Structures
             var range = 1000;
             var neighboors = 100;
 
-            var realData = Utilities.GenerateDoubles(dataSize, rang
+            var realData = Utilities.GenerateDoubles(dataSize, range, 2);
+            var testData = Utilities.GenerateDoubles(testDataSize, range, 2);
+            var metricSpaceSub
