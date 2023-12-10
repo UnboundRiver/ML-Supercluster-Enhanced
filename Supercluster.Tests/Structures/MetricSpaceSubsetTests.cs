@@ -56,4 +56,8 @@ namespace Supercluster.Tests.Structures
 
             var realData = Utilities.GenerateDoubles(dataSize, range, 2);
             var testData = Utilities.GenerateDoubles(testDataSize, range, 2);
-            var metricSpaceSub
+            var metricSpaceSubset = new MetricSpaceSubset<double[]>(realData, Metrics.L2Norm);
+
+            var stopwatch = new Stopwatch();
+
+            // structu
