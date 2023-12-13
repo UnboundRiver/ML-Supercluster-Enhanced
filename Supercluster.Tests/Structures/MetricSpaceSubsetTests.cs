@@ -60,4 +60,6 @@ namespace Supercluster.Tests.Structures
 
             var stopwatch = new Stopwatch();
 
-            // structu
+            // structure search
+            var resultsList = metricSpaceSubset.NearestNeighbors(testData[0], neighboors);
+            var stop
