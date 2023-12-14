@@ -62,4 +62,7 @@ namespace Supercluster.Tests.Structures
 
             // structure search
             var resultsList = metricSpaceSubset.NearestNeighbors(testData[0], neighboors);
-            var stop
+            var stopwatch2 = new Stopwatch();
+
+            // linear search
+            var linearResults = realData.Select(p => new Tuple<dou
