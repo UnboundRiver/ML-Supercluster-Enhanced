@@ -65,4 +65,6 @@ namespace Supercluster.Tests.Structures
             var stopwatch2 = new Stopwatch();
 
             // linear search
-            var linearResults = realData.Select(p => new Tuple<dou
+            var linearResults = realData.Select(p => new Tuple<double[], double>(p, Metrics.L2Norm(p, testData[0])))
+                    .OrderBy(p => p.Item2)
+                    .Take(neighboors).Select(p
