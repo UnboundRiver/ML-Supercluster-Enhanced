@@ -74,4 +74,7 @@ namespace Supercluster.Tests.Structures
             Console.Read();
 
             // sort results
-            var sortedResults = resultsList.OrderBy(r => r[0]).ThenBy(r => 
+            var sortedResults = resultsList.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
+            var sortedLinearResults = linearResults.OrderBy(r => r[0]).ThenBy(r => r[1]).ToArray();
+
+            // test result
