@@ -67,4 +67,8 @@ namespace Supercluster.Tests.Structures
             // linear search
             var linearResults = realData.Select(p => new Tuple<double[], double>(p, Metrics.L2Norm(p, testData[0])))
                     .OrderBy(p => p.Item2)
-                    .Take(neighboors).Select(p
+                    .Take(neighboors).Select(p => p.Item1);
+
+            Console.WriteLine(stopwatch.ElapsedTicks);
+            Console.WriteLine(stopwatch2.ElapsedTicks);
+    
