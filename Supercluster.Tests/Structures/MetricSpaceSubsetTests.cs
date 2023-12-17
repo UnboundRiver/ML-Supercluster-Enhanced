@@ -71,4 +71,7 @@ namespace Supercluster.Tests.Structures
 
             Console.WriteLine(stopwatch.ElapsedTicks);
             Console.WriteLine(stopwatch2.ElapsedTicks);
-    
+            Console.Read();
+
+            // sort results
+            var sortedResults = resultsList.OrderBy(r => r[0]).ThenBy(r => 
