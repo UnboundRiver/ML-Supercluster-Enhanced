@@ -79,4 +79,8 @@ namespace Supercluster.Tests.Structures
 
             // test results
             Assert.That(sortedResults.Length == sortedLinearResults.Length);
-            for (int i = 0; i < sortedLinearResul
+            for (int i = 0; i < sortedLinearResults.Length; i++)
+            {
+                Assert.That(sortedLinearResults[i].SequenceEqual(sortedResults[i]));
+            }
+        }
