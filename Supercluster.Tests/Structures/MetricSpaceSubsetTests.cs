@@ -84,3 +84,5 @@ namespace Supercluster.Tests.Structures
                 Assert.That(sortedLinearResults[i].SequenceEqual(sortedResults[i]));
             }
         }
+    }
+}
