@@ -8,4 +8,10 @@ using System.Windows;
 
 namespace Supercluster.VisualTests
 {
-    /// <summ
+    /// <summary>
+    /// Interaction logic for App.xaml
+    /// </summary>
+    public partial class App : Application
+    {
+    }
+}
