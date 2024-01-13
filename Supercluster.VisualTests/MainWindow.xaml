@@ -10,4 +10,8 @@
         mc:Ignorable="d">
     <Grid>
 
-        <TabControl Grid.Column="1
+        <TabControl Grid.Column="1" TabStripPlacement="Left">
+            <TabItem Header="KnnView">
+                <views:KnnView />
+            </TabItem>
+      
