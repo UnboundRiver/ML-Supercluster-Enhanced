@@ -14,4 +14,9 @@
             <TabItem Header="KnnView">
                 <views:KnnView />
             </TabItem>
-      
+            <TabItem Header="Data Designer">
+                <views:DataDesigner />
+            </TabItem>
+        </TabControl>
+
+    
