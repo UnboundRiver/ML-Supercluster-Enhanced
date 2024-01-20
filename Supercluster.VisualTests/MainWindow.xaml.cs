@@ -18,4 +18,11 @@ namespace Supercluster.VisualTests
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public pa
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            this.InitializeComponent();
+        }
+    }
+}
