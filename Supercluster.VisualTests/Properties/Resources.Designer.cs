@@ -21,4 +21,8 @@ namespace Supercluster.VisualTests.Properties
     // with the /str option, or rebuild your VS project.
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    [global::System
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    internal class Resources
+    {
+
+        private static globa
