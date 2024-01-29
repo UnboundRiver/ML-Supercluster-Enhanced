@@ -29,4 +29,5 @@ namespace Supercluster.VisualTests.Properties
 
         private static global::System.Globalization.CultureInfo resourceCulture;
 
-        [global::Sy
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
+        interna
