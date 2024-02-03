@@ -36,4 +36,5 @@ namespace Supercluster.VisualTests.Properties
 
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
-        /
+        /// </summary>
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanc
