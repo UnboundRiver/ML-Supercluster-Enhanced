@@ -42,4 +42,6 @@ namespace Supercluster.VisualTests.Properties
         {
             get
             {
-                if
+                if ((resourceMan == null))
+                {
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.Reso
