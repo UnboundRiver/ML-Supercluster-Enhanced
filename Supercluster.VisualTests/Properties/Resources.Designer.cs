@@ -44,4 +44,6 @@ namespace Supercluster.VisualTests.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.Reso
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Supercluster.VisualTests.Properties.Resources", typeof(Resources).Assembly);
+                    resourceMan = temp;
+                
