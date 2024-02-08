@@ -46,4 +46,10 @@ namespace Supercluster.VisualTests.Properties
                 {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Supercluster.VisualTests.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
-                
+                }
+                return resourceMan;
+            }
+        }
+
+        /// <summary>
+        ///   Overrides the current
