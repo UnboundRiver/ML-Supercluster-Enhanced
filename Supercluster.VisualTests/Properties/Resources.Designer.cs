@@ -65,4 +65,7 @@ namespace Supercluster.VisualTests.Properties
             set
             {
                 resourceCulture = value;
-       
+            }
+        }
+    }
+}
