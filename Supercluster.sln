@@ -11,4 +11,5 @@ Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "Supercluster.Documentation"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workbench", "Workbench\Workbench.csproj", "{818F4FC0-BB21-4905-A028-0CBB357B8E39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supercluster.VisualTests", "Supercluster.VisualTests\Supercluster.VisualTests.csproj", "{E29CC7A0-181C-4300-89EC-6FD65618E4AD}"
+EndProje
