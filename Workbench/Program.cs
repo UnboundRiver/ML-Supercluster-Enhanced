@@ -195,3 +195,39 @@
         }
 
     }
+}
+
+
+// load tree
+/*
+linearStopwatch.Start();
+// linear search
+var linearResults =
+    treeData.Select(p => new Tuple<double[], double>(p, Metrics.L2Norm_Double(p, target)))
+        .OrderBy(p => p.Item2)
+        .Take(neighboors)
+        .Select(p => p.Item1)
+        .ToArray();
+linearStopwatch.Stop();
+Console.WriteLine("Linear: " + linearStopwatch.ElapsedTicks);
+times.Add(linearStopwatch.ElapsedTicks);
+linearStopwatch.Reset();
+*/
+
+// kd tree
+/*
+var kdTree = new KDTree<double, double[]>(
+    dimensions,
+    treeData,
+    treeData,
+    Metrics.L2Norm_Double,
+    double.MinValue,
+    double.MaxValue);
+
+kdtreeStopWatch.Start();
+var kdtreeResults = kdTree.NearestNeighbors(target, neighboors).ToArray();
+kdtreeStopWatch.Stop();
+times.Add(kdtreeStopWatch.ElapsedTicks);
+Console.WriteLine("KDTree: " + kdtreeStopWatch.ElapsedTicks);
+kdtreeStopWatch.Reset();
+*/
