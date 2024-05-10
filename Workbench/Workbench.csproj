@@ -25,4 +25,6 @@
     <WarningLevel>4</WarningLevel>
     <CodeAnalysisRuleSet>..\Supercluster\Supercluster.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
-  <PropertyGroup Co
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugTyp
